@@ -1,0 +1,1002 @@
+{
+    "data": [
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Nvidia.svg",
+            "large_size_json": [
+                {}
+            ],
+            "medium_size_json": [
+                {}
+            ],
+            "platform_sizing_id": 1,
+            "platform_sizing_name": "Nvidia",
+            "region": {},
+            "small_size_json": [
+                {}
+            ],
+            "system": null
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/DELL.svg",
+            "large_size_json": [
+                {}
+            ],
+            "medium_size_json": [
+                {}
+            ],
+            "platform_sizing_id": 3,
+            "platform_sizing_name": "DELL",
+            "region": {},
+            "small_size_json": [
+                {}
+            ],
+            "system": null
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/AWS.svg",
+            "large_size_json": [
+                {}
+            ],
+            "medium_size_json": [
+                {}
+            ],
+            "platform_sizing_id": 5,
+            "platform_sizing_name": "AWS",
+            "region": {},
+            "small_size_json": [
+                {}
+            ],
+            "system": null
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Ali.svg",
+            "large_size_json": [
+                {}
+            ],
+            "medium_size_json": [
+                {}
+            ],
+            "platform_sizing_id": 7,
+            "platform_sizing_name": "Ali",
+            "region": {},
+            "small_size_json": [
+                {}
+            ],
+            "system": null
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Databricks.svg",
+            "large_size_json": [
+                {}
+            ],
+            "medium_size_json": [
+                {}
+            ],
+            "platform_sizing_id": 8,
+            "platform_sizing_name": "Databricks",
+            "region": {},
+            "small_size_json": [
+                {}
+            ],
+            "system": null
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/GCP.svg",
+            "large_size_json": [
+                {}
+            ],
+            "medium_size_json": [
+                {}
+            ],
+            "platform_sizing_id": 9,
+            "platform_sizing_name": "GCP",
+            "region": {},
+            "small_size_json": [
+                {}
+            ],
+            "system": null
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Intel.svg",
+            "large_size_json": [
+                {}
+            ],
+            "medium_size_json": [
+                {}
+            ],
+            "platform_sizing_id": 6,
+            "platform_sizing_name": "Intel",
+            "region": {},
+            "small_size_json": [
+                {}
+            ],
+            "system": null
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Denvr.svg",
+            "large_size_json": [
+                {}
+            ],
+            "medium_size_json": [
+                {}
+            ],
+            "platform_sizing_id": 2,
+            "platform_sizing_name": "Denvr",
+            "region": {},
+            "small_size_json": [
+                {}
+            ],
+            "system": null
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Runpod.svg",
+            "large_size_json": [
+                {
+                    "disk_space": "80 GB",
+                    "parent_name": "A100 80GB PCIe",
+                    "pricing_per_hour": 1.64,
+                    "ram": "117 GB",
+                    "region": [
+                        "CA-MTL-3, EU-RO-1, US-KS-2, US-KS-3"
+                    ],
+                    "type_name": "NVIDIA A100 80GB PCIe",
+                    "vcpus": null,
+                    "vram": "80 GB"
+                },
+                {
+                    "disk_space": "80 GB",
+                    "parent_name": "A100-SXM4-80GB",
+                    "pricing_per_hour": 1.89,
+                    "ram": "125 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1, US-KS-2, US-KS-3"
+                    ],
+                    "type_name": "NVIDIA A100-SXM4-80GB",
+                    "vcpus": null,
+                    "vram": "80 GB"
+                },
+                {
+                    "disk_space": "80 GB",
+                    "parent_name": "H100 PCIe",
+                    "pricing_per_hour": 2.39,
+                    "ram": "188 GB",
+                    "region": [
+                        "US-KS-2"
+                    ],
+                    "type_name": "NVIDIA H100 PCIe",
+                    "vcpus": null,
+                    "vram": "80 GB"
+                },
+                {
+                    "disk_space": "80 GB",
+                    "parent_name": "H100 80GB HBM3",
+                    "pricing_per_hour": 2.99,
+                    "ram": "125 GB",
+                    "region": [
+                        "CA-MTL-1, CA-MTL-2, CA-MTL-3, EU-FR-1, EU-NL-1, EUR-IS-3, US-CA-2, US-GA-1, US-GA-2, US-KS-2, US-TX-3"
+                    ],
+                    "type_name": "NVIDIA H100 80GB HBM3",
+                    "vcpus": null,
+                    "vram": "80 GB"
+                }
+            ],
+            "medium_size_json": [
+                {
+                    "disk_space": "65 GB",
+                    "parent_name": "A40",
+                    "pricing_per_hour": 0.44,
+                    "ram": "50 GB",
+                    "region": [
+                        "CA-MTL-1, EU-SE-1, US-KS-3"
+                    ],
+                    "type_name": "NVIDIA A40",
+                    "vcpus": null,
+                    "vram": "48 GB"
+                },
+                {
+                    "disk_space": "65 GB",
+                    "parent_name": "L40S",
+                    "pricing_per_hour": 0.86,
+                    "ram": "94 GB",
+                    "region": [
+                        "EU-NL-1, OC-AU-1, US-IL-1, US-TX-3, US-TX-4"
+                    ],
+                    "type_name": "NVIDIA L40S",
+                    "vcpus": null,
+                    "vram": "48 GB"
+                },
+                {
+                    "disk_space": "65 GB",
+                    "parent_name": "RTX A6000",
+                    "pricing_per_hour": 0.76,
+                    "ram": "50 GB",
+                    "region": [
+                        "EU-CZ-1, EU-RO-1, EU-SE-1, US-KS-1, US-KS-2, US-TX-1"
+                    ],
+                    "type_name": "NVIDIA RTX A6000",
+                    "vcpus": null,
+                    "vram": "48 GB"
+                },
+                {
+                    "disk_space": "65 GB",
+                    "parent_name": "RTX 6000 Ada Generation",
+                    "pricing_per_hour": 0.77,
+                    "ram": "94 GB",
+                    "region": [
+                        "US-CA-2, US-IL-1, US-KS-2, US-KS-3"
+                    ],
+                    "type_name": "NVIDIA RTX 6000 Ada Generation",
+                    "vcpus": null,
+                    "vram": "48 GB"
+                },
+                {
+                    "disk_space": "65 GB",
+                    "parent_name": "L40",
+                    "pricing_per_hour": 0.99,
+                    "ram": "94 GB",
+                    "region": [
+                        "EUR-IS-1, US-KS-2"
+                    ],
+                    "type_name": "NVIDIA L40",
+                    "vcpus": null,
+                    "vram": "48 GB"
+                }
+            ],
+            "platform_sizing_id": 10,
+            "platform_sizing_name": "Runpod",
+            "region": [
+                "CA-MTL-1",
+                "CA-MTL-2",
+                "CA-MTL-3",
+                "EU-CZ-1",
+                "EU-FR-1",
+                "EU-NL-1",
+                "EU-RO-1",
+                "EU-SE-1",
+                "EU-SE-2",
+                "EUR-IS-1",
+                "EUR-IS-2",
+                "EUR-IS-3",
+                "EUR-NO-1",
+                "OC-AU-1",
+                "SEA-SG-1",
+                "US-CA-1",
+                "US-CA-2",
+                "US-GA-1",
+                "US-GA-2",
+                "US-IL-1",
+                "US-KS-1",
+                "US-KS-2",
+                "US-KS-3",
+                "US-OR-1",
+                "US-OR-2",
+                "US-TX-1",
+                "US-TX-2",
+                "US-TX-3",
+                "US-TX-4"
+            ],
+            "small_size_json": [
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "RTX A4000",
+                    "pricing_per_hour": 0.32,
+                    "ram": "20 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1, EUR-NO-1, US-IL-1, US-TX-2"
+                    ],
+                    "type_name": "NVIDIA RTX A4000",
+                    "vcpus": null,
+                    "vram": "16 GB"
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "RTX A4500",
+                    "pricing_per_hour": 0.34,
+                    "ram": "31 GB",
+                    "region": [
+                        "EU-RO-1"
+                    ],
+                    "type_name": "NVIDIA RTX A4500",
+                    "vcpus": null,
+                    "vram": "20 GB"
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "RTX A5000",
+                    "pricing_per_hour": 0.36,
+                    "ram": "25 GB",
+                    "region": [
+                        "CA-MTL-1, EU-CZ-1, EU-SE-1, US-CA-2, US-IL-1"
+                    ],
+                    "type_name": "NVIDIA RTX A5000",
+                    "vcpus": null,
+                    "vram": "24 GB"
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "RTX 4000 Ada Generation",
+                    "pricing_per_hour": 0.38,
+                    "ram": "47 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1, US-CA-2"
+                    ],
+                    "type_name": "NVIDIA RTX 4000 Ada Generation",
+                    "vcpus": null,
+                    "vram": "20 GB"
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "L4",
+                    "pricing_per_hour": 0.43,
+                    "ram": "50 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1, EUR-IS-2"
+                    ],
+                    "type_name": "NVIDIA L4",
+                    "vcpus": null,
+                    "vram": "24 GB"
+                }
+            ],
+            "system": "GPU"
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Azure.svg",
+            "large_size_json": [
+                {
+                    "disk_size": "2 TB",
+                    "parent_name": "M-Series",
+                    "pricing_per_hour": 6.79,
+                    "ram": "1 TB",
+                    "region": [
+                        "East US, West Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_M64ms",
+                    "vcpus": 64
+                },
+                {
+                    "disk_size": "1 TB",
+                    "parent_name": "H-Series",
+                    "pricing_per_hour": 2.27,
+                    "ram": "224 GB",
+                    "region": [
+                        "East US, West US, Japan East"
+                    ],
+                    "type_name": "Standard_H16m",
+                    "vcpus": 16
+                },
+                {
+                    "disk_size": "1 TB",
+                    "parent_name": "G-Series",
+                    "pricing_per_hour": 4.38,
+                    "ram": "448 GB",
+                    "region": [
+                        "East US,West Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_G5",
+                    "vcpus": 32
+                }
+            ],
+            "medium_size_json": [
+                {
+                    "disk_size": "32 GB",
+                    "parent_name": "D-Series",
+                    "pricing_per_hour": 0.192,
+                    "ram": "16 GB",
+                    "region": [
+                        "East US, West Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_D4s_v3",
+                    "vcpus": 4
+                },
+                {
+                    "disk_size": "32 GB",
+                    "parent_name": "E-Series",
+                    "pricing_per_hour": 0.256,
+                    "ram": "32 GB",
+                    "region": [
+                        "East US, West US, Central US"
+                    ],
+                    "type_name": "Standard_E4s_v3",
+                    "vcpus": 4
+                },
+                {
+                    "disk_size": "16 GB",
+                    "parent_name": "F-Series",
+                    "pricing_per_hour": 0.169,
+                    "ram": "8 GB",
+                    "region": [
+                        "East US, West Europe, Japan East"
+                    ],
+                    "type_name": "Standard_F4s_v2",
+                    "vcpus": 4
+                }
+            ],
+            "platform_sizing_id": 12,
+            "platform_sizing_name": "Azure",
+            "region": null,
+            "small_size_json": [
+                {
+                    "disk_size": "10 GB",
+                    "parent_name": "A-Series",
+                    "pricing_per_hour": 0.018,
+                    "ram": "2 GB",
+                    "region": [
+                        "East US,West Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_A1_v2",
+                    "vcpus": 1
+                },
+                {
+                    "disk_size": "2 GB",
+                    "parent_name": "B-Series",
+                    "pricing_per_hour": 0.012,
+                    "ram": "1 GB",
+                    "region": [
+                        "East US , West US, Central US"
+                    ],
+                    "type_name": "Standard_B1s",
+                    "vcpus": 1
+                },
+                {
+                    "disk_size": "16 GB",
+                    "parent_name": "D-Series",
+                    "pricing_per_hour": 0.096,
+                    "ram": "8 GB",
+                    "region": [
+                        "East US, West Europe, Japan East"
+                    ],
+                    "type_name": "Standard_D2s_v3",
+                    "vcpus": 2
+                }
+            ],
+            "system": "CPU"
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Runpod.svg",
+            "large_size_json": [
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "cpu5m",
+                    "pricing_per_hour": 1.04,
+                    "ram": "128 GB",
+                    "region": [
+                        "EU-RO-1"
+                    ],
+                    "type_name": "cpu5m-16-128",
+                    "vcpus": "16",
+                    "vram": null
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "cpu5m",
+                    "pricing_per_hour": 2.08,
+                    "ram": "256 GB",
+                    "region": [
+                        "EU-RO-1"
+                    ],
+                    "type_name": "cpu5m-32-256",
+                    "vcpus": "32",
+                    "vram": null
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "cpu5g",
+                    "pricing_per_hour": 1.472,
+                    "ram": "128 GB",
+                    "region": [
+                        "EU-RO-1"
+                    ],
+                    "type_name": "cpu5g-32-128",
+                    "vcpus": "32",
+                    "vram": null
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "cpu3m",
+                    "pricing_per_hour": 0.88,
+                    "ram": "128 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3m-16-128",
+                    "vcpus": "16",
+                    "vram": null
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "cpu3m",
+                    "pricing_per_hour": 1.76,
+                    "ram": "256 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3m-32-256",
+                    "vcpus": "32",
+                    "vram": null
+                },
+                {
+                    "disk_space": "50 GB",
+                    "parent_name": "cpu3g",
+                    "pricing_per_hour": 1.28,
+                    "ram": "128 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3g-32-128",
+                    "vcpus": "32",
+                    "vram": null
+                }
+            ],
+            "medium_size_json": [
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu5m",
+                    "pricing_per_hour": 0.26,
+                    "ram": "32 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5m-4-32",
+                    "vcpus": "4",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu5m",
+                    "pricing_per_hour": 0.52,
+                    "ram": "64 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5m-8-64",
+                    "vcpus": "8",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu5g",
+                    "pricing_per_hour": 0.368,
+                    "ram": "32 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5g-8-32",
+                    "vcpus": "8",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu5g",
+                    "pricing_per_hour": 0.736,
+                    "ram": "64 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5g-16-64",
+                    "vcpus": "16",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu5c",
+                    "pricing_per_hour": 0.56,
+                    "ram": "32 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5c-16-32",
+                    "vcpus": "16",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu5c",
+                    "pricing_per_hour": 1.12,
+                    "ram": "64 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5c-32-64",
+                    "vcpus": "32",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu3m",
+                    "pricing_per_hour": 0.22,
+                    "ram": "32 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3m-4-32",
+                    "vcpus": "4",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu3m",
+                    "pricing_per_hour": 0.44,
+                    "ram": "64 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3m-8-64",
+                    "vcpus": "8",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu3g",
+                    "pricing_per_hour": 0.32,
+                    "ram": "32 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3g-8-32",
+                    "vcpus": "8",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu3g",
+                    "pricing_per_hour": 0.64,
+                    "ram": "64 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3g-16-64",
+                    "vcpus": "16",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu3c",
+                    "pricing_per_hour": 0.48,
+                    "ram": "32 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3c-16-32",
+                    "vcpus": "16",
+                    "vram": null
+                },
+                {
+                    "disk_space": "35 GB",
+                    "parent_name": "cpu3c",
+                    "pricing_per_hour": 0.96,
+                    "ram": "64 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3c-32-64",
+                    "vcpus": "32",
+                    "vram": null
+                }
+            ],
+            "platform_sizing_id": 11,
+            "platform_sizing_name": "Runpod",
+            "region": [
+                "CA-MTL-1",
+                "CA-MTL-2",
+                "CA-MTL-3",
+                "EU-CZ-1",
+                "EU-FR-1",
+                "EU-NL-1",
+                "EU-RO-1",
+                "EU-SE-1",
+                "EU-SE-2",
+                "EUR-IS-1",
+                "EUR-IS-2",
+                "EUR-IS-3",
+                "EUR-NO-1",
+                "OC-AU-1",
+                "SEA-SG-1",
+                "US-CA-1",
+                "US-CA-2",
+                "US-GA-1",
+                "US-GA-2",
+                "US-IL-1",
+                "US-KS-1",
+                "US-KS-2",
+                "US-KS-3",
+                "US-OR-1",
+                "US-OR-2",
+                "US-TX-1",
+                "US-TX-2",
+                "US-TX-3",
+                "US-TX-4"
+            ],
+            "small_size_json": [
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu5m",
+                    "pricing_per_hour": 0.13,
+                    "ram": "16 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5m-2-16",
+                    "vcpus": "2",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu5g",
+                    "pricing_per_hour": 0.092,
+                    "ram": "8 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5g-2-8",
+                    "vcpus": "2",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu5g",
+                    "pricing_per_hour": 0.184,
+                    "ram": "16 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5g-4-16",
+                    "vcpus": "4",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu5c",
+                    "pricing_per_hour": 0.07,
+                    "ram": "4 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5c-2-4",
+                    "vcpus": "2",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu5c",
+                    "pricing_per_hour": 0.14,
+                    "ram": "8 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5c-4-8",
+                    "vcpus": "4",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu5c",
+                    "pricing_per_hour": 0.28,
+                    "ram": "16 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu5c-8-16",
+                    "vcpus": "8",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu3m",
+                    "pricing_per_hour": 0.11,
+                    "ram": "16 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3m-2-16",
+                    "vcpus": "2",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu3g",
+                    "pricing_per_hour": 0.08,
+                    "ram": "8 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3g-2-8",
+                    "vcpus": "2",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu3g",
+                    "pricing_per_hour": 0.16,
+                    "ram": "16 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3g-4-16",
+                    "vcpus": "4",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu3c",
+                    "pricing_per_hour": 0.06,
+                    "ram": "4 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3c-2-4",
+                    "vcpus": "2",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu3c",
+                    "pricing_per_hour": 0.12,
+                    "ram": "8 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3c-4-8",
+                    "vcpus": "4",
+                    "vram": null
+                },
+                {
+                    "disk_space": "20 GB",
+                    "parent_name": "cpu3c",
+                    "pricing_per_hour": 0.24,
+                    "ram": "16 GB",
+                    "region": [
+                        "EU-RO-1, EUR-IS-1"
+                    ],
+                    "type_name": "cpu3c-8-16",
+                    "vcpus": "8",
+                    "vram": null
+                }
+            ],
+            "system": "CPU"
+        },
+        {
+            "image_path": "https://loop2devbsac.blob.core.windows.net/loop2devcontainer/model_foundry/Azure.svg",
+            "large_size_json": [
+                {
+                    "disk_size": "2 TB",
+                    "parent_name": "NDv2 Series",
+                    "pricing_per_hour": 8.4,
+                    "ram": "672 GB",
+                    "region": [
+                        "East US, West Europe, Japan East"
+                    ],
+                    "type_name": "Standard_ND40rs_v2",
+                    "vcpus": 40,
+                    "vram": "40 GB"
+                },
+                {
+                    "disk_size": "4 TB",
+                    "parent_name": "ND A100 v4 Series",
+                    "pricing_per_hour": 11.2,
+                    "ram": "896 GB",
+                    "region": [
+                        "East US, West Europe, Japan East"
+                    ],
+                    "type_name": "Standard_ND96asr_A100_v4",
+                    "vcpus": 96,
+                    "vram": "80 GB"
+                },
+                {
+                    "disk_size": "1.5 TB",
+                    "parent_name": "HBv3 Series",
+                    "pricing_per_hour": 6.5,
+                    "ram": "448 GB",
+                    "region": [
+                        "West US, North Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_HB120rs_v3",
+                    "vcpus": 120,
+                    "vram": "48 GB"
+                }
+            ],
+            "medium_size_json": [
+                {
+                    "disk_size": "512 GB",
+                    "parent_name": "NCas_T4_v3 Series",
+                    "pricing_per_hour": 1.8,
+                    "ram": "32 GB",
+                    "region": [
+                        "East US, West Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_NC8as_T4_v3",
+                    "vcpus": 8,
+                    "vram": "16 GB"
+                },
+                {
+                    "disk_size": "512 GB",
+                    "parent_name": "NVv4 Series",
+                    "pricing_per_hour": 1.15,
+                    "ram": "28 GB",
+                    "region": [
+                        "East US, West Europe, North Central US"
+                    ],
+                    "type_name": "Standard_NV8as_v4",
+                    "vcpus": 8,
+                    "vram": "16 GB"
+                },
+                {
+                    "disk_size": "1 TB",
+                    "parent_name": "NDasr_A100_v4 Series",
+                    "pricing_per_hour": 6.8,
+                    "ram": "128 GB",
+                    "region": [
+                        "East US, West Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_ND80asr_A100_v4",
+                    "vcpus": 20,
+                    "vram": "32 GB"
+                }
+            ],
+            "platform_sizing_id": 4,
+            "platform_sizing_name": "Azure",
+            "region": [
+                "East US",
+                "West US",
+                "Central US",
+                "South Central US",
+                "West US 2",
+                "West US 3",
+                "UAE North",
+                "Switzerland North",
+                "Qatar Central",
+                "South Africa North",
+                "Australia East",
+                "Central India",
+                "Japan East"
+            ],
+            "small_size_json": [
+                {
+                    "disk_size": "256 GB",
+                    "parent_name": "NCas_T4_v3 Series",
+                    "pricing_per_hour": 0.9,
+                    "ram": "16 GB",
+                    "region": [
+                        "East US, West Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_NC4as_T4_v3",
+                    "vcpus": 4,
+                    "vram": "16 GB"
+                },
+                {
+                    "disk_size": "512 GB",
+                    "parent_name": "NVv4 Series",
+                    "pricing_per_hour": 0.55,
+                    "ram": "14 GB",
+                    "region": [
+                        "East US, West Europe, North Central US"
+                    ],
+                    "type_name": "Standard_NV4as_v4",
+                    "vcpus": 4,
+                    "vram": "8 GB"
+                },
+                {
+                    "disk_size": "1 TB",
+                    "parent_name": "NDasr_A100_v4 Series",
+                    "pricing_per_hour": 3.6,
+                    "ram": "64 GB",
+                    "region": [
+                        "East US, West Europe, Southeast Asia"
+                    ],
+                    "type_name": "Standard_ND40asr_A100_v4",
+                    "vcpus": 16,
+                    "vram": "16 GB"
+                }
+            ],
+            "system": "GPU"
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Logo details fetched successfully!",
+    "output_kpis": {
+        "execution_time": "6425.814867019653ms",
+        "processed_records": 12
+    },
+    "status_code": 200
+}

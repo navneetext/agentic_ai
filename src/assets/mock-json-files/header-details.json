@@ -1,0 +1,19 @@
+{
+    "category_id": 1,
+    "pipeline_id":1,
+    "title": "Retrieval Evaluation",
+    "description": "Lorem Ipsum is simply dummy text of the printing",
+    "services": {
+      "aiServices": 10,
+      "algo": 1,
+      "data": 3,
+      "Models": 6
+    },
+    "creator": {
+      "name": "Ayushi",
+      "profile_picture": "url_to_profile_picture"
+    },
+    "rating": 4.5,
+    "updated_date": "26 Sept"
+  }
+  

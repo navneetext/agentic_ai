@@ -1,0 +1,1110 @@
+{
+    "data": {
+        "series": [
+            {
+                "data": [
+                    {
+                        "data": [
+                            {
+                                "data": [
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "RagTest18",
+                                        "pipeline_template_id": 447,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "RagTesting2025",
+                                        "pipeline_template_id": 447,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Azure Blob Data Ingestion",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Video and Audio Transcription",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Video_Transcription",
+                                        "pipeline_template_id": 475,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "reateaming_pipeline_18",
+                                        "pipeline_template_id": 449,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "RagTesting2025",
+                                        "pipeline_template_id": 448,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Clone_test_pipeline_pradyumn",
+                                        "pipeline_template_id": 437,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Readteaming_2",
+                                        "pipeline_template_id": 441,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "reateaming_pipeline_18",
+                                        "pipeline_template_id": 449,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Readteaming_2_edit",
+                                        "pipeline_template_id": 441,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Clone_reateaming_pipeline_18",
+                                        "pipeline_template_id": 450,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Azure Blob Data Ingestion",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Video and Audio Transcription",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Audio_Transcription",
+                                        "pipeline_template_id": 476,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Clone_Clone_reateaming_pipeline_18",
+                                        "pipeline_template_id": 451,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test_pipeline_pradyumnv2",
+                                        "pipeline_template_id": 436,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test_pipeline_pradyumn",
+                                        "pipeline_template_id": 436,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Clone_Clone_reateaming_pipeline_18",
+                                        "pipeline_template_id": 451,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest",
+                                        "pipeline_template_id": 434,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Readteaming_2_edit",
+                                        "pipeline_template_id": 442,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Test18",
+                                        "pipeline_template_id": 445,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "clone_Readteaming_2",
+                                        "pipeline_template_id": 443,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest3",
+                                        "pipeline_template_id": 468,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest",
+                                        "pipeline_template_id": 434,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteaming_testing",
+                                        "pipeline_template_id": 453,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Benchmarking_Core_Performanc",
+                                        "pipeline_template_id": 445,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Singlemahesh",
+                                        "pipeline_template_id": 477,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest",
+                                        "pipeline_template_id": 434,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "pipeline_test",
+                                        "pipeline_template_id": 469,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteaming",
+                                        "pipeline_template_id": 454,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest",
+                                        "pipeline_template_id": 434,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest1",
+                                        "pipeline_template_id": 434,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test",
+                                        "pipeline_template_id": 470,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test_pipeline_pradyumnv3",
+                                        "pipeline_template_id": 436,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test",
+                                        "pipeline_template_id": 471,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Standard RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test",
+                                        "pipeline_template_id": 471,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Singlemahesh",
+                                        "pipeline_template_id": 477,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteaming1",
+                                        "pipeline_template_id": 438,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Test18",
+                                        "pipeline_template_id": 444,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Redteaming_pipeline",
+                                        "pipeline_template_id": 439,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest",
+                                        "pipeline_template_id": 434,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test",
+                                        "pipeline_template_id": 471,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest",
+                                        "pipeline_template_id": 433,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Clone_Test18",
+                                        "pipeline_template_id": 459,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Azure Blob Data Ingestion",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Feature Extraction",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Azure Blob Storage",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Text_Extraction_PDF",
+                                        "pipeline_template_id": 473,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Clone_redteaming_testing",
+                                        "pipeline_template_id": 460,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Azure Blob Data Ingestion",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Feature Extraction",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Azure Blob Storage",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Text_Extraction_PDF",
+                                        "pipeline_template_id": 472,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Azure Blob Data Ingestion",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Video and Audio Transcription",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Audio_Transcription",
+                                        "pipeline_template_id": 476,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Readteaming_2",
+                                        "pipeline_template_id": 440,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Test18",
+                                        "pipeline_template_id": 446,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Hybrid Chunking",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Test20",
+                                        "pipeline_template_id": 446,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "single_pipeline",
+                                        "pipeline_template_id": 477,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest123",
+                                        "pipeline_template_id": 461,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest2",
+                                        "pipeline_template_id": 455,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test",
+                                        "pipeline_template_id": 474,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest",
+                                        "pipeline_template_id": 434,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test",
+                                        "pipeline_template_id": 474,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Knowledge Retrieval Evaluation",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Text Understanding Evaluation",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Text Generation Evaluation",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Benchmarking_Core_Performanc",
+                                        "pipeline_template_id": 463,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteamingtest",
+                                        "pipeline_template_id": 434,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Non DB Data Profiling",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test",
+                                        "pipeline_template_id": 465,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Clone_redteamingtest",
+                                        "pipeline_template_id": 435,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Azure Blob Data Ingestion",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Feature Extraction",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "PDF_Parser_19",
+                                        "pipeline_template_id": 466,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Azure Blob Data Ingestion",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Video and Audio Transcription",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Audio_Transcription",
+                                        "pipeline_template_id": 476,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "test_pipeline",
+                                        "pipeline_template_id": 478,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Text Generation Evaluation",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "text_generation",
+                                        "pipeline_template_id": 480,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Prompt Generation V2",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Policy RAG",
+                                                "value": 50
+                                            },
+                                            {
+                                                "name": "Category Violation Check",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "redteaming_testing",
+                                        "pipeline_template_id": 453,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Knowledge Retrieval Evaluation",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Knowledge_Retrieval_Evaluation",
+                                        "pipeline_template_id": 481,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Text Generation Evaluation",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Text_Generation_Evaluation",
+                                        "pipeline_template_id": 482,
+                                        "value": 100
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "name": "Text Understanding Evaluation",
+                                                "value": 50
+                                            }
+                                        ],
+                                        "name": "Text_Understanding_Evaluation",
+                                        "pipeline_template_id": 483,
+                                        "value": 100
+                                    }
+                                ],
+                                "environment_id": 434,
+                                "name": "Dev",
+                                "project_env_id": 1534,
+                                "value": 200
+                            },
+                            {
+                                "data": [],
+                                "environment_id": 442,
+                                "name": "newqaenvronment",
+                                "project_env_id": 1617,
+                                "value": 200
+                            }
+                        ],
+                        "name": "ProjectDev",
+                        "project_id": "434",
+                        "value": 400
+                    }
+                ],
+                "id": "252",
+                "name": "WorkspaceDev",
+                "value": 800
+            }
+        ]
+    },
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "succussfully fetched business dashboard data",
+    "output_kpis": {
+        "execution_time": 5.980585813522339,
+        "processed_records": 1
+    },
+    "status_code": 200
+}

@@ -1,0 +1,331 @@
+<!-- Back Navigation -->
+<nav class="back-navigation">
+  <a (click)="onBack()">Back</a>
+  <span class="separator">|</span>
+  <span>Evaluation | Video Content Analyzer</span>
+</nav>
+
+
+<!-- Main Container -->
+<div class="evaluation-page">
+  
+
+  <!-- Content Area -->
+  <div class="evaluation-content">
+    <!-- Steps -->
+    <div class="steps-container">
+      <div class="steps">
+        <div class="step" [class.active]="currentStep === 1" [class.completed]="isStepCompleted(1)" (click)="goToStep(1)">
+          <div class="step-number">
+            <i *ngIf="isStepCompleted(1)"></i>
+            <span *ngIf="!isStepCompleted(1)">1</span>
+          </div>
+          <div class="step-label">Performance Metrics</div>
+        </div>
+        <div class="step-line" [class.completed]="isStepCompleted(1)"></div>
+        <div class="step" [class.active]="currentStep === 2" [class.completed]="isStepCompleted(2)" (click)="goToStep(2)">
+          <div class="step-number">
+            <i *ngIf="isStepCompleted(2)"></i>
+            <span *ngIf="!isStepCompleted(2)">2</span>
+          </div>
+          <div class="step-label">Safety Metrics</div>
+        </div>
+        <div class="step-line" [class.completed]="isStepCompleted(2)"></div>
+        <div class="step" [class.active]="currentStep === 3" [class.completed]="isStepCompleted(3)" (click)="goToStep(3)">
+          <div class="step-number">
+            <i *ngIf="isStepCompleted(3)"></i>
+            <span *ngIf="!isStepCompleted(3)">3</span>
+          </div>
+          <div class="step-label">Additional Settings</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics Section -->
+    <div class="metrics-section" *ngIf="currentStep === 1">
+      <!-- First row with two tables -->
+      <div class="metrics-row">
+        <!-- Response Text Quality Metrics -->
+        <div class="metric-group">
+          <h3>
+            Response Text Quality Metrics
+            <span class="required">*</span>
+            <i class="info-icon icon-info"></i>
+          </h3>
+          <div class="metric-inputs">
+            <div class="input-group">
+              <label>
+                Select Metric
+                <i class="info-icon icon-info"></i>
+              </label>
+              <select [(ngModel)]="selectedMetric">
+                <option value="">Select a metric</option>
+                <option *ngFor="let metric of responseMetrics" [value]="metric.name">{{metric.name}}</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>
+                Select Dataset
+                <i class="info-icon icon-info"></i>
+              </label>
+              <select [(ngModel)]="selectedDataset">
+                <option value="">Select a dataset</option>
+                <option value="Dataset_01">Dataset 01</option>
+                <option value="Dataset_02">Dataset 02</option>
+                <option value="Dataset_03">Dataset 03</option>
+              </select>
+            </div>
+            <button class="add-btn" (click)="addMetric()">+</button>
+          </div>
+
+          <table class="metrics-table">
+            <thead>
+              <tr>
+                <th>Metrics</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let metric of responseMetrics">
+                <td>{{metric.name}}</td>
+                <td>
+                  <button class="delete-btn" (click)="deleteMetric(responseMetrics, metric)">
+                    <i class="icon-delete"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Execution Correctness Metrics -->
+        <div class="metric-group">
+          <h3>
+            Execution Correctness Metrics
+            <span class="required">*</span>
+            <i class="info-icon icon-info"></i>
+          </h3>
+          <div class="metric-inputs">
+            <div class="input-group">
+              <label>
+                Select Metric
+                <i class="info-icon icon-info"></i>
+              </label>
+              <select [(ngModel)]="selectedExecutionMetric">
+                <option value="">Select a metric</option>
+                <option *ngFor="let metric of executionMetrics" [value]="metric.name">{{metric.name}}</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>
+                Select Dataset
+                <i class="info-icon icon-info"></i>
+              </label>
+              <select [(ngModel)]="selectedExecutionDataset">
+                <option value="">Select a dataset</option>
+                <option value="Dataset_01">Dataset 01</option>
+                <option value="Dataset_02">Dataset 02</option>
+                <option value="Dataset_03">Dataset 03</option>
+              </select>
+            </div>
+            <button class="add-btn" (click)="addExecutionMetric()">+</button>
+          </div>
+
+          <table class="metrics-table">
+            <thead>
+              <tr>
+                <th>Metrics</th>
+                <th>Evaluation Dataset</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let metric of executionMetrics">
+                <td>{{metric.name}}</td>
+                <td>{{metric.dataset}}</td>
+                <td>
+                  <button class="delete-btn" (click)="deleteMetric(executionMetrics, metric)">
+                    <i class="icon-delete"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Second row with Effectiveness Metrics -->
+      <div class="metrics-row">
+        <div class="metric-group">
+          <h3>
+            Effectiveness Metrics
+            <span class="required">*</span>
+            <i class="info-icon icon-info"></i>
+          </h3>
+          <div class="metric-inputs">
+            <div class="input-group">
+              <label>
+                Select Metric
+                <i class="info-icon icon-info"></i>
+              </label>
+              <select [(ngModel)]="selectedEffectivenessMetric">
+                <option value="">Select a metric</option>
+                <option *ngFor="let metric of effectivenessMetrics" [value]="metric.name">{{metric.name}}</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>
+                Select Dataset
+                <i class="info-icon icon-info"></i>
+              </label>
+              <select [(ngModel)]="selectedEffectivenessDataset">
+                <option value="">Select a dataset</option>
+                <option value="Dataset_01">Dataset 01</option>
+                <option value="Dataset_02">Dataset 02</option>
+                <option value="Dataset_03">Dataset 03</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>
+                Select Evaluation Rubric
+                <i class="info-icon icon-info"></i>
+              </label>
+              <select [(ngModel)]="selectedRubric">
+                <option value="">Select a rubric</option>
+                <option value="Rubric.doc">Rubric.doc</option>
+                <option value="File_01.pdf">File_01.pdf</option>
+              </select>
+            </div>
+            <button class="add-btn" (click)="addEffectivenessMetric()">+</button>
+          </div>
+
+          <table class="metrics-table">
+            <thead>
+              <tr>
+                <th>Metrics</th>
+                <th>Dataset</th>
+                <th>Evaluation Rubric</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let metric of effectivenessMetrics">
+                <td>{{metric.name}}</td>
+                <td>{{metric.dataset}}</td>
+                <td>
+                  <a href="#" class="file-link">{{metric.evaluationRubric}}</a>
+                </td>
+                <td>
+                  <button class="delete-btn" (click)="deleteMetric(effectivenessMetrics, metric)">
+                    <i class="icon-delete"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
+        <button class="btn-previous" (click)="previousStep()" [disabled]="isFirstStep()">Back</button>
+        <button class="btn-next" (click)="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <!-- Safety Metrics Section -->
+    <div class="metrics-section safety-metrics" *ngIf="currentStep === 2">
+      <div class="metric-group">
+        <h3>
+          Safety And Fairness
+          <span class="required">*</span>
+          <i class="info-icon icon-info"></i>
+        </h3>
+        <div class="metric-inputs">
+          <div class="input-group">
+            <label>
+              Select Metric
+              <i class="info-icon icon-info"></i>
+            </label>
+            <select [(ngModel)]="selectedSafetyMetric">
+              <option value="">Select a metric</option>
+              <option *ngFor="let metric of safetyMetrics" [value]="metric.name">{{metric.name}}</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>
+              Select Dataset
+              <i class="info-icon icon-info"></i>
+            </label>
+            <select [(ngModel)]="selectedSafetyDataset">
+              <option value="">Select a dataset</option>
+              <option value="Dataset_01">Dataset 01</option>
+              <option value="Dataset_02">Dataset 02</option>
+              <option value="Dataset_03">Dataset 03</option>
+            </select>
+          </div>
+          <button class="add-btn" (click)="addSafetyMetric()">+</button>
+        </div>
+
+        <table class="metrics-table">
+          <thead>
+            <tr>
+              <th>Metrics</th>
+              <th>Dataset</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let metric of safetyMetrics">
+              <td>{{metric.name}}</td>
+              <td>{{metric.dataset}}</td>
+              <td>
+                <button class="delete-btn" (click)="deleteSafetyMetric(metric)">
+                  <i class="icon-delete"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
+        <button class="btn-previous" (click)="previousStep()" [disabled]="isFirstStep()">Previous</button>
+        <button class="btn-next" (click)="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <!-- Additional Metrics Section -->
+    <div class="metrics-section" *ngIf="currentStep === 3">
+      <div class="metrics-grid">
+        <div class="metric-item" *ngFor="let metric of additionalMetrics">
+          <label class="checkbox-label">
+            <input type="checkbox" 
+                   [checked]="metric.checked"
+                   (change)="handleMetricChange($event, metric.id)">
+            <span class="checkbox-custom"></span>
+            <span class="label-text">{{ metric.label }}</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
+        <button class="btn-previous" (click)="previousStep()" [disabled]="isFirstStep()">Previous</button>
+        <button class="btn-submit" (click)="onSubmit()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Confirmation Dialog -->
+<app-confirmation-dialog *ngIf="showConfirmDialog"
+  [title]="'Evaluation'"
+  [message]="'Do you want to run evaluation?'"
+  [confirmText]="'Yes'"
+  [cancelText]="'No'"
+  (confirm)="onConfirmEvaluation()"
+  (cancel)="onCancelEvaluation()"
+  (close)="onCloseDialog()">
+</app-confirmation-dialog> 

@@ -1,0 +1,53 @@
+{
+  "clusterAndCompute": {
+    "Small": [
+      { "key": "Instance Type", "value": "Standard_D3_v2" },
+      { "key": "vCPUs", "value": "4 Cores" },
+      { "key": "Memory (GB)", "value": "14" },
+      { "key": "Min Workers", "value": "2" },
+      { "key": "Max Workers", "value": "5" }
+    ],
+    "Medium": [
+      { "key": "Instance Type", "value": "Standard_D4_v2" },
+      { "key": "vCPUs", "value": "8 Cores" },
+      { "key": "Memory (GB)", "value": "28" },
+      { "key": "Min Workers", "value": "2" },
+      { "key": "Max Workers", "value": "5" }
+    ],
+    "Large": [
+      { "key": "Instance Type", "value": "Standard_D14_v2" },
+      { "key": "vCPUs", "value": "16 Cores" },
+      { "key": "Memory (GB)", "value": "112" },
+      { "key": "Min Workers", "value": "2" },
+      { "key": "Max Workers", "value": "5" }
+    ]
+  },
+  "postgreSQL": {
+    "Small": [
+      { "key": "vCores", "value": "1" },
+      { "key": "Memory per vCore", "value": "2 GiB" },
+      { "key": "Storage (MB)", "value": "32768" },
+      { "key": "VM Series", "value": "B1ms" }
+    ],
+    "Medium": [
+      { "key": "vCores", "value": "2" },
+      { "key": "Memory per vCore", "value": "4 GiB" },
+      { "key": "Storage (MB)", "value": "65536" },
+      { "key": "VM Series", "value": "B2s" }
+    ],
+    "Large": [
+      { "key": "vCores", "value": "2" },
+      { "key": "Memory per vCore", "value": "8 GiB" },
+      { "key": "Storage (MB)", "value": "131072" },
+      { "key": "VM Series", "value": "B2ms" }
+    ]
+  },
+  "azureKubernetesServices": {
+    "Small": [
+      { "key": "vCores", "value": "Standard_D4ds_v5, Standard_D4s_v3" }    ],
+    "Medium": [
+      { "key": "vCores", "value": "Standard_D8s_v3, Standard_D4ds_v5" }    ],
+    "Large": [
+      { "key": "vCores", "value": "Standard_D8s_v3, Standard_D8ds_v5" }    ]
+  }
+}

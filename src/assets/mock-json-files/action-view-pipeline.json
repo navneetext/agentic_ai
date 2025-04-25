@@ -1,0 +1,166 @@
+{
+    "body": [
+        {
+            "description": "Description for Pipeline 10",
+            "last_execution": null,
+            "last_execution_status": "not scheduled",
+            "name": "Pipeline 10",
+            "pipeline_components_execution_json": {
+                "components": [
+                    {
+                        "comments": "no comments!!",
+                        "connections": [
+                            {
+                                "target_node": 2
+                            }
+                        ],
+                        "end_dt": "2024-10-30 11:39:05.290 +0530",
+                        "executed_by": "Vinoth",
+                        "id": 1,
+                        "name": "Generation",
+                        "pos_x": 23,
+                        "pos_y": 54,
+                        "start_dt": "2024-10-30 11:39:05.290 +0530",
+                        "status": "success",
+                        "tabs": [
+                            {
+                                "body": {
+                                    "execution_time": "10ms",
+                                    "processed_records": 100
+                                },
+                                "name": "KPIs"
+                            },
+                            {
+                                "body": {
+                                    "param1": "param1",
+                                    "param2": "param2",
+                                    "param3": "param3",
+                                    "param4": "param4"
+                                },
+                                "name": "Input"
+                            },
+                            {
+                                "body": {
+                                    "execution_status": "success",
+                                    "status_code": 200
+                                },
+                                "name": "Output"
+                            },
+                            {
+                                "body": {
+                                    "date": "2024-10-30 11:39:05.290 +0530",
+                                    "id": 234,
+                                    "task_name": "input_extract-file.csv"
+                                },
+                                "name": "HIL"
+                            }
+                        ]
+                    },
+                    {
+                        "comments": "no comments!!",
+                        "connections": [
+                            {
+                                "target_node": 3
+                            }
+                        ],
+                        "end_dt": "2024-10-30 11:39:05.290 +0530",
+                        "executed_by": "Vinoth",
+                        "id": 2,
+                        "name": "Rag Fusion",
+                        "pos_x": 63,
+                        "pos_y": 199,
+                        "start_dt": "2024-10-30 11:39:05.290 +0530",
+                        "status": "success",
+                        "tabs": [
+                            {
+                                "body": {
+                                    "execution_time": "10ms",
+                                    "processed_records": 100
+                                },
+                                "name": "KPIs"
+                            },
+                            {
+                                "body": {
+                                    "param1": "param1",
+                                    "param2": "param2",
+                                    "param3": "param3",
+                                    "param4": "param4"
+                                },
+                                "name": "Input"
+                            },
+                            {
+                                "body": {
+                                    "execution_status": "success",
+                                    "status_code": 200
+                                },
+                                "name": "Output"
+                            },
+                            {
+                                "body": {
+                                    "date": "2024-10-30 11:39:05.290 +0530",
+                                    "id": 234,
+                                    "task_name": "input_extract-file.csv"
+                                },
+                                "name": "HIL"
+                            }
+                        ]
+                    },
+                    {
+                        "comments": "no comments!!",
+                        "connections": [],
+                        "end_dt": "2024-10-30 11:39:05.290 +0530",
+                        "executed_by": "Vinoth",
+                        "id": 3,
+                        "name": "Llm Model",
+                        "pos_x": 340,
+                        "pos_y": 137,
+                        "start_dt": "2024-10-30 11:39:05.290 +0530",
+                        "status": "success",
+                        "tabs": [
+                            {
+                                "body": {
+                                    "execution_time": "10ms",
+                                    "processed_records": 100
+                                },
+                                "name": "KPIs"
+                            },
+                            {
+                                "body": {
+                                    "param1": "param1",
+                                    "param2": "param2",
+                                    "param3": "param3",
+                                    "param4": "param4"
+                                },
+                                "name": "Input"
+                            },
+                            {
+                                "body": {
+                                    "execution_status": "success",
+                                    "status_code": 200
+                                },
+                                "name": "Output"
+                            },
+                            {
+                                "body": {
+                                    "date": "2024-10-30 11:39:05.290 +0530",
+                                    "id": 234,
+                                    "task_name": "input_extract-file.csv"
+                                },
+                                "name": "HIL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "The pipeline details are fetched successfully",
+    "output_kpis": {
+        "execution_time": "1.986s",
+        "processed_records": 1
+    },
+    "status_code": 200
+}

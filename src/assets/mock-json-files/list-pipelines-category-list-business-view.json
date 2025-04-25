@@ -1,0 +1,33 @@
+{
+    "body": [
+        {
+            "category_id": 1,
+            "category_name": "Category 1"
+        },
+        {
+            "category_id": 2,
+            "category_name": "Category 2"
+        },
+        {
+            "category_id": 3,
+            "category_name": "Category 3"
+        },
+        {
+            "category_id": 4,
+            "category_name": "Category 4"
+        },
+        {
+            "category_id": 5,
+            "category_name": "Category 5"
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "pipeline Instances  fetched Successfully!",
+    "output_kpis": {
+        "execution_time": 2.0157456398010254,
+        "processed_records": 5
+    },
+    "status_code": 200
+}

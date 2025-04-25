@@ -1,0 +1,232 @@
+:host {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 1000;
+}
+
+.source-panel {
+  width: 352px;
+  height: calc(100vh - 300px);
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #7F56D9;
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  overflow: hidden;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #7F56D9;
+  background: #F9F5FF;
+}
+
+.panel-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #667085;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  
+  &:hover {
+    color: #101828;
+  }
+}
+
+.panel-body {
+  height: calc(100% - 53px);
+  overflow-y: auto;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 24px;
+  padding: 0 16px;
+  border-bottom: 1px solid #E4E7EC;
+  background: #FFFFFF;
+  position: sticky;
+  top: 0;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #667085;
+  cursor: pointer;
+  position: relative;
+
+  &.active {
+    color: #6941C6;
+    font-weight: 600;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #7F56D9;
+    }
+  }
+
+  &:hover:not(.active) {
+    color: #6941C6;
+  }
+}
+
+.tab-content {
+  padding: 16px;
+}
+
+// Test tab styles
+.input-section {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.input-avatar {
+  width: 32px;
+  height: 32px;
+  background: #F4EBFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.input-box {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 1px solid #E4E7EC;
+  border-radius: 8px;
+  padding: 8px 12px;
+
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #101828;
+    
+    &::placeholder {
+      color: #667085;
+    }
+  }
+
+  .send-btn {
+    background: none;
+    border: none;
+    color: #6941C6;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+
+    &:hover {
+      color: #5925DC;
+    }
+  }
+}
+
+// Log tab styles
+.log-content {
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #101828;
+    margin: 0 0 12px;
+  }
+
+  .endpoint-input {
+    margin-bottom: 16px;
+
+    input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #E4E7EC;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #101828;
+      background: #FFFFFF;
+      
+      &:read-only {
+        cursor: default;
+        background: #F9FAFB;
+      }
+    }
+  }
+
+  .code-block {
+    position: relative;
+    background: #F9FAFB;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #E4E7EC;
+
+    pre {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #101828;
+      white-space: pre-wrap;
+
+      .highlight {
+        color: #F04438;
+        font-weight: 500;
+      }
+    }
+
+    .code-actions {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      display: flex;
+      gap: 8px;
+
+      .action-btn {
+        background: none;
+        border: none;
+        color: #6941C6;
+        cursor: pointer;
+        padding: 4px;
+        font-size: 14px;
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+} 

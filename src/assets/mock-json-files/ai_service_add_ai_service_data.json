@@ -1,0 +1,73 @@
+{
+    "body": [
+    {
+        "artifact_file": "Wks_Loop/loopproj/RAGChunking.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/RAGEmbedding.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/RAGVectorization.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/RAGIndexing.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/RAGRetrieval.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/DataFactoryIngestion.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/DataFactoryTransformation.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/DataFactoryExport.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/DataFactoryPipeline.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/DataFactoryOrchestration.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/GenAIModelTraining.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/GenAIPromptEngineering.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/GenAIFineTuning.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/GenAITextGeneration.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/GenAIImageGeneration.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/AISentimentAnalysis.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/AITopicModeling.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/AILanguageTranslation.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/AISummarization.zip"
+    },
+    {
+        "artifact_file": "Wks_Loop/loopproj/AIQuestionAnswering.zip"
+    }
+],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Artifact files fetched successfully",
+    "output_kpis": {
+        "execution_time": 3.197605609893799,
+        "processed_records": 0
+    },
+    "status_code": 200
+}

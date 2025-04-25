@@ -1,0 +1,64 @@
+.accordion{
+    &.custom-accordion{
+        .accordion-item{
+            border-radius: 0;
+            border: 0;
+
+            &:first-of-type{
+                border-radius: 0;
+
+                & > .accordion-header {
+                    .accordion-button{
+                        border-radius: 0;
+                    }
+                }
+            }
+
+            &:last-of-type {                
+                & > .accordion-header {
+                    .accordion-button{
+                        &.collapsed{
+                            border-radius: 0;
+                        }
+                    }
+                }
+                & > .accordion-collapse{
+                    border-radius: 0;
+                }
+            }            
+
+            .accordion-button{
+                padding: 10px 15px 10px 38px;
+                background-color: $primary-color1-05;
+                border-bottom: 1px solid $primary-color1-60;   
+                box-shadow: none;  
+                position: relative;
+                @include font(12px);
+                line-height: 1.5;
+                font-weight: 400;
+                color: $grey-color;
+                
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 15px;
+                    top: 10px;
+                    transform: rotate(-90deg);
+                    width: 10px;
+                    height: 18px;
+                    background-position: center center;
+                }
+
+                &[aria-expanded="true"]{
+                    &::after{
+                        transform: rotate(0deg)
+                    }
+                }
+            }
+
+            .accordion-body{
+                padding: 15px 0;
+            }
+        }
+    }
+}

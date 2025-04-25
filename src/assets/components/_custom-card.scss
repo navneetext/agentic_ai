@@ -1,0 +1,48 @@
+.custom-card{
+    background-color: $white-color;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0px 0px 20px 0px rgba(143,143,144,0.17);
+    margin-bottom: 20px;
+
+    &.has-header{
+        padding: 0;
+    }
+
+    .custom-card-header{
+        padding: 20px 15px;
+
+        h4{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 0;
+            @include font(22px);
+            line-height: 1.5;
+            color: $grey-color;
+            font-weight: 500;
+
+            .icon{
+                max-width: 22px;
+                margin-right: 10px;
+
+                &.icon-lg{
+                    max-width: 32px;
+
+                    img{
+                        width: 32px;
+                    }
+                }
+            }
+
+            .pink-text{
+                color: $primary-color2;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .custom-card-body{
+        padding: 24px;
+    }
+}

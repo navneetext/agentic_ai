@@ -1,0 +1,160 @@
+.app-menu-col {
+    .dropdown-toggle {
+        &.app-menus-icon {
+            padding: 3px;
+            background-color: $white-color;
+            border-radius: 4px;
+            margin-right: 12px;
+
+            &::after {
+                display: none;
+            }
+
+            &:hover, &[aria-expanded="true"] {
+                background-color: $primary-color1-10;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        &.app-menus-dropdown {
+            width: 400px;
+            min-height: 450px;
+            background-color: $white-color;
+            border-radius: 10px;
+            padding: 14px 14px 24px;
+            border: none;
+            box-shadow: 13px 7px 13.7px 3px rgba(52, 52, 52, 0.17);
+            margin: 24px 0 0 -12px !important;
+
+            .apps-list {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin-bottom: 30px;
+
+                li {
+                    flex-basis: 100%;
+
+                    a {
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 10px;
+                        padding: 8px;
+                        border-radius: 4px;
+                        text-decoration: none;
+
+                        .app-menu-icon {
+                            background-color: $primary-color1-80;
+                            border-radius: 6px;
+                            padding: 5px;
+                            width: 50px;
+                            height: 50px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            position: relative;
+
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                width: 25px;
+                                height: 25px;
+                                background-size: contain;
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                                left: 50%;
+                                margin-left: -12.5px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+
+                            /** New Icons**/
+                            &.app-menu-data-studio{
+                                &::before {
+                                    background-image: url('/assets/images/icon-data-studio-white.svg');
+                                }
+                            }
+
+                            &.app-menu-ai-workbench{
+                                &::before {
+                                    background-image: url('/assets/images/icon-ai-workbench-white.svg');
+                                }
+                            }
+
+                            &.app-menu-gen-ai-studio{
+                                &::before {
+                                    background-image: url('/assets/images/icon-gen-ai-white.svg');
+                                }
+                            }
+
+                            &.app-menu-infra-hub{
+                                &::before {
+                                    background-image: url('/assets/images/icon-infrahub-white.svg');
+                                }
+                            }
+
+                            &.app-menu-gen-bi{
+                                &::before {
+                                    background-image: url('/assets/images/icon-gen-bi-white.svg');
+                                }
+                            }
+
+                            &.app-menu-ai-governance{
+                                &::before {
+                                    background-image: url('/assets/images/icon-ai-governance-white.svg');
+                                }
+                            }
+                        }
+
+                        .app-menu-text {  
+                            flex-basis: calc(100% - 110px);
+
+                            .app-name{
+                                @include font(14px);
+                                line-height: 1;
+                                font-weight: 500;
+                                color: $grey-color;
+                                margin-bottom: 5px;
+                            }
+
+                            .app-description{
+                                @include font(12px);
+                                line-height: 1.25;
+                                font-weight: 400;
+                                color: $grey-color-60;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: $primary-color1-10;
+
+                            .app-menu-text {
+                                color: $primary-color1;
+                            }                            
+                        }
+                    }
+                }
+            }
+
+            .all-apps-link {
+                @include font(14px);
+                line-height: 1.5;
+                font-weight: 500;
+                color: $secondary-color;
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 5px;
+                padding-left: 8px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

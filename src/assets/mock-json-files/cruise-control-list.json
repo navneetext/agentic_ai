@@ -1,0 +1,177 @@
+{
+    "body": {
+        "in_active_count": 3,
+        "schedules": [
+            {
+                "schedule_id": 101,
+                "schedule_name": "Example Schedule",
+                "stages": [
+                    {
+                        "cruise_control_id": 1,
+                        "duration": "300 mins",
+                        "end_date_time": "2024-12-31T00:00:00+00:00",
+                        "last_run": "2024-10-11T14:00:00+00:00",
+                        "next_scheduled_run": "2024-10-13T09:00:00+00:00",
+                        "progress": [
+                            "Success",
+                            "Success",
+                            "Success"
+                        ],
+                        "recurrence": "One time",
+                        "stage": "S3",
+                        "start_date_time": "2024-11-25T00:00:00+00:00"
+                    },
+                    {
+                       "cruise_control_id": 2,
+                        "duration": "300 mins",
+                        "end_date_time": "2024-12-31T00:00:00+00:00",
+                        "last_run": "2024-10-11T14:00:00+00:00",
+                        "next_scheduled_run": "2024-10-13T09:00:00+00:00",
+                        "progress": [
+                            "Success",
+                            "Success",
+                            "Success"
+                        ],
+                        "recurrence": "One time",
+                        "stage": "S3",
+                        "start_date_time": "2024-11-25T00:00:00+00:00" 
+                    }
+                ]
+            },
+            {
+                "schedule_id": 102,
+                "schedule_name": "Data_fac",
+                "stages": [
+                    {
+                        "cruise_control_id": 2,
+                        "duration": "660 mins",
+                        "end_date_time": "2024-10-11T00:00:00+00:00",
+                        "last_run": "2024-10-11T09:00:00+00:00",
+                        "next_scheduled_run": "2024-10-13T09:00:00+00:00",
+                        "progress": [
+                            "Success",
+                            "Success",
+                            "Success"
+                        ],
+                        "recurrence": "Weekly",
+                        "stage": "S1",
+                        "start_date_time": "2024-10-11T00:00:00+00:00"
+                    }
+                ]
+            },
+            {
+                "schedule_id": 103,
+                "schedule_name": "Data_fac",
+                "stages": [
+                    {
+                        "cruise_control_id": 3,
+                        "duration": "20 mins",
+                        "end_date_time": "2024-10-11T16:45:00+00:00",
+                        "last_run": "2024-10-11T09:00:00+00:00",
+                        "next_scheduled_run": "2024-10-13T14:00:00+00:00",
+                        "progress": [
+                            "Success",
+                            "Success",
+                            "Success"
+                        ],
+                        "recurrence": "One time",
+                        "stage": "S1",
+                        "start_date_time": "2024-10-11T15:45:00+00:00"
+                    }
+                ]
+            },
+            {
+                "schedule_id": 105,
+                "schedule_name": "Data_Backup",
+                "stages": [
+                    {
+                        "cruise_control_id": 5,
+                        "duration": "60 mins",
+                        "end_date_time": "2024-10-09T10:00:00+00:00",
+                        "last_run": "2024-10-09T10:00:00+00:00",
+                        "next_scheduled_run": "2024-10-16T09:00:00+00:00",
+                        "progress": [
+                            "Success",
+                            "Success",
+                            "Success"
+                        ],
+                        "recurrence": "Weekly",
+                        "stage": "s2",
+                        "start_date_time": "2024-10-07T14:00:00+00:00"
+                    }
+                ]
+            },
+            {
+                "schedule_id": 106,
+                "schedule_name": "Daily_Export",
+                "stages": [
+                    {
+                        "cruise_control_id": 6,
+                        "duration": "30 mins",
+                        "end_date_time": "2024-10-08T10:30:00+00:00",
+                        "last_run": "2024-10-08T10:30:00+00:00",
+                        "next_scheduled_run": "2024-10-16T09:00:00+00:00",
+                        "progress": [
+                            "Success",
+                            "Success",
+                            "Success"
+                        ],
+                        "recurrence": "Daily",
+                        "stage": "s2",
+                        "start_date_time": "2024-10-08T10:00:00+00:00"
+                    }
+                ]
+            },
+            {
+                "schedule_id": 108,
+                "schedule_name": "Rev_Evall",
+                "stages": [
+                    {
+                        "cruise_control_id": 8,
+                        "duration": "120 mins",
+                        "end_date_time": "2024-12-31T00:00:00+00:00",
+                        "last_run": "2024-10-07T16:00:00+00:00",
+                        "next_scheduled_run": "2024-10-13T09:00:00+00:00",
+                        "progress": [
+                            "Success",
+                            "Success",
+                            "Success"
+                        ],
+                        "recurrence": "one time",
+                        "stage": "s2",
+                        "start_date_time": "2024-11-25T00:00:00+00:00"
+                    }
+                ]
+            },
+            {
+                "schedule_id": 110,
+                "schedule_name": "Example Schedule",
+                "stages": [
+                    {
+                        "cruise_control_id": 79,
+                        "duration": null,
+                        "end_date_time": null,
+                        "last_run": null,
+                        "next_scheduled_run": null,
+                        "progress": [
+                            "Success",
+                            "Success"
+                        ],
+                        "recurrence": "one-time",
+                        "stage": "Stage 1",
+                        "start_date_time": null
+                    }
+                ]
+            }
+        ]
+    },
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Schedules list fetched successfully",
+    "output_kpis": {
+        "execution_time": 0.05881619453430176,
+        "processed_records": 2
+    },
+    "status_code": 200
+}

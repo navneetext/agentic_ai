@@ -1,0 +1,117 @@
+.gradient-highlighter-card {
+    background-image: url('/assets/images/bg-gradient-highlighter.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    .gradient-highlighter-card-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        border-bottom: 1px solid $white-color;
+        padding: 15px 22px;
+
+        h4 {
+            @include font(18px);
+            line-height: 1.5;
+            font-weight: 600;
+            color: $white-color;
+            margin-bottom: 0;
+        }
+
+        .alert {
+            padding: 4px 10px 4px 33px;
+            border-radius: 16px;
+            font-weight: 500;
+
+            &::before {
+                left: 10px;
+            }
+        }
+    }
+
+    .gradient-highlighter-card-body {
+        padding: 25px 22px 25px;
+
+        .provider-logo {
+            background-color: $primary-color2-05;
+            border: 1px solid $primary-color2-60;
+            padding: 6px 13px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            @include font(16px);
+            line-height: 1.5;
+            color: $grey-color;
+            font-weight: 600;
+            margin-bottom: 15px;
+
+            @include media(xl) {
+                margin-bottom: 0;
+            }
+
+            img {
+                max-width: 40px;
+            }
+        }
+
+        .stats-list {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            li {
+                flex-basis: calc(33% - 10px);
+
+
+                .stats-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+
+                    .icon {
+                        background-color: $primary-color2-05;
+                        border: 1px solid $primary-color2-60;
+                        padding: 10px;
+                        width: 53px;
+                        height: 53px;
+                        border-radius: 10px;
+                        text-align: center;
+
+                        img {
+                            max-width: 100%;
+                            transform: translateY(-50%);
+                            margin-top: 50%;
+                            display: inline-block;
+                        }
+                    }
+
+                    .stats-content {
+                        h4 {
+                            @include font(18px);
+                            line-height: 1.5;
+                            font-weight: 500;
+                            color: $white-color;
+                            margin-bottom: 0;
+                        }
+
+                        .count {
+                            @include font(22px);
+                            line-height: 1.5;
+                            font-weight: 700;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

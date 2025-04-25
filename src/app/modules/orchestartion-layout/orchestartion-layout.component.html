@@ -1,0 +1,131 @@
+<app-header></app-header>
+<div class="top-navigation">
+    <div class="left-section">
+        <div class="breadcrumb-section">
+            <a href="#" class="back-link">
+                <i class="icon-back"></i>
+                Back
+            </a>
+            <span class="separator">|</span>
+            <span class="model-name">vila model by NVIDIA</span>
+            <span class="separator">|</span>
+            <span class="studio-name">Agent Orchestration Studio</span>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="service-indicators">
+            <div class="service-item">
+                <span class="dot centific"></span>
+                Centific AI Data Foundry
+            </div>
+            <div class="service-item">
+                <span class="dot user-defined"></span>
+                User-defined AI services
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="orchestration-page">
+    <div class="orchestration-container">
+        <!-- Agent Builder Section -->
+        <div class="agent-builder-section">
+            <div class="section-header">
+                <h2>Agent Builder Chats</h2>
+                <button class="add-button">+</button>
+            </div>
+            <div class="chat-list">
+                <div class="chat-item active">Video Content Analyzer</div>
+                <div class="chat-item">Looking for hotel booking app</div>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <div class="action-buttons">
+                <div class="test-button-container">
+                    <button class="btn test" [class.active]="activeButton === 'test'" (click)="toggleSourcePanel($event)">
+                        <i class="icon-test"></i>
+                        Test
+                    </button>
+                    <app-source-model [isVisible]="isSourcePanelVisible"></app-source-model>
+                </div>
+                <button class="btn deploy" (click)="onDeploy()">
+                    <i class="icon-deploy"></i>
+                    Deploy
+                </button>
+                <button class="btn evaluate" [class.active]="activeButton === 'evaluate'" (click)="onEvaluate()">
+                    <i class="icon-evaluate"></i>
+                    Evaluate
+                </button>
+               
+            </div>
+            <div class="content-header">
+                <div class="agent-info">
+                    <div class="plan-header">
+                        <i class="icon-plan"></i>
+                        Plan
+                    </div>
+                    <div class="content-wrapper">
+                        <h3>Video Content Analyzer</h3>
+                        <span class="tag">Public Sector</span>
+                        <p>An agent that scans videos/images for text, dates, and transcribes content with timeline markers. It searches Wikipedia for relevant information, crawls directories for related documents, classifies topics, and builds a knowledge graph for content understanding.</p>
+                        <button class="add-agent-btn">
+                            Add Agent
+                            <div class="icon-plus"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agent Flow -->
+            <div class="agent-flow">
+                <div id="drawflow" #drawflow (click)="onNodeClick($event)"></div>
+            </div>
+
+            <!-- Bottom Actions -->
+            <div class="bottom-actions">
+                <div class="left-controls">
+                    <div class="zoom-controls">
+                        <button class="zoom-btn minus" (click)="zoomOut()" [disabled]="zoomLevel <= minZoom">
+                            <i class="icon-minus"></i>
+                        </button>
+                        <button class="zoom-btn plus" (click)="zoomIn()" [disabled]="zoomLevel >= maxZoom">
+                            <i class="icon-plus"></i>
+                        </button>
+                        <button class="zoom-btn fullscreen" (click)="toggleFullscreen()">
+                            <i class="icon-fullscreen"></i>
+                        </button>
+                    </div>
+                   
+                </div>
+                <div class="right-controls">
+                    <div class="global-share">
+                        <span>Share as Global</span>
+                        <label class="switch">
+                            <input type="checkbox" [(ngModel)]="isGlobalShare">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn publish" (click)="onPublishAgent()">Publish Agent</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Router Outlet for Child Routes -->
+            <router-outlet></router-outlet>
+
+            <!-- Success Popup -->
+            <div class="popup-overlay" *ngIf="showSuccessPopup">
+                <div class="success-popup">
+                    <div class="success-icon">
+                        <img src="assets/images/succ.svg" alt="Success">
+                    </div>
+                    <div class="success-message">Agent has been Published Successfully</div>
+                    <button class="view-status-button" (click)="viewAgentStatus()">View Status</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

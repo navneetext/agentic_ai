@@ -1,0 +1,76 @@
+<div id="header" class="header">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <!-- Left Side: Logo, Menu, App Name -->
+      <div class="col-6 col-md-9 col-xl-7">
+        <div class="header-left d-flex align-items-center">
+          <div class="app-menu-col">
+            <button
+              class="dropdown-toggle app-menus-icon"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="/assets/images/icon-menus-blue.svg"
+                alt="icon-menus-blue"
+              />
+            </button>
+          </div>
+
+          <a class="brand-logo">
+            <img src="/assets/images/logo.svg" alt="logo" />
+          </a>
+
+          <div class="app-prj-env-wrapper">
+            <div class="app-name">{{ "Agentic AI workbench" }}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Notifications & User Profile -->
+      <div class="col-6 col-md-3 col-xl-5 d-flex justify-content-end">
+        <ul class="header-items">
+          <li>
+            Policy Management
+          </li>
+          <li>
+            <div class="notifications dropdown">
+              <button
+                class="notifications-icon dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="/assets/images/icon-bell-blue.svg"
+                  alt="icon-bell-blue"
+                />
+                <span class="notifications-count">3</span>
+              </button>
+            </div>
+          </li>
+         
+          <li>
+            <div class="user-profile">
+              <div class="user-profile-img">{{ "US" }}</div>
+              <div class="user-profile-details">
+                <div class="user-name">{{ "User" }}</div>
+                <div class="user-role dropdown">
+                  <button
+                    class="dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    {{ "Admin" }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

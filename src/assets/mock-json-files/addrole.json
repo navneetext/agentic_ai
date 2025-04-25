@@ -1,0 +1,7 @@
+{
+  "userroles": [ 
+    { "label": "Admin", "value": "admin" },
+    { "label": "QA", "value": "qa" },
+    { "label": "Ai Developer", "value": "ai_developer" }
+ ]
+}

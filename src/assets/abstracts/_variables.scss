@@ -1,0 +1,167 @@
+/**********************************************
+Theme Colors
+**********************************************/
+$white-color: #fff;
+$black-color: #000;
+
+$primary-color1: #5929D0;
+$primary-color1-80: mix(white, $primary-color1, 20%);
+$primary-color1-60: mix(white, $primary-color1, 40%);
+$primary-color1-50: mix(white, $primary-color1, 50%);
+$primary-color1-40: mix(white, $primary-color1, 60%);
+$primary-color1-20: mix(white, $primary-color1, 80%);
+$primary-color1-10: mix(white, $primary-color1, 90%);
+$primary-color1-05: mix(white, $primary-color1, 95%);
+
+$primary-color2: #CD128A;
+$primary-color2-80: mix(white, $primary-color2, 20%);
+$primary-color2-60: mix(white, $primary-color2, 40%);
+$primary-color2-50: mix(white, $primary-color2, 50%);
+$primary-color2-40: mix(white, $primary-color2, 60%);
+$primary-color2-20: mix(white, $primary-color2, 80%);
+$primary-color2-10: mix(white, $primary-color2, 90%);
+$primary-color2-05: mix(white, $primary-color2, 95%);
+
+$secondary-color: #01359B;
+$secondary-color-80: mix(white, $secondary-color, 20%);
+$secondary-color-60: mix(white, $secondary-color, 40%);
+$secondary-color-50: mix(white, $secondary-color, 50%);
+$secondary-color-40: mix(white, $secondary-color, 60%);
+$secondary-color-20: mix(white, $secondary-color, 80%);
+$secondary-color-10: mix(white, $secondary-color, 90%);
+$secondary-color-05: mix(white, $secondary-color, 95%);
+
+$grey-color: #333333;
+$grey-color-80: mix(white, $grey-color, 20%);
+$grey-color-60: mix(white, $grey-color, 40%);
+$grey-color-50: mix(white, $grey-color, 50%);
+$grey-color-40: mix(white, $grey-color, 60%);
+$grey-color-20: mix(white, $grey-color, 80%);
+$grey-color-10: mix(white, $grey-color, 90%);
+$grey-color-05: mix(white, $grey-color, 95%);
+
+/** Special colors for minimal use **/
+$red-color: #DC3545;
+$green-color: #198754;
+$yellow-color: #FFC107;
+$sky-blue-color: #2D8EFF;
+$sky-blue-alt-color: #0038FF;
+$gery-color: #6c757d;
+$lt-green-color: #2CA02C;
+
+/** Bootstrap custom variables **/
+.tooltip {
+  --bs-tooltip-bg: #CD128A; /* primary-color2 color used */
+  --bs-tooltip-color: #fff; /* White text */
+}
+
+/**********************************************
+Medai break points
+**********************************************/
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+  'xxxl': 1920px,
+);
+
+
+// Agentic AI Workbench Tools Variables
+
+// Colors
+$agplan-ai-color-primary: #6636d9;
+$agplan-ai-color-text: #333;
+$agplan-ai-color-border: #D6D6D6;
+$agplan-ai-color-white: #fff;
+
+// Radius
+$agplan-ai-radius-small: 6px;
+$agplan-ai-radius-medium: 10px;
+
+// Fonts
+$agplan-ai-font-primary: "Poppins-Regular", sans-serif;
+
+// Font Sizes
+$agplan-ai-font-size-sm: 14px;
+$agplan-ai-font-size-md: 16px;
+
+// Shadows
+$agplan-ai-shadow-box: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+// Images
+$agplan-ai-img-plan-icon: url('/assets/images/agentic-ai-workbench-images/plan_icon.svg');
+$agplan-ai-img-right-arrow: url('/assets/images/agentic-ai-workbench-images/right_arrow.svg');
+
+
+
+
+
+
+// Colors
+$agagent-ai-color-primary: #5f25e9;
+$agagent-ai-color-bg: #fff;
+$agagent-ai-color-text: #333;
+$agagent-ai-color-muted: #858585;
+$agagent-ai-color-tag-bg: #F8CCFF;
+$agagent-ai-color-icon-bg: #f0f2f8;
+$agagent-ai-color-category-bg: #f2ebff;
+$agagent-ai-color-border: #e5e5e5;
+
+// Radius
+$agagent-ai-radius-sm: 12px;
+$agagent-ai-radius-full: 50px;
+$agagent-ai-radius-pill: 20px;
+
+//font family
+$agagent-ai-font-primary: "Poppins-Regular", sans-serif;
+
+// Font sizes
+$agagent-ai-font-size-xs: 12px;
+$agagent-ai-font-size-sm: 13px;
+$agagent-ai-font-size-md: 14px;
+$agagent-ai-font-size-lg: 16px;
+
+// Fonts
+$agagent-ai-font-family: 'Inter', sans-serif;
+
+// Shadows
+$agagent-ai-box-shadow-light: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+
+
+
+// Colors
+$agtool-ai-white: #ffffff;
+$agtool-ai-grey-light: #e0e0e0;
+$agtool-ai-text-primary: #333;
+$agtool-ai-text-secondary: #555;
+$agtool-ai-badge-bg: #d741a1;
+$agtool-ai-icon-bg: #f2ebfd;
+$agtool-ai-icon-border: #ffffff;
+
+// Radius
+$agtool-ai-radius-sm: 4px;
+$agtool-ai-radius-md: 5px;
+$agtool-ai-radius-lg: 12px;
+
+// Fonts
+$agtool-ai-font-regular: "Poppins-Regular", sans-serif;
+$agtool-ai-font-semibold: "Poppins-SemiBold", sans-serif;
+
+// Font Sizes
+$agtool-ai-font-xs: 12px;
+$agtool-ai-font-sm: 14px;
+$agtool-ai-font-md: 16px;
+$agtool-ai-font-lg: 18px;
+
+// Shadows
+$agtool-ai-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+// Images
+$agtool-ai-tools-bg-image: "/assets/images/agentic-ai-workbench-images/tools_image.png";
+
+
+// Agentic AI Workbench Tools Variables

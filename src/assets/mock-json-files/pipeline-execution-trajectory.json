@@ -1,0 +1,25 @@
+{
+    "body": {
+        "executed_by": null,
+        "execution_end_time": "Mon, 09 Dec 2024 11:59:58 GMT",
+        "execution_mode": "TEST",
+        "execution_start_time": "Mon, 09 Dec 2024 11:57:16 GMT",
+        "execution_status": "SUCCESS",
+        "metadata": {
+            "execution_end_time": "Mon, 09 Dec 2024 11:59:58 GMT",
+            "execution_status": "SUCCESS",
+            "pipeline_template_name": "Child_policy_2",
+            "pipeline_template_version": "1.0",
+            "total_ai_services": 3
+        }
+    },
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Instance header fetched successfully",
+    "output_kpis": {
+        "execution_time": "0.1133s",
+        "processed_records": 6
+    },
+    "status_code": 200
+}

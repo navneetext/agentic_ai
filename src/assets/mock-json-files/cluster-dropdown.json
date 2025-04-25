@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "disk_space": [{"disk_space": [90, 95, 100]}],
+            "platform": "Runpod",
+            "ram": [{"ram": 50},{"abc": 70}],
+            "region": [
+                "CA-MTL-1",
+                "CA-MTL-2",
+                "CA-MTL-3",
+                "EU-CZ-1",
+                "EU-FR-1",
+                "EU-NL-1",
+                "EU-RO-1",
+                "EU-SE-1",
+                "EU-SE-2",
+                "EUR-IS-1",
+                "EUR-IS-2",
+                "EUR-IS-3",
+                "EUR-NO-1",
+                "OC-AU-1",
+                "SEA-SG-1",
+                "US-CA-1",
+                "US-CA-2",
+                "US-GA-1",
+                "US-GA-2",
+                "US-IL-1",
+                "US-KS-1",
+                "US-KS-2",
+                "US-KS-3",
+                "US-OR-1",
+                "US-OR-2",
+                "US-TX-1",
+                "US-TX-2",
+                "US-TX-3",
+                "US-TX-4"
+            ],
+            "system": "NVIDIA RTX A4500",
+            "vram": [{"vram": 80},{"abc": 70}],
+            "platform_sizing_id": 11,
+            "system_type": "CPU"
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Platform Collections details fetched successfully!",
+    "output_kpis": {
+        "execution_time": "5985.446214675903ms",
+        "processed_records": 1
+    },
+    "status_code": 200
+}

@@ -1,0 +1,225 @@
+{
+    "body": [
+      {
+        "act_ind": "Y",
+        "created_by": "User123",
+        "created_datetime": "Thu, 24 Oct 2024 14:06:15 GMT",
+        "exec_by": "User123",
+        "exec_end_time": "Tue, 01 Oct 2024 14:30:00 GMT",
+        "exec_input_json": {
+          "description": "Received data from external API source.",
+          "input_date": "2024-10-01T14:00:00Z",
+          "source": "API-Gateway",
+          "file_format": "JSON"
+        },
+        "exec_on": "Thu, 24 Oct 2024 14:06:15 GMT",
+        "exec_output_json": {
+          "description": "Processed successfully. Clean data ready for analysis.",
+          "execution_date": "2024-10-01T14:30:00Z",
+          "output_size": "2MB",
+          "rows_processed": 5000
+        },
+        "exec_start_time": "Tue, 01 Oct 2024 14:00:00 GMT",
+        "exec_status": "success",
+        "exec_thru_proj": "Project Alpha",
+        "feedback_kpi_json": {
+          "ai_services": "Service A, Service C",
+          "description": "Performance as expected with minimal latency.",
+          "feedback_date": "2024-10-01T15:00:00Z",
+          "version": "1.0.1",
+          "error_rate": "0.01%"
+        },
+        "latency": "30",
+        "pipeline_execution_logs_id": 18,
+        "pipeline_id": 1,
+        "updated_by": "User456",
+        "updated_datetime": "Thu, 24 Oct 2024 14:06:15 GMT",
+        "version": "1.0"
+      },
+      {
+        "act_ind": "Y",
+        "created_by": "creator1",
+        "created_datetime": "Wed, 23 Oct 2024 11:43:59 GMT",
+        "exec_by": "user_exec1",
+        "exec_end_time": "Wed, 23 Oct 2024 11:44:59 GMT",
+        "exec_input_json": {
+          "description": "CSV data ingestion complete.",
+          "input_date": "2024-10-01T14:00:00Z",
+          "source": "CSV-Upload",
+          "file_format": "CSV"
+        },
+        "exec_on": "Wed, 23 Oct 2024 11:43:59 GMT",
+        "exec_output_json": {
+          "description": "Data transformation completed with no issues.",
+          "execution_date": "2024-10-01T14:30:00Z",
+          "output_size": "3.5MB",
+          "rows_processed": 7500
+        },
+        "exec_start_time": "Wed, 23 Oct 2024 11:43:59 GMT",
+        "exec_status": "success",
+        "exec_thru_proj": "Project Beta",
+        "feedback_kpi_json": {
+          "ai_services": "Service B, Service D",
+          "description": "Minimal resource utilization during processing.",
+          "feedback_date": "2024-10-01T15:00:00Z",
+          "version": "1.1.0",
+          "cpu_usage": "15%"
+        },
+        "latency": "1",
+        "pipeline_execution_logs_id": 2,
+        "pipeline_id": 1,
+        "updated_by": "user1",
+        "updated_datetime": "Wed, 23 Oct 2024 11:43:59 GMT",
+        "version": "1.2"
+      },
+      {
+        "act_ind": "Y",
+        "created_by": "User456",
+        "created_datetime": "Tue, 22 Oct 2024 10:30:45 GMT",
+        "exec_by": "System",
+        "exec_end_time": "Tue, 22 Oct 2024 10:45:30 GMT",
+        "exec_input_json": {
+          "description": "System-triggered daily data pull.",
+          "input_date": "2024-10-01T12:00:00Z",
+          "source": "Internal-DB",
+          "file_format": "PARQUET"
+        },
+        "exec_on": "Tue, 22 Oct 2024 10:30:45 GMT",
+        "exec_output_json": {
+          "description": "Records aggregated and stored.",
+          "execution_date": "2024-10-01T12:30:00Z",
+          "output_size": "5MB",
+          "rows_processed": 10000
+        },
+        "exec_start_time": "Tue, 22 Oct 2024 10:30:00 GMT",
+        "exec_status": "success",
+        "exec_thru_proj": "Project Gamma",
+        "feedback_kpi_json": {
+          "ai_services": "Service A",
+          "description": "Model accuracy at 98% for classification tasks.",
+          "feedback_date": "2024-10-01T13:00:00Z",
+          "version": "2.0.0",
+          "model_accuracy": "98%"
+        },
+        "latency": "15",
+        "pipeline_execution_logs_id": 3,
+        "pipeline_id": 1,
+        "updated_by": "User456",
+        "updated_datetime": "Tue, 22 Oct 2024 10:30:45 GMT",
+        "version": "2.0"
+      },
+      {
+        "act_ind": "Y",
+        "created_by": "AdminUser",
+        "created_datetime": "Mon, 21 Oct 2024 08:15:00 GMT",
+        "exec_by": "AdminUser",
+        "exec_end_time": "Mon, 21 Oct 2024 08:45:30 GMT",
+        "exec_input_json": {
+          "description": "Batch process initiated for data synchronization.",
+          "input_date": "2024-10-01T13:00:00Z",
+          "source": "FTP-Server",
+          "file_format": "XML"
+        },
+        "exec_on": "Mon, 21 Oct 2024 08:15:00 GMT",
+        "exec_output_json": {
+          "description": "Synchronization completed, records up-to-date.",
+          "execution_date": "2024-10-01T13:30:00Z",
+          "output_size": "7MB",
+          "rows_processed": 8500
+        },
+        "exec_start_time": "Mon, 21 Oct 2024 08:15:00 GMT",
+        "exec_status": "failure",
+        "exec_thru_proj": "Project Delta",
+        "feedback_kpi_json": {
+          "ai_services": "Service C",
+          "description": "Error handling optimized for faster recovery.",
+          "feedback_date": "2024-10-01T13:30:00Z",
+          "version": "3.0.0",
+          "error_count": 2
+        },
+        "latency": "30",
+        "pipeline_execution_logs_id": 4,
+        "pipeline_id": 1,
+        "updated_by": "AdminUser",
+        "updated_datetime": "Mon, 21 Oct 2024 08:15:00 GMT",
+        "version": "3.0"
+      },
+      {
+        "act_ind": "Y",
+        "created_by": "User789",
+        "created_datetime": "Fri, 20 Oct 2024 07:05:23 GMT",
+        "exec_by": "System",
+        "exec_end_time": "Fri, 20 Oct 2024 07:35:00 GMT",
+        "exec_input_json": {
+          "description": "Periodic data load from external API.",
+          "input_date": "2024-10-01T12:00:00Z",
+          "source": "DataAPI",
+          "file_format": "CSV"
+        },
+        "exec_on": "Fri, 20 Oct 2024 07:05:23 GMT",
+        "exec_output_json": {
+          "description": "Data loaded and validated.",
+          "execution_date": "2024-10-01T12:35:00Z",
+          "output_size": "6MB",
+          "rows_processed": 12000
+        },
+        "exec_start_time": "Fri, 20 Oct 2024 07:05:23 GMT",
+        "exec_status": "success",
+        "exec_thru_proj": "Project Epsilon",
+        "feedback_kpi_json": {
+          "ai_services": "Service D, Service E",
+          "description": "Memory usage below threshold levels.",
+          "feedback_date": "2024-10-01T13:35:00Z",
+          "version": "4.0.0",
+          "memory_usage": "300MB"
+        },
+        "latency": "15",
+        "pipeline_execution_logs_id": 5,
+        "pipeline_id": 1,
+        "updated_by": "System",
+        "updated_datetime": "Fri, 20 Oct 2024 07:05:23 GMT",
+        "version": "4.1"
+      },
+      {
+        "act_ind": "Y",
+        "created_by": "creator1",
+        "created_datetime": "Wed, 23 Oct 2024 11:43:59 GMT",
+        "exec_by": "user_exec1",
+        "exec_end_time": "Wed, 23 Oct 2024 11:44:59 GMT",
+        "exec_input_json": {
+          "description": "CSV data ingestion complete.",
+          "input_date": "2024-10-01T14:00:00Z",
+          "source": "CSV-Upload",
+          "file_format": "CSV"
+        },
+        "exec_on": "Wed, 23 Oct 2024 11:43:59 GMT",
+        "exec_output_json": {
+          "description": "Data transformation completed with no issues.",
+          "execution_date": "2024-10-01T14:30:00Z",
+          "output_size": "3.5MB",
+          "rows_processed": 7500
+        },
+        "exec_start_time": "Wed, 23 Oct 2024 11:43:59 GMT",
+        "exec_status": "success",
+        "exec_thru_proj": "Project Beta",
+        "feedback_kpi_json": {
+          "ai_services": "Service B, Service D",
+          "description": "Minimal resource utilization during processing.",
+          "feedback_date": "2024-10-01T15:00:00Z",
+          "version": "1.1.0",
+          "cpu_usage": "15%"
+        },
+        "latency": "1",
+        "pipeline_execution_logs_id": 2,
+        "pipeline_id": 1,
+        "updated_by": "user1",
+        "updated_datetime": "Wed, 23 Oct 2024 11:43:59 GMT",
+        "version": "1.2"
+      }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Logs fetched successfully."
+  }
+  

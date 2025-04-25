@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/main.scss';
+
+// Source Model Popup Styles
+.source-model-popup {
+  .modal-dialog.source-dialog {
+    position: absolute;
+    margin: 0;
+    top: 70px;
+    right: 24px;
+  }
+
+  .source-backdrop {
+    background-color: transparent;
+  }
+
+  .modal-content {
+    border: none;
+    background: none;
+    width: auto;
+  }
+}
+
+// Modal styles
+.evaluation-modal-window {
+  .modal-backdrop {
+    background-color: rgba(52, 64, 84, 0.7);
+  }
+  
+  .evaluation-dialog {
+    max-width: 400px;
+    margin: 1.75rem auto;
+    
+    .modal-content {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04);
+    }
+  }
+}

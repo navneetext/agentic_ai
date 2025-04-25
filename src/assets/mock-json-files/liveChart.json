@@ -1,0 +1,17 @@
+{
+    "data": {
+        "fetched_all": true,
+        "tasks_data": [
+            {
+                "annotator_response": "",
+                "ls_task_id": 35083,
+                "task_name": "input"
+            }
+        ],
+        "total_tasks": 1
+    },
+    "message": "Fetched all records successfully",
+    "status": "success",
+    "status_code": 200,
+    "trace_id": "a4571d91-00a9-4763-a494-8566a9b81f83"
+}

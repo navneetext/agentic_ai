@@ -1,0 +1,41 @@
+{
+    "configure_compute_id": "1234",
+    "db_operation_mode": "create",
+    "compute_name": "Compute_1",
+    "description": "My Variety AI Model in computer region prevention and detection",
+    "platform": "Databricks",
+    "platform_sizing_id": "1234",
+    "compute_type": "GPU",
+    "clusters": [
+        {
+            "rank": 3,
+            "name": "Cluster_01",
+            "no_of_nodes": 5,
+            "system": "System_01",
+            "region": "East US",
+            "ram": "10 GB",
+            "v_ram": "A_100",
+            "disk_space": "10GB"
+        },
+        {
+            "rank": 2,
+            "name": "Cluster_02",
+            "no_of_nodes": 8,
+            "system": "System_02",
+            "region": "us-central1-b",
+            "ram": "10 GB",
+            "v_ram": "A_100",
+            "disk_space": "10GB"
+        },
+        {
+            "rank": 1,
+            "name": "Cluster_03",
+            "no_of_nodes": 10,
+            "system": "System_03",
+            "region": "us-central1-b",
+            "ram": "10 GB",
+            "v_ram": "A_100",
+            "disk_space": "10GB"
+        }
+    ]
+}

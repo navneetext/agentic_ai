@@ -1,0 +1,33 @@
+{
+    "body": [
+        {
+            "pipeline_components_execution_json": {
+                "components": [
+                    {
+                        "connections": [
+                            {
+                                "target_node": 2
+                            },
+                            {
+                                "target_node": 3
+                            }
+                        ],
+                        "id": 1,
+                        "name": "Generation",
+                        "pos_x": 23,
+                        "pos_y": 54
+                    }
+                ]
+            }
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "The pipeline details are fetched successfully",
+    "output_kpis": {
+        "execution_time": "1.986s",
+        "processed_records": 1
+    },
+    "status_code": 200
+}

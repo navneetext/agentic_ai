@@ -1,0 +1,194 @@
+.comments-wrapper {
+    .user-input-block {
+        position: relative;
+        margin-bottom: 20px;
+
+        .form-group {
+            input {
+                padding: 20px;
+                border-radius: 10px;
+                padding-right: 100px;
+            }
+        }
+
+        button {
+            position: absolute;
+            content: '';
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .comments-block {
+        .comments-block-filter {
+            border-bottom: 1px solid $grey-color-50;
+
+            .dropdown {
+                .dropdown-toggle {
+                    padding: 12px 22px 8px 22px;
+                    position: relative;
+                    @include font(14px);
+                    line-height: 1.5;
+                    font-weight: 400;
+
+                    @include media(xxxl) {
+                        @include font(16px);
+                        line-height: 1.5;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 50%;
+                        width: 14px;
+                        height: 14px;
+                        transform: translateY(-50%);
+                        background-image: url('/assets/images/icon-filter-black.svg');
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .comments-body {
+            padding-top: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+            padding-right: 10px;
+
+            &::-webkit-scrollbar {
+                width: 6px;
+                border-radius: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: $grey-color-10;
+                border-radius: 5px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: $grey-color-20;
+                border-radius: 5px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: $grey-color-10;
+            }
+
+            .base-comment-block {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 10px;
+                margin-bottom: 20px;
+
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid $grey-color-40;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 40px;
+                    font-weight: 600;
+                }
+
+                .comment {
+                    flex-basis: calc(100% - 50px);
+
+                    .name {
+                        @include font(14px);
+                        line-height: 1.5;
+                        font-weight: 600;
+                        color: $grey-color;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+
+                        .date-time {
+                            display: inline-block;
+                            font-weight: 400;
+                            color: $grey-color-40;
+                            padding-left: 7px;
+                        }
+                    }
+
+                    p {
+                        @include font(14px);
+                        line-height: 1.5;
+                        font-weight: 400;
+                        color: $grey-color;
+                        margin-bottom: 10px;
+                    }
+
+                    .edit-comment-wrapper,
+                    .reply-comment-wrapper {
+                        padding-top: 10px;
+
+                        .cta-block {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            gap: 15px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+
+                    .actions {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 10px;
+
+                        li {
+                            &.reply {
+                                position: relative;
+                                padding-left: 27px;
+                                @include font(14px);
+                                line-height: 1.5;
+                                color: $grey-color-40;
+                                cursor: pointer;
+
+                                &::before {
+                                    position: absolute;
+                                    content: '';
+                                    left: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: 18px;
+                                    height: 18px;
+                                    background-image: url('../../assets/images/icon-reply-grey.svg');
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.level-two-comment-block {
+                    padding-left: 50px;
+                }
+            }
+
+            .nodata{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include font(16px);
+                line-height: 1.5;
+                font-weight: 500;
+                color: $grey-color;
+                padding: 40px 0;
+            }
+        }
+    }
+}

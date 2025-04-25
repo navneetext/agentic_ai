@@ -1,0 +1,100 @@
+{
+    "comments": [
+        {
+            "children": [
+                {
+                    "children": [],
+                    "comment_id": 2,
+                    "content": "Updated Comment from api_v1!!!",
+                    "created_at": "Wed, 30 Oct 2024 05:37:39 GMT",
+                    "created_by": {
+                        "email": "bob.smith@example.com",
+                        "name": "Bob Smith",
+                        "photo": null,
+                        "user_id": 2
+                    }
+                },
+                {
+                    "children": [],
+                    "comment_id": 3,
+                    "content": "Another reply to the main comment!",
+                    "created_at": "Wed, 30 Oct 2024 06:15:22 GMT",
+                    "created_by": {
+                        "email": "carol.taylor@example.com",
+                        "name": "Carol Taylor",
+                        "photo": null,
+                        "user_id": 3
+                    }
+                }
+            ],
+            "comment_id": 1,
+            "content": "This is a comment on Pipeline 1",
+            "created_at": "Wed, 30 Oct 2024 05:37:39 GMT",
+            "created_by": {
+                "email": "alice.johnson@example.com",
+                "name": "Alice Johnson",
+                "photo": null,
+                "user_id": 1
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "comment_id": 5,
+                            "content": "Nested reply under Bob's comment!",
+                            "created_at": "Wed, 30 Oct 2024 08:45:00 GMT",
+                            "created_by": {
+                                "email": "dave.jones@example.com",
+                                "name": "Dave Jones",
+                                "photo": null,
+                                "user_id": 5
+                            }
+                        }
+                    ],
+                    "comment_id": 4,
+                    "content": "Another main comment's first reply!",
+                    "created_at": "Wed, 30 Oct 2024 07:12:34 GMT",
+                    "created_by": {
+                        "email": "eve.williams@example.com",
+                        "name": "Eve Williams",
+                        "photo": null,
+                        "user_id": 4
+                    }
+                }
+            ],
+            "comment_id": 6,
+            "content": "This is a second main comment on Pipeline 1",
+            "created_at": "Wed, 30 Oct 2024 07:00:00 GMT",
+            "created_by": {
+                "email": "frank.martin@example.com",
+                "name": "Frank Martin",
+                "photo": null,
+                "user_id": 6
+            }
+        },
+        {
+            "children": [],
+            "comment_id": 7,
+            "content": "This is a third main comment with no replies.",
+            "created_at": "Wed, 30 Oct 2024 09:30:15 GMT",
+            "created_by": {
+                "email": "gina.lee@example.com",
+                "name": "Gina Lee",
+                "photo": null,
+                "user_id": 7
+            }
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "The comments were fetched successfully!",
+    "output_kpis": {
+        "execution_time": "7.0245s",
+        "processed_records": 5
+    },
+    "status_code": 200
+}

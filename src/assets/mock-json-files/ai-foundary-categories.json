@@ -1,0 +1,20 @@
+{
+    "items": [
+      {
+        "name": "collections"
+      },
+      {
+        "name": "Industries"
+      },
+      {
+        "name": "Deployment Option"
+      },
+      {
+        "name": "Inference Task"
+      },
+      {
+        "name": "Fine-Tuning Task"
+      }
+    ]
+  }
+  

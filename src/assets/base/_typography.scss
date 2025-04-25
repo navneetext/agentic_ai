@@ -1,0 +1,91 @@
+@include font-face("poppins", "/assets/fonts/poppins/poppins-light-webfont", 300);
+@include font-face("poppins", "/assets/fonts/poppins/poppins-regular-webfont", 400);
+@include font-face("poppins", "/assets/fonts/poppins/poppins-medium-webfont", 500);
+@include font-face("poppins", "/assets/fonts/poppins/poppins-semibold-webfont", 600);
+@include font-face("poppins", "/assets/fonts/poppins/poppins-bold-webfont", 700);
+
+$poppins: "poppins";
+
+* {
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $poppins;
+}
+
+body {
+  @include font(14px);
+  font-family: $poppins;
+  font-weight: 400;
+  color: $grey-color;
+
+  @include media(xxxl){
+    @include font(16px);
+  }
+}
+
+// @include transition(all, 05s, ease);
+
+h1 {
+  @include font(20px);
+  font-family: $poppins;
+  font-weight: 600;
+
+  @include media(xxl){
+    @include font(22px);
+  }
+
+  @include media(xxxl){
+    @include font(32px);
+  }
+}
+
+h2 {
+  @include font(18px);
+  font-family: $poppins;
+  font-weight: 600;
+
+  @include media(xxxl){
+    @include font(28px);
+  }
+}
+
+h3 {
+  @include font(16px);
+  font-family: $poppins;
+  font-weight: 600;
+
+  @include media(xxxl){
+    @include font(24px);
+  }
+}
+
+h4 {
+  @include font(14px);
+  font-family: $poppins;
+  font-weight: 600;
+
+  @include media(xxxl){
+    @include font(18px);
+  }
+}
+
+p {
+  @include font(14px);
+  font-family: $poppins;
+  font-weight: 400;
+
+  @include media(xxl){
+    @include font(16px);
+  }
+}
+
+a{
+  @include font(14px);
+  font-family: $poppins;
+  font-weight: 400;
+
+  @include media(xxxl){
+    @include font(16px);
+  }
+}

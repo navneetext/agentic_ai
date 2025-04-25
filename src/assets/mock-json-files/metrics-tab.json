@@ -1,0 +1,36 @@
+{
+    "body": {
+      "metrics_table": [
+        {
+          "kpi": "Task Accuracy",
+          "pre_finetuning": "60%",
+          "post_finetuning": ">90%",
+          "standard": "+23%",
+          "objective": "-20%",
+          "improvement": "-20%",
+          "gap_analysis": "88%"
+        },
+        {
+          "kpi": "Response Latency",
+          "pre_finetuning": "300ms",
+          "post_finetuning": "<150ms",
+          "standard": "+150ms",
+          "objective": "+150ms",
+          "improvement": "130ms",
+          "gap_analysis": "-170ms"
+        }
+      ],
+      "weightage_meter_values": {
+        "pre_finetuning": 1.1,
+        "postfinetuning": 1.4
+      }
+    },
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Metrics generated successfully!",
+    "output_kpis": {
+      "execution_time": 9.257102489471436
+    },
+    "status_code": 200
+  }

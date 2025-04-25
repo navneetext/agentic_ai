@@ -1,0 +1,147 @@
+@import '../../../../../assets/abstracts/variables';
+@import '../../../../../assets/abstracts/functions';
+@import '../../../../../assets/abstracts/mixins';
+
+.col-6.col-md-6.col-lg-4 {
+  margin-right: 25px; 
+}
+
+.plan-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(411px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 10px;
+
+  .plan-card {
+    width: 411px;
+    height: 203px;
+    flex-shrink: 0;
+    border-radius: $agplan-ai-radius-medium;
+    border: 1px solid $agplan-ai-color-border;
+    background: $agplan-ai-color-white;
+    padding: 16px;
+    box-sizing: border-box;
+    font-family: $agplan-ai-font-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-icon {
+      width: 25.31px;
+      height: 33.746px;
+      flex-shrink: 0;
+      background: {
+        image: $agplan-ai-img-plan-icon;
+        size: contain;
+        repeat: no-repeat;
+        position: center;
+      }
+    }
+
+    &-title {
+      color: $agplan-ai-color-text;
+      @include agplan-ai-typography($agplan-ai-font-primary, $agplan-ai-font-size-md, 600, 18px);
+      padding-left: 10px;
+    }
+
+    &-description {
+      color: $agplan-ai-color-text;
+      @include agplan-ai-typography($agplan-ai-font-primary, $agplan-ai-font-size-sm, 400, 18px, );
+    }
+
+    &-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-link {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .btn {
+    &-outline {
+      @include agplan-ai-typography($agplan-ai-font-primary, $agplan-ai-font-size-sm, 400, 18px);
+      font-size: $agplan-ai-font-size-sm;
+      border: 1px solid $agplan-ai-color-primary;
+      border-radius: $agplan-ai-radius-small;
+      background-color: transparent;
+      color: $agplan-ai-color-primary;
+      cursor: pointer;
+      display: flex;
+      width: 125px;
+      height: 36px;
+      padding: 6px 10px 6px 5px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    &-primary {
+      @include agplan-ai-typography($agplan-ai-font-primary, $agplan-ai-font-size-sm, 400, 18px);
+      font-size: $agplan-ai-font-size-sm;
+      background-color: $agplan-ai-color-primary;
+      color: $agplan-ai-color-white;
+      border: none;
+      border-radius: $agplan-ai-radius-small;
+      cursor: pointer;
+      display: flex;
+      width: 120.084px;
+      height: 36px;
+      padding: 6px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+  }
+
+  .arrow {
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-right {
+      width: 16px;
+      height: 12px;
+      flex-shrink: 0;
+      background: {
+        image: $agplan-ai-img-right-arrow;
+        size: contain;
+        repeat: no-repeat;
+        position: center;
+      }
+      margin-top: 15px;
+    }
+  }
+
+  .base-image {
+    width: 100%;
+    display: block;
+  }
+
+  .overlay-image {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 40%;
+    height: auto;
+  }
+}
+
+
+

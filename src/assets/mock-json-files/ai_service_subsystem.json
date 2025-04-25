@@ -1,0 +1,68 @@
+{
+    "body": [
+        {
+            "module_id": 1,
+            "name": "Model",
+            "value": "model"
+        },
+        {
+            "module_id": 2,
+            "name": "DataFactory",
+            "value": "datafactory"
+        },
+        {
+            "module_id": 3,
+            "name": "RAG",
+            "value": "rag"
+        },
+        {
+            "module_id": 4,
+            "name": "Entity Extraction",
+            "value": "entity extraction"
+        },
+        {
+            "module_id": 5,
+            "name": "Generation",
+            "value": "generation"
+        },
+        {
+            "module_id": 6,
+            "name": "Fine-Tuning",
+            "value": "fine-tuning"
+        },
+        {
+            "module_id": 7,
+            "name": "Hallucination",
+            "value": "hallucination"
+        },
+        {
+            "module_id": 8,
+            "name": "Benchmark",
+            "value": "benchmark"
+        },
+        {
+            "module_id": 9,
+            "name": "Generation",
+            "value": "generation"
+        },
+        {
+            "module_id": 11,
+            "name": "Redteaming",
+            "value": "redteaming"
+        },
+        {
+            "module_id": 15,
+            "name": "PromtEngineering",
+            "value": "promtengineering"
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "DropdownModules fetched successfully!",
+    "output_kpis": {
+        "execution_time": 2.1573197841644287,
+        "processed_records": 11
+    },
+    "status_code": 200
+}

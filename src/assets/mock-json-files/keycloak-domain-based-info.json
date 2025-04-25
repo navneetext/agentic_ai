@@ -1,0 +1,14 @@
+{"listOfDomains":[
+    {
+        "domain": "centific.com",
+        "realm": "AD",
+        "url": "https://40.76.120.158:8443/",
+        "clientId": "angular_login"
+    },
+    {
+        "domain": "anotherdomain.com",
+        "realm": "anotherdomain",
+        "url": "https://40.76.120.158:8443/",
+        "clientId": "angular_login"
+    }
+]}

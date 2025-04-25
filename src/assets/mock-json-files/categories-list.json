@@ -1,0 +1,192 @@
+[
+    {
+      "category_id": 1,
+      "category_name": "Advice in Particular Domains",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 2,
+      "category_name": "Animal Abuse",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 3,
+      "category_name": "Availability Risks",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 4,
+      "category_name": "Boundary Prompts",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 5,
+      "category_name": "Bullying",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 6,
+      "category_name": "Child Safety",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 7,
+      "category_name": "Dangerous Activities",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 8,
+      "category_name": "Dangerous Devices and Weapons",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 9,
+      "category_name": "Dangerous Substances",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 10,
+      "category_name": "Data Integrity Protection",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 11,
+      "category_name": "Depictions of Violence and Gore",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 12,
+      "category_name": "False Attribution",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 13,
+      "category_name": "Geopolitical Events Bias",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 14,
+      "category_name": "Gestures, Profanity, and Sexually Explicit Language",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 15,
+      "category_name": "Harmful Misinformation",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 16,
+      "category_name": "Hate and Intolerance - Hate Group",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 17,
+      "category_name": "Hate and Intolerance - Individual",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 18,
+      "category_name": "Hate and Intolerance - Religion",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 19,
+      "category_name": "Inclusivity - Cultural Appropriation",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 20,
+      "category_name": "Inclusivity - Societal Bias",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 21,
+      "category_name": "Information of Non-Public Figures",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 22,
+      "category_name": "Malicious Content Generation",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 23,
+      "category_name": "Non-Violent Criminal Activities",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 24,
+      "category_name": "Nudity",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 25,
+      "category_name": "Personal Identifiers",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 26,
+      "category_name": "Personal Insults",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 27,
+      "category_name": "Private Information of Public Figures",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 28,
+      "category_name": "Profanity",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 29,
+      "category_name": "Promotion of Violent Acts and Actors",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 30,
+      "category_name": "Real-World Facts, Events, and People",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 31,
+      "category_name": "Regurgitated Material",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 32,
+      "category_name": "Self-Harm",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 33,
+      "category_name": "Sensitive Data Protection",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 34,
+      "category_name": "Sexual Activity",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 35,
+      "category_name": "Sexual Content",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 36,
+      "category_name": "Use or Control of Weapons of Mass Destruction",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 37,
+      "category_name": "Violent Acts",
+      "active_flag": "Y"
+    },
+    {
+      "category_id": 38,
+      "category_name": "Vulnerability to Malicious Instructions",
+      "active_flag": "Y"
+    }
+  ]

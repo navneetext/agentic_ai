@@ -1,0 +1,204 @@
+[
+    {
+      "runDetails": {
+        "trainingLlmId": 1,
+        "modelVersion": 1,
+        "runBy": "Harika",
+        "objective": "finetuning test 1",
+        "startTime": "22 Jan 2025",
+        "endTime": "23 Jan 2025",
+        "executionStatus": "Completed",
+        "isCoreLlmTraining": "true",
+        "isAgenticLlmTraining": "true",
+        "perspectives": [
+          {
+            "trainingLlmCoreId": 1,
+            "llmRunId": 1,
+            "performanceMetricsId": 1,
+            "isCoreEvaluated": true,
+            "isRobustness": true,  
+            "isEthicalAligned": true,
+            "isDeployReady": true,
+            "isAgenticAiDecision": false,
+            "isAgenticAiMultiagent": false,
+            "startTime": "22 Jan 2025",
+            "endTime": "23 Jan 2025",
+            "executionStatus": "Completed",
+            "objectiveGoals": "Objective text comes here...",
+            "hyperParameterJson": {
+              "learningRate": "0.01",
+              "batchSize": "16",
+              "dropout": "0.1"
+            },
+            "metrics": {
+              "textGeneration": [
+                {
+                  "metricsName": "bleu",
+                  "objectiveValue": "0.6",
+                  "standardValue": "0.6"
+                },
+                {
+                  "metricsName": "rouge",
+                  "objectiveValue": "0.8",
+                  "standardValue": "0.8"
+                },
+                {
+                  "metricsName": "meteor",
+                  "objectiveValue": "0.7",
+                  "standardValue": "0.7"
+                },
+                {
+                  "metricsName": "perplexity",
+                  "objectiveValue": "20",
+                  "standardValue": "20"
+                }
+              ],
+              "textUnderstanding": [
+                {
+                  "metricsName": "contextual_coherence",
+                  "objectiveValue": "1",
+                  "standardValue": "1"
+                },
+                {
+                  "metricsName": "f1_score",
+                  "objectiveValue": "1",
+                  "standardValue": "1"
+                }
+              ],
+              "knowledgeRetrieval": [
+                {
+                  "metricsName": "response_diversity",
+                  "objectiveValue": "0.4",
+                  "standardValue": "0"
+                },
+                {
+                  "metricsName": "retrieval_accuracy",
+                  "objectiveValue": "0.5",
+                  "standardValue": "0"
+                }
+              ]
+            },
+            "datasets": [
+              {
+                "trainingLlmDatasetId": 1,
+                "datasetCategoryId": 1,
+                "datasetId": 1,
+                "fileName": "Sample.csv"
+              },
+              {
+                "trainingLlmDatasetId": 2,
+                "datasetCategoryId": 2,
+                "datasetId": 2,
+                "fileName": "Sample2.csv"
+              }
+            ],
+            "computes": {
+              "configuredComputeId": "1232",
+              "configuredComputeName": "Test1232",
+              "description": "Teste",
+              "platformSizingName": "Databricks",
+              "platformSizingId": 1,
+              "dateTime": "2025-02-15T10:00:00Z",
+              "viewComputeDetails": {
+                "platform": ["GPT-4", "LLaMA", "Claude"],
+                "version": "Databricks",
+                "type": "GPU",
+                "size": "Small",
+                "typeName": "A_100",
+                "ram": "10 GB",
+                "vRam": "10_B",
+                "diskSpace": "10GB",
+                "pricePerToken": "20 $",
+                "pricePerHour": "20 $",
+                "clusters": [
+                  {
+                    "rank": 3,
+                    "name": "Compute_01",
+                    "noOfNodes": 2,
+                    "region": "North_USA",
+                    "system": "System_01"
+                  },
+                  {
+                    "rank": 2,
+                    "name": "Compute_02",
+                    "noOfNodes": 5,
+                    "region": "Southeast_Asia",
+                    "system": "System_02"
+                  }
+                ],
+                "estimatedKpi": {
+                  "throughput": 12,
+                  "latency": 5,
+                  "epochEta": 5,
+                  "allTokensCost": "20 $",
+                  "allHoursCost": "20 $",
+                  "totalCost": "20 $"
+                },
+                "actualKpi": {
+                  "throughput": 12,
+                  "latency": 5,
+                  "epochEta": 5,
+                  "allTokensCost": "40 $",
+                  "allHoursCost": "40 $",
+                  "totalCost": "40 $"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "computes": {
+        "configuredComputeId": "1232",
+        "configuredComputeName": "Test1232",
+        "description": "Teste",
+        "platformSizingName": "Databricks",
+        "platformSizingId": 1,
+        "dateTime": "2025-02-15T10:00:00Z",
+        "viewComputeDetails": {
+          "platform": ["GPT-4", "LLaMA", "Claude"],
+          "version": "Databricks",
+          "type": "GPU",
+          "size": "Small",
+          "typeName": "A_100",
+          "ram": "10 GB",
+          "vRam": "10_B",
+          "diskSpace": "10GB",
+          "pricePerToken": "20 $",
+          "pricePerHour": "20 $",
+          "clusters": [
+            {
+              "rank": 3,
+              "name": "Compute_01",
+              "noOfNodes": 2,
+              "region": "North_USA",
+              "system": "System_01"
+            },
+            {
+              "rank": 2,
+              "name": "Compute_02",
+              "noOfNodes": 5,
+              "region": "Southeast_Asia",
+              "system": "System_02"
+            }
+          ],
+          "estimatedKpi": {
+            "throughput": 12,
+            "latency": 5,
+            "epochEta": 5,
+            "allTokensCost": "20 $",
+            "allHoursCost": "20 $",
+            "totalCost": "20 $"
+          },
+          "actualKpi": {
+            "throughput": 12,
+            "latency": 5,
+            "epochEta": 5,
+            "allTokensCost": "40 $",
+            "allHoursCost": "40 $",
+            "totalCost": "40 $"
+          }
+        }
+      }
+    }
+]
+  

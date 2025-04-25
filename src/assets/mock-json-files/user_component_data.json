@@ -1,0 +1,74 @@
+[
+  {
+    "componentId": 1,
+    "componentTypeName": "Source",
+    "components": [
+      {
+        "userComponentId": 1,
+        "componentName": "SQL Source"
+      },
+      {
+        "userComponentId": 2,
+        "componentName": "CosmoDB Source"
+      },
+      {
+        "userComponentId": 3,
+        "componentName": "Kafka Source"
+      }
+    ]
+  },
+  {
+    "componentId": 2,
+    "componentTypeName": "Pre-processing",
+    "components": [
+      {
+        "userComponentId": 4,
+        "componentName": "Data Cleansing"
+      },
+      {
+        "userComponentId": 5,
+        "componentName": "Data Transformation"
+      },
+      {
+        "userComponentId": 6,
+        "componentName": "Aggregation"
+      }
+    ]
+  },
+  {
+    "componentId": 3,
+    "componentTypeName": "Target",
+    "components": [
+      {
+        "userComponentId": 7,
+        "componentName": "SQL Target"
+      },
+      {
+        "userComponentId": 8,
+        "componentName": "CosmoDB Target"
+      },
+      {
+        "userComponentId": 9,
+        "componentName": "Kafka Target"
+      }
+    ]
+  },
+  {
+    "componentId": 4,
+    "componentTypeName": "Dataset",
+    "components": [
+      {
+        "userComponentId": 1,
+        "componentName": "SQL Source"
+      },
+      {
+        "userComponentId": 2,
+        "componentName": "CosmoDB Source"
+      },
+      {
+        "userComponentId": 3,
+        "componentName": "Kafka Source"
+      }
+    ]
+  }
+]

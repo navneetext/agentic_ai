@@ -1,0 +1,127 @@
+@import '../../../../../assets/abstracts/variables';
+@import '../../../../../assets/abstracts/functions';
+@import '../../../../../assets/abstracts/mixins';
+
+
+.col-6.col-md-6.col-lg-4.my-agent-card-box {
+  margin-right: -9px; 
+}
+
+.my-agent {
+  &-card-grid {
+    display: grid;
+    gap: 7px;
+    row-gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+    margin-top: 10px;
+  }
+
+  &-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &-info-card {
+    width: 308px;
+    height: 225px;
+    flex-shrink: 0;
+    border: 1px solid $agagent-ai-color-border;
+    border-radius: $agagent-ai-radius-sm;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $agagent-ai-color-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include agagent-ai-box-shadow;
+
+    .my-agent-card {
+      &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      &-title {
+        @include agagent-ai-typography($agagent-ai-font-size-lg, 600);
+      }
+
+      &-icons {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+
+      &-icon-small {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        padding: 5px;
+        background: $agagent-ai-color-icon-bg;
+        box-sizing: border-box;
+      }
+
+      &-icon-main {
+        width: 24px;
+        height: 24px;
+      }
+
+      &-tag {
+        display: inline-flex;
+        padding: 5px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: $agagent-ai-radius-pill;
+        background: $agagent-ai-color-tag-bg;
+        width: fit-content;
+        @include agagent-ai-typography($agagent-ai-font-size-sm);       
+      }
+
+      &-desc {
+        line-height: 1.5;
+        @include agagent-ai-typography($agagent-ai-font-size-md);
+        font-family: $agagent-ai-font-primary;
+      }
+
+      &-edit-time {
+        margin-bottom: -10px;
+        line-height: 18px;
+        @include agagent-ai-typography($agagent-ai-font-size-xs, 400, $agagent-ai-color-muted);
+      }
+    }
+  }
+
+  &-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &-category-container {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  &-category-button {
+    padding: 8px 14px;
+    border-radius: $agagent-ai-radius-full;
+    border: none;
+    background-color: $agagent-ai-color-category-bg;
+    cursor: pointer;
+    @include agagent-ai-typography($agagent-ai-font-primary, $agagent-ai-font-size-md);
+
+    &.active {
+      background-color: $agagent-ai-color-primary;
+      color: $agagent-ai-color-bg;
+    }
+  }
+}

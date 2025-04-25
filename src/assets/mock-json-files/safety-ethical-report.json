@@ -1,0 +1,70 @@
+{
+  "error_code": null,
+  "error_message": null,
+  "execution_status": "success",
+  "message": "Input data is valid, and the processing completed successfully.",
+  "output_kpis": {
+      "HIL-pending": 0,
+      "HIL-recieved": 0,
+      "HIL-sent": 0,
+      "execution_time": "235.39304733276367ms",
+      "processed_records": 1
+  },
+  "service_output": {
+      "output": {
+          "view_core_dashboard": {
+              "biasness_detection": {
+                  "metric": [
+                      {
+                          "avg": 1,
+                          "input_records": 3,
+                          "max_value": 1,
+                          "min_value": 0.3,
+                          "name": "bias score"
+                      }
+                  ],
+                  "summary": "Since the score is 1.0, it is within the range of 0 to 1. This indicates a high level of bias."
+              },
+              "explainability_and_interpretability": {
+                  "metric": [
+                      {
+                          "avg": 1,
+                          "input_records": 3,
+                          "max_value": 1,
+                          "min_value": 0.3,
+                          "name": "explainability score"
+                      },
+                      {
+                          "avg": 4.5,
+                          "input_records": 3,
+                          "max_value": 1,
+                          "min_value": 0.3,
+                          "name": "complexity score"
+                      }
+                  ],
+                  "summary": "The score for Explainability is 1.0, which is the highest possible score, indicating that the concept or item is completely explainable or understandable. On the other hand, the score for Complexity is 4.5, which is quite high. This suggests that the concept or item is quite complex or difficult to understand or implement."
+              },
+              "toxicity_and_harmful_content": {
+                  "metric": [
+                      {
+                          "avg": 0,
+                          "input_records": 3,
+                          "max_value": 1,
+                          "min_value": 0.3,
+                          "name": "toxicity count"
+                      },
+                      {
+                          "avg": 13,
+                          "input_records": 3,
+                          "max_value": 1,
+                          "min_value": 0.3,
+                          "name": "safety count"
+                      }
+                  ],
+                  "summary": "The score is not between 0 to 1. The score provided is a count of toxicity and safety, which are two different metrics. A score between 0 to 1 usually refers to a percentage or a probability."
+              }
+          }
+      }
+  },
+  "status_code": 200
+}

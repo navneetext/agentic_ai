@@ -1,0 +1,37 @@
+{
+    "environmentTypeValues": [
+        {
+            "value": 1,
+            "label": "Development"
+        },
+        {
+            "value": 2,
+            "label": "Testing"
+        },
+        {
+            "value": 3,
+            "label": "Staging"
+        },
+        {    
+            "value": 4,
+            "label": "Production"
+        }
+    ],
+    "SIZE_OF_PROVIDERS": [
+        {
+            "id": "small",
+            "value": "Small",
+            "label": "Small"
+        },
+        {
+            "id": "medium",
+            "value": "Medium",
+            "label": "Medium"
+        },
+        {
+            "id": "large",
+            "value": "Large",
+            "label": "Large"
+        }
+    ]
+}

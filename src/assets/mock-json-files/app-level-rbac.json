@@ -1,0 +1,36 @@
+{
+    "app_level_mapping":[
+        {
+            "role":"Platform Admin",
+            "app_access":["Data Studio","AI Workbench", "Gen AI Studio", "Infra Hub", "Gen BI", "AI Governance" ]
+        },
+        {
+            "role":"Admin",
+            "app_access":["Data Studio","AI Workbench", "Gen AI Studio", "Infra Hub", "Gen BI", "AI Governance" ]
+        },
+        {
+            "role":"AI Architect",
+            "app_access":["Data Studio","AI Workbench", "Gen AI Studio", "Infra Hub", "Gen BI", "AI Governance"  ]
+        },
+        {
+            "role":"AI Developer",
+            "app_access":["Data Studio","AI Workbench", "Gen AI Studio", "Infra Hub", "AI Governance","Gen BI" ]
+        },
+        {
+            "role":"QA",
+            "app_access":["Data Studio","AI Workbench", "Gen AI Studio", "Infra Hub", "Gen BI", "AI Governance" ]
+        },
+        {
+            "role":"Auditor",
+            "app_access":["Infra Hub", "Gen BI", "AI Governance" ]
+        },
+        {
+            "role":"PM",
+            "app_access": ["Data Studio","AI Workbench","Gen BI","Gen AI Studio"]
+        },
+        {
+            "role":"BA",
+            "app_access": ["Data Studio","AI Workbench","Gen BI","Gen AI Studio"]
+        }
+    ]
+}

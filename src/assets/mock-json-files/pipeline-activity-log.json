@@ -1,0 +1,42 @@
+{
+    "body": [
+        {
+            "logs": [
+                {
+                    "date&time": "2024-12-06 14:54:05",
+                    "desc": "Pipeline execution started with PAAS Pipeline"
+                },
+                {
+                    "date&time": "2024-12-06 14:54:07",
+                    "desc": "Service RAG_chunking_fixed_size Started successfully."
+                },
+                {
+                    "date&time": "2024-12-06 14:54:42",
+                    "desc": "Service RAG_chunking_fixed_size executed successfully."
+                },
+                {
+                    "date&time": "2024-12-06 14:54:42",
+                    "desc": "Service RAG_dense_embedding Started successfully."
+                },
+                {
+                    "date&time": "2024-12-06 14:55:27",
+                    "desc": "Service RAG_dense_embedding executed successfully."
+                },
+                {
+                    "date&time": "2024-12-06 14:55:27",
+                    "desc": "Pipeline execution completed with PAAS Pipeline"
+                }
+            ]
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "The logs were fetched successfully from DB.",
+    "output_kpis": {
+        "execution_time": "2.035s",
+        "processed_records": 1
+    },
+    "status_code": 200
+}
+ 

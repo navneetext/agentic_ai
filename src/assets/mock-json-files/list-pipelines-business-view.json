@@ -1,0 +1,90 @@
+{
+    "body": [
+        {
+            "description": "Description of pipeline instance 1",
+            "id": 1,
+            "name": "Pipeline Instance 1",
+            "versions": [
+                {
+                    "approval_status": "Approved",
+                    "execution_status": "SUCCESS",
+                    "last_execution": "2024-11-01T08:00:00",
+                    "public_ind": "Y",
+                    "version": 1
+                },
+                {
+                    "approval_status": "Approved",
+                    "execution_status": "SUCCESS",
+                    "last_execution": "2024-11-01T08:00:00",
+                    "public_ind": "Y",
+                    "version": 1.1
+                }
+            ]
+        },
+        {
+            "description": "Description of pipeline instance 2",
+            "id": 2,
+            "name": "Pipeline Instance 2",
+            "versions": [
+                {
+                    "approval_status": "Pending",
+                    "execution_status": "FAILED",
+                    "last_execution": "2024-11-02T09:00:00",
+                    "public_ind": "N",
+                    "version": 1
+                }
+            ]
+        },
+        {
+            "description": "Description of pipeline instance 3",
+            "id": 3,
+            "name": "Pipeline Instance 3",
+            "versions": [
+                {
+                    "approval_status": "Approved",
+                    "execution_status": "SUCCESS",
+                    "last_execution": "2024-11-03T10:00:00",
+                    "public_ind": "Y",
+                    "version": 1
+                }
+            ]
+        },
+        {
+            "description": "Description of pipeline instance 4",
+            "id": 4,
+            "name": "Pipeline Instance 4",
+            "versions": [
+                {
+                    "approval_status": "Rejected",
+                    "execution_status": "PENDING",
+                    "last_execution": "2024-11-04T11:00:00",
+                    "public_ind": "N",
+                    "version": 1
+                }
+            ]
+        },
+        {
+            "description": "Description of pipeline instance 5",
+            "id": 5,
+            "name": "Pipeline Instance 5",
+            "versions": [
+                {
+                    "approval_status": "Approved",
+                    "execution_status": "SUCCESS",
+                    "last_execution": "2024-11-05T12:00:00",
+                    "public_ind": "Y",
+                    "version": 1
+                }
+            ]
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "pipeline Instances  fetched Successfully!",
+    "output_kpis": {
+        "execution_time": 2.3715341091156006,
+        "processed_records": 5
+    },
+    "status_code": 200
+}

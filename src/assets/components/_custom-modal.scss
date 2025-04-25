@@ -1,0 +1,174 @@
+.modal-dialog {
+  &.custom-modal {
+    // margin: 0;
+
+    .modal-header {
+      padding: 15px 24px;
+      border-bottom-color: $secondary-color-20;
+
+      .modal-title {
+        text-transform: capitalize;
+      }
+
+      .cta-secondary {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+      }
+    }
+
+    .modal-body {
+      padding: 24px;
+
+      .form-group {
+        margin-bottom: 14px;
+      }
+
+      .download-cta-block {
+        text-align: right;
+        padding-top: 35px;
+
+        .cta-download-link {
+          @include button-transparent(
+            $sky-blue-alt-color,
+            "/assets/images/icon-download-blue-alt.svg",
+            left
+          );
+        }
+      }
+
+      .cta-upload {
+        @include button-transparent(
+          $primary-color1,
+          "/assets/images/icon-upload-blue.svg",
+          left
+        );
+        background-color: mix(white, $primary-color1, 90%);
+      }
+
+      .modal-card {
+        background-color: $secondary-color-05;
+        padding: 15px 24px;
+        border-radius: 4px;
+        margin: 10px 0;
+
+        .modal-card-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+
+          .modal-card-header-left {
+            display: flex;
+            align-items: center;
+            justify-items: flex-start;
+            gap: 28px;
+            margin-bottom: 14px;
+
+            @include media(xxl) {
+              gap: 48px;
+            }
+
+            li {
+              position: relative;
+
+              &:not(:last-child) {
+                &::after {
+                  position: absolute;
+                  content: "";
+                  right: -14px;
+                  top: 50%;
+                  margin-top: -18px;
+                  height: 36px;
+                  width: 1px;
+                  background-color: $secondary-color-40;
+
+                  @include media(xxl) {
+                    right: -24px;
+                  }
+                }
+              }
+
+              p {
+                font-weight: 500;
+              }
+            }
+          }
+
+          .modal-card-header-right {
+            text-align: right;
+
+            .sql-builder {
+              display: block;
+              @include font(14px);
+              line-height: 1.5;
+              color: $grey-color;
+              font-weight: 400;
+
+              @include media(xxxl) {
+                @include font(16px);
+                line-height: 1.5;
+              }
+
+              img {
+                max-width: 17px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 7px;
+              }
+            }
+          }
+        }
+
+        .form-group {
+          margin-bottom: 0;
+
+          textarea {
+            height: 110px;
+          }
+        }
+      }
+
+      .modal-card-bottom {
+        .cta-block {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px 32px;
+        }
+
+        .end-point-block {
+          .form-group {
+            margin-bottom: 0;
+
+            .form-label {
+              color: $black-color;
+            }
+          }
+
+          .input-wrapper {
+            position: relative;
+
+            .form-control{
+              padding-right: 100px;
+            }
+
+            .copy-clip-icon {
+              position: absolute;
+              content: "";
+              right: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      border-top-color: $secondary-color-20;
+    }
+  }
+}

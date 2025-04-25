@@ -1,0 +1,101 @@
+@import '../../../../../assets/abstracts/variables';
+@import '../../../../../assets/abstracts/functions';
+@import '../../../../../assets/abstracts/mixins';
+
+.col-6.col-md-6.col-lg-4 {
+  margin-right: 10px; 
+}
+
+
+.tools-card-grid {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 10px;
+  margin-top: 10px;
+
+  & .tool-card {
+    background: $agtool-ai-white;
+    border: 1px solid $agtool-ai-grey-light;
+    border-radius: $agtool-ai-radius-lg;
+    padding: 0;
+    @include agtool-ai-shadow;
+    position: relative;
+    max-width: 100%;
+    min-height: 165px;
+    overflow: hidden;
+
+    &-top-bg {
+      height: 48px;
+      background-image: url($agtool-ai-tools-bg-image);
+      background-size: cover;
+      background-position: center;
+      border-top-left-radius: $agtool-ai-radius-lg;
+      border-top-right-radius: $agtool-ai-radius-lg;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      margin-top: -20px;
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+
+      & .tool-icon-container {
+        background-color: $agtool-ai-icon-bg;
+        padding: 6px;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border-radius: $agtool-ai-radius-sm;
+        border: 2px solid $agtool-ai-icon-border;
+        background: var(--p-110-efeafb, $agtool-ai-icon-bg);
+        @include agtool-ai-shadow;
+
+        & .tool-icon {
+          width: 19px;
+          height: 19px;
+          flex-shrink: 0;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    &-body {
+      padding: 0 20px 36px;
+      position: relative;
+
+      & .tool-title {
+        @include agtool-ai-font($agtool-ai-font-lg, 600);
+        color: $agtool-ai-text-primary;
+        margin: 10px 0 0;
+      }
+
+      & .tool-desc {
+        font-size: $agtool-ai-font-sm;
+        color: $agtool-ai-text-secondary;
+        margin-top: 8px;
+      }
+
+      & .tool-badge {
+        @include agtool-ai-badge;
+      }
+    }
+
+    h3 {
+      margin: 10px 0 8px;
+      @include agtool-ai-font($agtool-ai-font-md, 600);
+      color: $agtool-ai-text-primary;
+      line-height: normal;
+    }
+
+    p {
+      padding-top: 5px;
+      color: $agtool-ai-text-primary;
+      @include agtool-ai-font($agtool-ai-font-sm, 500);
+    }
+  }
+}

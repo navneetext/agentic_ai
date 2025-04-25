@@ -1,0 +1,28 @@
+// Import the math module
+@use "sass:math";
+
+/**********************************************
+font face function and mixin from https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+Note: Below function is using in the font-face mixin
+**********************************************/
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
+  }
+
+  @return $string;
+}
+
+/**********************************************
+px TO rem convertor function
+**********************************************/
+@function px-to-rem($px, $base-font-size: 16px) {
+  @return math.div($px, $base-font-size) * 1rem;
+}

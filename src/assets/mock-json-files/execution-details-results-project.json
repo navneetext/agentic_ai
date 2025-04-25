@@ -1,0 +1,37 @@
+{
+    "body": [
+        {
+            "executed_by": "centific",
+            "execution_end_time": "Thu, 28 Nov 2024 08:58:22 GMT",
+            "execution_mode": "TEST",
+            "execution_start_time": "Thu, 28 Nov 2024 08:58:22 GMT",
+            "execution_status": "FAILED",
+            "pipeline_template_id": 177
+        },
+        {
+            "executed_by": "centific",
+            "execution_end_time": "Thu, 28 Nov 2024 08:58:22 GMT",
+            "execution_mode": "TEST",
+            "execution_start_time": "Thu, 28 Nov 2024 08:58:22 GMT",
+            "execution_status": "SUCCESS",
+            "pipeline_template_id": 177
+        },
+        {
+            "executed_by": "centific",
+            "execution_end_time": "Thu, 28 Nov 2024 08:58:22 GMT",
+            "execution_mode": "TEST",
+            "execution_start_time": "Thu, 28 Nov 2024 08:58:22 GMT",
+            "execution_status": "SUCCESS",
+            "pipeline_template_id": 177
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Pipeline Template Execution Details fetched successfully!",
+    "output_kpis": {
+        "execution_time": 2.051917552947998,
+        "processed_records": 0
+    },
+    "status_code": 200
+}

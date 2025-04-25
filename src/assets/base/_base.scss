@@ -1,0 +1,110 @@
+/**********************************************
+Note: Don't change the order of below imports
+**********************************************/
+// @import '../abstracts/variables';
+// @import '../abstracts/functions';
+// @import '../abstracts/mixins';
+// @import 'reset';
+// @import 'typography';
+// @import 'colorschemes';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	//height: auto !important;
+	background-color: $secondary-color-05;
+	padding: 0 12px 12px;
+
+	@include media(xl){
+		padding: 0 24px 0;
+	}
+
+	&::before{
+		position: fixed;
+		content: '';
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 20px;
+		background-color: $secondary-color-05;
+		z-index: 2;		
+	}
+}
+
+section {
+	position: relative;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+p {
+	a {
+		display: inline-block;
+	}
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+	height: auto;
+	display: block;
+}
+
+/* clears the 'X' from search field in Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from search field in Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+body{
+	.overlay{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		background-color: rgba(0,0,0,0.89);
+		z-index: 999;
+		overflow: hidden;
+		display: none;
+	}
+
+	&.overlay-active{
+		.overlay{
+			display: block;
+		}
+	}
+}
+
+::selection {
+	background: $primary-color1;
+	color: $white-color;
+	text-shadow: none;
+}
+  
+::-moz-selection {
+	background: $primary-color1;
+	color: $white-color;
+	text-shadow: none;
+}
+
+::-ms-selection {
+	background: $primary-color1;
+	color: $white-color;
+	text-shadow: none;
+}

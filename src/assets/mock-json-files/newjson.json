@@ -1,0 +1,44 @@
+{
+    "body": {
+        "num_prompts": 0,
+        "service_output": {
+            "LLM_Answer": "Vector embeddings are numerical representations of objects or concepts in a multi-dimensional space. They are used in machine learning and natural language processing to represent words, phrases, or documents in a way that captures their semantic relationships. By converting words or entities into vectors, it becomes easier for algorithms to process and analyze them based on their contextual meanings and similarities.",
+            "Question": "what is vector embeddings",
+            "output": {
+                "data": {
+                    "bert_output": {
+                        "data": {
+                            "f1": [
+                                0.6882920265197754
+                            ],
+                            "precision": [
+                                0.7078949213027954
+                            ],
+                            "recall": [
+                                0.6697455644607544
+                            ]
+                        }
+                    },
+                    "perplexity_output": {
+                        "mean_perplexity": 183.99070739746094,
+                        "perplexities": [
+                            183.99070739746094
+                        ]
+                    },
+                    "rouge_output": [
+                        0.25
+                    ]
+                }
+            }
+        }
+    },
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Prompts details fetched successfully",
+    "output_kpis": {
+        "execution_time": 3.962399959564209,
+        "processed_records": 0
+    },
+    "status_code": 200
+}

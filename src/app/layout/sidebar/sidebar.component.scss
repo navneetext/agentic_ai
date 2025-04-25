@@ -1,0 +1,338 @@
+@import '../../../assets/abstracts/variables';
+@import '../../../assets/abstracts/functions';
+@import '../../../assets/abstracts/mixins';
+
+.sidebar{
+    position: fixed;
+    left: 12px;
+    top: 68px;
+    min-height: calc(100% - 78px);
+    border-radius: 10px;
+    background-color: $white-color;
+    box-shadow: 0px 0px 9.5px 0px rgba(143, 143, 144, 0.17);
+    z-index: 999;
+
+    @include media(xl){
+        left: 24px;
+        top: 105px;
+        min-height: calc(100% - 120px);
+    }
+
+    ul{
+        margin: 0;
+        padding: 14px 5px;
+        border-bottom: 1px solid $grey-color-40;
+
+        &:last-child{
+            border: none;
+        }
+
+        @include media(xl){
+            padding: 30px 12px;
+        }
+
+        @include media(xxxl){
+            padding: 30px 15px;
+        }
+
+        li{
+            margin-bottom: 12px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            .side-menu{
+                cursor: pointer;
+                
+                @include media(xl){
+                    padding: 11px;
+                    border-radius: 4px;
+                }
+
+                @include media(xxxl){
+                    padding: 16px;
+                    border-radius: 8px;
+                }                
+ 
+                .side-menu-icon{
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+
+                    @include media(xl) {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    @include media(xxxl){
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 18px;
+                        height: 18px;
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        left: 50%;
+                        margin-left: -9px;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                        @include media(xl){
+                            margin-left: -6px;
+                        }
+
+                        @include media(xxxl){
+                            width: 24px;
+                            height: 24px;
+                            margin-left: -12px;
+                        }
+                    }
+
+                    &.side-menu-dashboard{
+                        &::before{
+                            background-image: url('/assets/images/icon-dashboard.svg');
+                        }
+                    }
+                    &.side-menu-home{
+                        &::before{
+                            background-image: url('/assets/images/icons-home.svg');
+                        }
+                    }
+                    &.side-menu-work{
+                        &::before{
+                            background-image: url('/assets/images/work.svg');
+                        }
+                    }
+                    &.side-menu-aiservices{
+                        &::before{
+                            background-image: url('/assets/images/chatbot.svg');
+                        }
+                    }
+                    &.side-menu-plan{
+                        &::before{
+                            background-image: url('/assets/images/plan.svg');
+                        }
+                    }
+                    &.side-menu-pipeline{
+                        &::before{
+                            background-image: url('/assets/images/icon-pipeline.svg');
+                        }
+                    }
+                    &.side-menu-marketplace{
+                        &::before{
+                            background-image: url('/assets/images/icon-datamp.svg');
+                        }
+                    }
+                    &.side-menu-settings{
+                        &::before{
+                            background-image: url('/assets/images/icon-admin-settings.svg');
+                        }
+                    }
+                    &.side-menu-baseline{
+                        &::before{
+                            background-image: url('/assets/images/icon-baseline-grey.svg');
+                        }
+                    }
+                    &.side-menu-cruise-control{
+                        &::before{
+                            background-image: url('/assets/images/icon-cruise-control-grey.svg');
+                        }
+                    }
+                    &.side-menu-hil{
+                        &::before{
+                            background-image: url('/assets/images/icon-hil-grey.svg');
+                        }
+                    }
+                }
+
+                .side-menu-text{
+                    
+                    @include media(xl){
+                        vertical-align: middle;
+                        padding-left: 10px;
+                        @include font(16px);
+                        line-height: 1;
+                        font-weight: 400;
+                        color: $grey-color;
+
+                        @include media(xxxl){
+                            padding-left: 15px;
+                            @include font(18px);
+                            line-height: 1;                            
+                        }
+                    }
+                }
+                
+                /** Hover state styels (icons and text color change) **/
+                &:hover, &.active, &[aria-expanded="true"]{
+                    @include media(xl){
+                        background-color: $primary-color1-10;
+                    }
+                    .side-menu-icon{
+                        background-color: $primary-color1-10;
+                        border-radius: 4px;
+
+                        @include media(xl){
+                            background-color: transparent;
+                        }
+
+                        &.side-menu-dashboard{
+                            &::before{
+                                background-image: url('/assets/images/icon-dashboard-blue.svg');
+                            }
+                        }
+                        &.side-menu-workspace{
+                            &::before{
+                                background-image: url('/assets/images/icon-workshop-blue.svg');
+                            }
+                        }
+                        &.side-menu-projects{
+                            &::before{
+                                background-image: url('/assets/images/icon-projects-blue.svg');
+                            }
+                        }
+                        &.side-menu-aiservices{
+                            &::before{
+                                background-image: url('/assets/images/icon-aiservices-blue.svg');
+                            }
+                        }
+                        &.side-menu-myreviews{
+                            &::before{
+                                background-image: url('/assets/images/icon-mymodels-blue.svg');
+                            }
+                        }
+                        &.side-menu-pipeline{
+                            &::before{
+                                background-image: url('/assets/images/icon-pipeline-blue.svg');
+                            }
+                        }
+                        &.side-menu-marketplace{
+                            &::before{
+                                background-image: url('/assets/images/icon-datamp-blue.svg');
+                            }
+                        }
+                        &.side-menu-settings{
+                            &::before{
+                                background-image: url('/assets/images/icon-admin-settings-blue.svg');
+                            }
+                        }
+                        &.side-menu-baseline{
+                            &::before{
+                                background-image: url('/assets/images/icon-baseline-blue.svg');
+                            }
+                        }
+                        &.side-menu-cruise-control{
+                            &::before{
+                                background-image: url('/assets/images/icon-cruise-control-blue.svg');
+                            }
+                        }
+                        &.side-menu-hil{
+                            &::before{
+                                background-image: url('/assets/images/icon-hil-blue.svg');
+                            }
+                        }
+                    }
+                    .side-menu-text{
+                        color: $primary-color1;
+                        font-weight: 500;
+                    }
+                }                
+            }
+
+            &.has-dropdown{
+                .side-menu{
+                    position: relative;
+                    padding-right: 50px;
+
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        right: 25px;
+                        top: 50%;
+                        margin-top: -4px;
+                        width: 16px;
+                        height: 8px;
+                        @include arrow(down, 8px, $primary-color1);
+                        
+                        -webkit-transition: ease all 0.5s;
+                        -moz-transition: ease all 0.5s;
+                        -ms-transition: ease all 0.5s;
+                        -o-transition: ease all 0.5s;
+                        transition: ease all 0.5s;
+                    }
+
+                    &[aria-expanded="true"]{
+                        &::after{
+                            transform: rotate(-180deg);
+                            transition: ease all 0.5s;
+                        }
+                    }
+                }
+            
+                .dropdown-content{
+                    display: none;
+                    ul{
+                        li{
+                            margin-bottom: 6px;
+
+                            a{
+                                padding: 5px 10px;
+                                @include font(14px);
+                                line-height: 1;
+                                font-weight: 400;
+                                color: $grey-color; 
+
+                                @include media(xxxl){
+                                    @include font(16px);
+                                }
+
+                                &:hover, &.active{
+                                    color: $primary-color1;
+                                }
+                            }
+                        }
+                    }
+
+                    &.open{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .toggle-cta{
+        position: absolute;
+        content: '';
+        right: -18px;
+        top: 30%;
+        background-color: $primary-color1-60;
+        width: 18px;
+        height: 50px;
+        border-radius: 6px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        @include media(xl){
+            display: flex;
+        }
+
+        &:hover{
+            background-color: $primary-color1-80;
+        }
+
+        img{
+            max-width: 100%;
+        }
+    }
+}

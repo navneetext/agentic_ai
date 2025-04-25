@@ -1,0 +1,98 @@
+{
+  "error_code": null,
+  "error_message": null,
+  "execution_status": "success",
+  "message": "Input data is valid, and the processing completed successfully.",
+  "output_kpis": {
+      "HIL-pending": 0,
+      "HIL-recieved": 0,
+      "HIL-sent": 0,
+      "execution_time": 3.3948,
+      "processed_records": 1
+  },
+  "service_output": {
+      "output": {
+          "infra_stats": {
+              "metrics": [
+                  {
+                      "created_date": "21 Feb 2025 & 13:20",
+                      "kpi_comparision": {
+                          "cost_comparison": {
+                              "all_hour": {
+                                  "actual": "$40",
+                                  "estimated": "$40"
+                              },
+                              "all_token": {
+                                  "actual": "$40",
+                                  "estimated": "$40"
+                              },
+                              "total": {
+                                  "actual": "$100",
+                                  "estimated": "$100"
+                              }
+                          },
+                          "hour": "$22",
+                          "metrics_comparison": {
+                              "epoch_eta": {
+                                  "actual": 5,
+                                  "estimated": 5
+                              },
+                              "latency": {
+                                  "actual": 5,
+                                  "estimated": 5
+                              },
+                              "throughput": {
+                                  "actual": 5,
+                                  "estimated": 5
+                              }
+                          },
+                          "token": "$22"
+                      },
+                      "objective": "running",
+                      "run_by": "Vasudevan"
+                  },
+                  {
+                      "created_date": "22 Feb 2025 & 16:58",
+                      "kpi_comparision": {
+                          "cost_comparison": {
+                              "all_hour": {
+                                  "actual": "$40",
+                                  "estimated": "$40"
+                              },
+                              "all_token": {
+                                  "actual": "$40",
+                                  "estimated": "$40"
+                              },
+                              "total": {
+                                  "actual": "$100",
+                                  "estimated": "$100"
+                              }
+                          },
+                          "hour": "$22",
+                          "metrics_comparison": {
+                              "epoch_eta": {
+                                  "actual": 5,
+                                  "estimated": 5
+                              },
+                              "latency": {
+                                  "actual": 5,
+                                  "estimated": 5
+                              },
+                              "throughput": {
+                                  "actual": 5,
+                                  "estimated": 5
+                              }
+                          },
+                          "token": "$22"
+                      },
+                      "objective": "Running core Performance to finetuned the model",
+                      "run_by": "Vasudevan"
+                  }
+              ],
+              "total_cost": "$100",
+              "total_data": "8"
+          }
+      }
+  },
+  "status_code": 200
+}

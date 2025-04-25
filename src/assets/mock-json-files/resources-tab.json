@@ -1,0 +1,32 @@
+{
+    "body": {
+      "input_provided_table": [
+        {
+          "category": "annotations",
+          "details": "High-quality labeled data for fairness, ethical reasoning, and adversarial robustness"
+        },
+        {
+          "category": "data",
+          "details": "30 GB task-specific data, including multi-agent interactions, decision scenarios, and ethical dilemmas"
+        },
+        {
+          "category": "tools",
+          "details": "Bias detection tools, toxicity filters, and RLHF frameworks"
+        }
+      ],
+      "computational_resources_table": [
+        {
+          "category": "hardware",
+          "details": "16 NVIDIA A100 GPUs (40 GB each)"
+        },
+        {
+          "category": "batch size",
+          "details": "64 for multi-agent tasks"
+        },
+        {
+          "category": "training time",
+          "details": "96 hours for distributed training"
+        }
+      ]
+    }
+  }

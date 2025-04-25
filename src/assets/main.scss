@@ -1,0 +1,40 @@
+/**********************************************
+Note: Don't change the order of below imports
+**********************************************/
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/colorschemes';
+@import 'base/base';
+
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/status-badge';
+@import 'components/custom-alerts';
+@import 'components/custom-tabs';
+@import 'components/_custom-modal';
+@import 'components/highlighter-card';
+@import 'components/comments-widget';
+@import 'components/action-widget';
+@import 'components/_custom-card';
+@import 'components/_template-card';
+@import 'components/_custom-ratings';
+@import 'components/_evaluation-card';
+@import 'components/_custom-accordion';
+@import 'components/_gradient-highlighter-card';
+@import 'components/_gradient-cards';
+@import 'components/_apps-menu';
+@import 'components/_dataset-cards';
+@import 'components/_color-content-widget';
+@import 'components/_file-upload';
+@import 'components/_key-value-card';
+@import 'components/_custom-radio-card-list';
+
+
+@import 'layout/wrappers';
+
+@import 'libraries/primeng-custom-theme';
+@import 'libraries/_drawflow-custom-theme';

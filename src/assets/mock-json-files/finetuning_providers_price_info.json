@@ -1,0 +1,16 @@
+[{
+    "token": "$22",
+    "hour": "$22",
+    "estimatedThoughput": "$05",
+    "estimatedLatency": "$05",
+    "estimatedEpochETA": "$05",
+    "estimatedAllTokensCost": "$40",
+    "estimatedAllHourCost": "$40",
+    "estimatedTotalCost": "$100",
+    "actualThoughput": "$05",
+    "actualLatency": "$05",
+    "actualEpochETA": "$05",
+    "actualAllTokensCost": "$40",
+    "actualAllHourCost": "$40",
+    "actualTotalCost": "$100"
+  }]

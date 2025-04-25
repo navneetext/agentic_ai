@@ -1,0 +1,64 @@
+{
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Input data is valid, and the processing completed successfully.",
+    "output_kpis": {
+        "HIL-pending": 2,
+        "HIL-recieved": 12,
+        "HIL-sent": 23,
+        "execution_time": 2.155,
+        "processed_records": 1
+    },
+    "service_output": {
+        "output": [
+            {
+                "cost_comparison": {
+                    "all_hour": {
+                        "actual": 50,
+                        "estimated": 70
+                    },
+                    "all_token": {
+                        "actual": 90,
+                        "estimated": 40
+                    },
+                    "total": {
+                        "actual": 90,
+                        "estimated": 75
+                    }
+                },
+                "metrics_comparison": [
+                    {
+                        "epoch_eta": {
+                            "actual": 0.5,
+                            "estimated": 0.7
+                        },
+                        "latency": {
+                            "actual": 0.5,
+                            "estimated": 0.7
+                        },
+                        "throughput": {
+                            "actual": 0.9,
+                            "estimated": 0.4
+                        }
+                    }
+                ],
+                "overall_summary": {
+                    "metrics": {
+                        "autonomy_decision_making": 6,
+                        "collaboration_multi_agent_environment": 6,
+                        "core_performance": 8,
+                        "deployment": "1",
+                        "ethical_safety": 8,
+                        "evaluation_deployment_readiness": 6,
+                        "robustness_adaptability": 9
+                    },
+                    "total_computes": 3,
+                    "total_cost": "$200",
+                    "total_data": 3
+                }
+            }
+        ]
+    },
+    "status_code": 200
+}

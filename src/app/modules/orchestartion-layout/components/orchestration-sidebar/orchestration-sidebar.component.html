@@ -1,0 +1,11 @@
+<div class="orchestration-sidebar">
+  <div class="sidebar-content">
+    <ul class="menu-items">
+      <li *ngFor="let item of menuItems">
+        <a [routerLink]="item.route" routerLinkActive="active">
+          {{ item.text }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div> 

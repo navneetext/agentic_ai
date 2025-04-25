@@ -1,0 +1,17 @@
+[
+    {
+        "environment_id": 9,
+        "environment_type_id": 21,
+        "environment_type_name": "Dev"
+      },
+      {
+        "environment_id": 10,
+        "environment_type_id": 20,
+        "environment_type_name": "Production"
+      },
+      {
+        "environment_id": 11,
+        "environment_type_id": 22,
+        "environment_type_name": "QA"
+      }
+]

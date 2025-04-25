@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "avg_rating": "4.00",
+            "dataset_category_description": "The text is a complex mix of Amazon's online interface, including details about products, services, and customer support. It also includes Amazon's Children's Privacy Disclosure, which explains how Amazon collects, uses, and shares personal information from children under the age of 13.",
+            "dataset_category_id": 31,
+            "dataset_category_name": "Online Shopping",
+            "dataset_name": "Child_Privacy_Text.txt",
+            "domain_name": "Internal",
+            "industry_name": "Retail",
+            "number_of_pipelines": 18,
+            "number_of_projects": 273,
+            "object_type": "txt",
+            "rating": "4",
+            "updated_by": 59,
+            "updated_date": "Wed, 15 Jan 2025 17:24:27 GMT",
+            "usability_score": "5.9"
+        }
+    ],
+    "execution_status": "success",
+    "message": "Filtered datasets fetched successfully!",
+    "status_code": 200
+}

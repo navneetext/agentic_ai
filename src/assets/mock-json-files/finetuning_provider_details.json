@@ -1,0 +1,13 @@
+[
+    {
+      "computeName": "Compute_1",
+      "region": "Southeaset_asia, Nort_USA, Africa",
+      "type": "GPU",
+      "systemType": "A_100",
+      "ram": "10GB",
+      "vRam": "10GB",
+      "diskSpace": "10GB",
+      "clusters": 5,
+      "nodes": 5
+    }
+]

@@ -1,0 +1,960 @@
+{
+    "body": [
+        {
+            "components": [
+                {
+                    "active": "true",
+                    "approval_status_counts": {
+                        "Approved": 1,
+                        "Rejected": 0
+                    },
+                    "comp_name": "Chunking",
+                    "deploy_status_counts": {
+                        "Deployed": 17,
+                        "Failed": 3
+                    },
+                    "module_component_id": 9,
+                    "user_defined_complist": [
+                        {
+                            "ai_service_id": 310,
+                            "ai_service_name": "jailbreakingpromptgen",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "310_4",
+                                    "approval_status": null,
+                                    "deploy_id": 218,
+                                    "deploy_status": "Failed",
+                                    "description": "testing algo manifest engine",
+                                    "endpoint": null,
+                                    "input_json": {
+                                        "blob_connection_string": "",
+                                        "blob_container": "",
+                                        "blob_file_name": "",
+                                        "prompt_count": ""
+                                    },
+                                    "version": "4",
+                                    "visibility": "Y"
+                                },
+                                {
+                                    "ai_service_details_id": "310_3",
+                                    "approval_status": null,
+                                    "deploy_id": 228,
+                                    "deploy_status": "Failed",
+                                    "description": "testing algo manifest engine",
+                                    "endpoint": null,
+                                    "input_json": {
+                                        "blob_connection_string": "",
+                                        "blob_container": "",
+                                        "blob_file_name": "",
+                                        "prompt_count": ""
+                                    },
+                                    "version": "3",
+                                    "visibility": "Y"
+                                },
+                                {
+                                    "ai_service_details_id": "310_2",
+                                    "approval_status": null,
+                                    "deploy_id": 211,
+                                    "deploy_status": "Failed",
+                                    "description": "testing algo manifest engine",
+                                    "endpoint": null,
+                                    "input_json": {
+                                        "blob_connection_string": "",
+                                        "blob_container": "",
+                                        "blob_file_name": "",
+                                        "prompt_count": ""
+                                    },
+                                    "version": "2",
+                                    "visibility": "Y"
+                                },
+                                {
+                                    "ai_service_details_id": "310_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 208,
+                                    "deploy_status": "Deployed",
+                                    "description": "testing algo manifest engine",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/jailbreakingpromptgen/208/",
+                                    "input_json": {
+                                        "blob_connection_string": "",
+                                        "blob_container": "",
+                                        "blob_file_name": "",
+                                        "prompt_count": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1156,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1156_1",
+                                    "approval_status": null,
+                                    "deploy_id": null,
+                                    "deploy_status": null,
+                                    "description": "sample description",
+                                    "endpoint": null,
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1157,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1157_1",
+                                    "approval_status": null,
+                                    "deploy_id": null,
+                                    "deploy_status": null,
+                                    "description": "sample description",
+                                    "endpoint": null,
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1159,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1159_1",
+                                    "approval_status": null,
+                                    "deploy_id": 853,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/853/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1124,
+                            "ai_service_name": "RAG_chunking_fixed_size",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1124_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 825,
+                                    "deploy_status": "Deployed",
+                                    "description": "To do Fixed Size Chunking",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_chunking_fixed_size/825/",
+                                    "input_json": {
+                                        "blob_file_name": "",
+                                        "chunk_size": 500,
+                                        "connection_string": "",
+                                        "container_name": "",
+                                        "overlap": 15
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Fixed Size Chunking",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1161,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1161_1",
+                                    "approval_status": null,
+                                    "deploy_id": 854,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/854/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 738,
+                            "ai_service_name": "rag_fixed_size_chunking_aiservice",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "738_1",
+                                    "approval_status": "Approved",
+                                    "deploy_id": 463,
+                                    "deploy_status": "Deployed",
+                                    "description": "This is RAG",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/rag_fixed_size_chunking_aiservice/463/",
+                                    "input_json": {
+                                        "blob_file_name": "",
+                                        "chunk_size": 500,
+                                        "connection_string": "",
+                                        "container_name": "",
+                                        "overlap": 15
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 310,
+                            "ai_service_name": "jailbreakingpromptgen",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "310_2",
+                                    "approval_status": null,
+                                    "deploy_id": 211,
+                                    "deploy_status": "Failed",
+                                    "description": "testing algo manifest engine",
+                                    "endpoint": null,
+                                    "input_json": {
+                                        "blob_connection_string": "",
+                                        "blob_container": "",
+                                        "blob_file_name": "",
+                                        "prompt_count": ""
+                                    },
+                                    "version": "2",
+                                    "visibility": "Y"
+                                },
+                                {
+                                    "ai_service_details_id": "310_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 208,
+                                    "deploy_status": "Deployed",
+                                    "description": "testing algo manifest engine",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/jailbreakingpromptgen/208/",
+                                    "input_json": {
+                                        "blob_connection_string": "",
+                                        "blob_container": "",
+                                        "blob_file_name": "",
+                                        "prompt_count": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1171,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1171_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 865,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/865/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1166,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1166_1",
+                                    "approval_status": null,
+                                    "deploy_id": 856,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/856/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1077,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1077_1",
+                                    "approval_status": null,
+                                    "deploy_id": 801,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/801/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1153,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1153_1",
+                                    "approval_status": null,
+                                    "deploy_id": null,
+                                    "deploy_status": null,
+                                    "description": "sample description",
+                                    "endpoint": null,
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1164,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1164_1",
+                                    "approval_status": null,
+                                    "deploy_id": null,
+                                    "deploy_status": null,
+                                    "description": "sample description",
+                                    "endpoint": null,
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1142,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1142_1",
+                                    "approval_status": null,
+                                    "deploy_id": 841,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/841/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1042,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1042_1",
+                                    "approval_status": null,
+                                    "deploy_id": 738,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/738/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1144,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1144_1",
+                                    "approval_status": null,
+                                    "deploy_id": 843,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/843/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1146,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1146_1",
+                                    "approval_status": null,
+                                    "deploy_id": 845,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/845/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1147,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1147_1",
+                                    "approval_status": null,
+                                    "deploy_id": 847,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/847/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1103,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1103_1",
+                                    "approval_status": null,
+                                    "deploy_id": 807,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/807/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1149,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1149_1",
+                                    "approval_status": null,
+                                    "deploy_id": 849,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/849/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 897,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "897_1",
+                                    "approval_status": null,
+                                    "deploy_id": 544,
+                                    "deploy_status": "Failed",
+                                    "description": "sample description",
+                                    "endpoint": null,
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1152,
+                            "ai_service_name": "real",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1152_1",
+                                    "approval_status": null,
+                                    "deploy_id": 851,
+                                    "deploy_status": "Deployed",
+                                    "description": "sample description",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/real/851/",
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        },
+                        {
+                            "ai_service_id": 1172,
+                            "ai_service_name": "jailbreakingpromptgen",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1172_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": null,
+                                    "deploy_status": null,
+                                    "description": "testing algo manifest engine",
+                                    "endpoint": null,
+                                    "input_json": null,
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Structured Data Cleansing",
+                            "is_expanded": "false",
+                            "name": "Chunking"
+                        }
+                    ]
+                },
+                {
+                    "active": "true",
+                    "approval_status_counts": {
+                        "Approved": 1,
+                        "Rejected": 0
+                    },
+                    "comp_name": "Embedding",
+                    "deploy_status_counts": {
+                        "Deployed": 4,
+                        "Failed": 2
+                    },
+                    "module_component_id": 10,
+                    "user_defined_complist": [
+                        {
+                            "ai_service_id": 1168,
+                            "ai_service_name": "RAG_dense_embedding",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1168_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 859,
+                                    "deploy_status": "Failed",
+                                    "description": "to embed data",
+                                    "endpoint": null,
+                                    "input_json": {
+                                        "model_name": "",
+                                        "table_name": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Dense Embedding",
+                            "is_expanded": "false",
+                            "name": "Embedding"
+                        },
+                        {
+                            "ai_service_id": 1169,
+                            "ai_service_name": "RAG_dense_embedding",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1169_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 860,
+                                    "deploy_status": "Deployed",
+                                    "description": "to embed data",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_dense_embedding/860/",
+                                    "input_json": {
+                                        "model_name": "",
+                                        "table_name": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Dense Embedding",
+                            "is_expanded": "false",
+                            "name": "Embedding"
+                        },
+                        {
+                            "ai_service_id": 1132,
+                            "ai_service_name": "RAG_sparse_embedding",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1132_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 836,
+                                    "deploy_status": "Deployed",
+                                    "description": "to embed data",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_sparse_embedding/836/",
+                                    "input_json": {
+                                        "model_name": "",
+                                        "table_name": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Sparse Embedding",
+                            "is_expanded": "false",
+                            "name": "Embedding"
+                        },
+                        {
+                            "ai_service_id": 1133,
+                            "ai_service_name": "RAG_dense_embedding",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1133_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 834,
+                                    "deploy_status": "Failed",
+                                    "description": "to embed data",
+                                    "endpoint": null,
+                                    "input_json": {
+                                        "model_name": "",
+                                        "table_name": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Dense Embedding",
+                            "is_expanded": "false",
+                            "name": "Embedding"
+                        },
+                        {
+                            "ai_service_id": 1170,
+                            "ai_service_name": "RAG_sparse_embedding",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1170_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 861,
+                                    "deploy_status": "Deployed",
+                                    "description": "to embed data",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_sparse_embedding/861/",
+                                    "input_json": {
+                                        "model_name": "",
+                                        "table_name": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Sparse Embedding",
+                            "is_expanded": "false",
+                            "name": "Embedding"
+                        },
+                        {
+                            "ai_service_id": 1008,
+                            "ai_service_name": "RAG_dense_embedding",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1008_1",
+                                    "approval_status": "Approved",
+                                    "deploy_id": 694,
+                                    "deploy_status": "Deployed",
+                                    "description": "to embed data",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_dense_embedding/694/",
+                                    "input_json": {
+                                        "model_name": "",
+                                        "table_name": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Dense Embedding",
+                            "is_expanded": "false",
+                            "name": "Embedding"
+                        }
+                    ]
+                },
+                {
+                    "active": "true",
+                    "approval_status_counts": {
+                        "Approved": 1,
+                        "Rejected": 0
+                    },
+                    "comp_name": "Indexing",
+                    "deploy_status_counts": {
+                        "Deployed": 2,
+                        "Failed": 0
+                    },
+                    "module_component_id": 11,
+                    "user_defined_complist": [
+                        {
+                            "ai_service_id": 373,
+                            "ai_service_name": "RAG_hiearchical_indexing",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "373_1",
+                                    "approval_status": "Approved",
+                                    "deploy_id": 227,
+                                    "deploy_status": "Deployed",
+                                    "description": "To do Hieararchical Indexing",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_hiearchical_indexing/227/",
+                                    "input_json": {
+                                        "table_name": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Hieararchical Indexing",
+                            "is_expanded": "false",
+                            "name": "Indexing"
+                        },
+                        {
+                            "ai_service_id": 1125,
+                            "ai_service_name": "RAG_hiearchical_indexing",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1125_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 826,
+                                    "deploy_status": "Deployed",
+                                    "description": "To do Hieararchical Indexing",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_hiearchical_indexing/826/",
+                                    "input_json": {
+                                        "table_name": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Hieararchical Indexing",
+                            "is_expanded": "false",
+                            "name": "Indexing"
+                        }
+                    ]
+                },
+                {
+                    "active": "true",
+                    "approval_status_counts": {
+                        "Approved": 2,
+                        "Rejected": 0
+                    },
+                    "comp_name": "Vector",
+                    "deploy_status_counts": {
+                        "Deployed": 2,
+                        "Failed": 2
+                    },
+                    "module_component_id": 12,
+                    "user_defined_complist": [
+                        {
+                            "ai_service_id": 1167,
+                            "ai_service_name": "RAG_vectorization_pinecone",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1167_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 858,
+                                    "deploy_status": "Deployed",
+                                    "description": "to vector seach index",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_vectorization_pinecone/858/",
+                                    "input_json": {
+                                        "api_key": "",
+                                        "cloud": "",
+                                        "embedding_model_name": "",
+                                        "index_name": "",
+                                        "metric": "",
+                                        "namespace": "",
+                                        "pipelineid": "",
+                                        "query": "",
+                                        "region": "",
+                                        "table_name": "",
+                                        "top_k": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Pinecone Vector Index",
+                            "is_expanded": "false",
+                            "name": "Vector"
+                        },
+                        {
+                            "ai_service_id": 431,
+                            "ai_service_name": "RAG_vectorization_db_execute_api",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "431_1",
+                                    "approval_status": "Approved",
+                                    "deploy_id": 269,
+                                    "deploy_status": "Deployed",
+                                    "description": "to vector seach index",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_vectorization_db_execute_api/269/",
+                                    "input_json": {
+                                        "embedding_model_name": "",
+                                        "endpoint_name": "",
+                                        "index_name": "",
+                                        "query": "",
+                                        "table_name": "",
+                                        "top_k": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "Databricks Vector Index",
+                            "is_expanded": "false",
+                            "name": "Vector"
+                        },
+                        {
+                            "ai_service_id": 1135,
+                            "ai_service_name": "RAG_vectorization_databricks",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1135_1",
+                                    "approval_status": "Pending",
+                                    "deploy_id": 837,
+                                    "deploy_status": "Failed",
+                                    "description": "to vector seach index",
+                                    "endpoint": null,
+                                    "input_json": {
+                                        "embedding_model_name": "",
+                                        "endpoint_name": "",
+                                        "index_name": "",
+                                        "query": "",
+                                        "table_name": "",
+                                        "top_k": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "DataBricks Vector Index",
+                            "is_expanded": "false",
+                            "name": "Vector"
+                        },
+                        {
+                            "ai_service_id": 1138,
+                            "ai_service_name": "RAG_vectorization_databricks",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "1138_1",
+                                    "approval_status": "Approved",
+                                    "deploy_id": 839,
+                                    "deploy_status": "Failed",
+                                    "description": "to vector seach index",
+                                    "endpoint": null,
+                                    "input_json": {
+                                        "embedding_model_name": "",
+                                        "endpoint_name": "",
+                                        "index_name": "",
+                                        "query": "",
+                                        "table_name": "",
+                                        "top_k": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "DataBricks Vector Index V2",
+                            "is_expanded": "false",
+                            "name": "Vector"
+                        }
+                    ]
+                },
+                {
+                    "active": "true",
+                    "approval_status_counts": {
+                        "Approved": 1,
+                        "Rejected": 0
+                    },
+                    "comp_name": "Evaluation RAG",
+                    "deploy_status_counts": {
+                        "Deployed": 1,
+                        "Failed": 0
+                    },
+                    "module_component_id": 13,
+                    "user_defined_complist": [
+                        {
+                            "ai_service_id": 972,
+                            "ai_service_name": "RAG_Evaluation",
+                            "children": [
+                                {
+                                    "ai_service_details_id": "972_1",
+                                    "approval_status": "Approved",
+                                    "deploy_id": 654,
+                                    "deploy_status": "Deployed",
+                                    "description": "To evaluate Retrived chunks",
+                                    "endpoint": "https://dev-apis-loop.centific.com/api/aiservice/Centific/product/aidatafoundary/frontcontroller/Dep_Workspace/AIOps_Deployment/RAG_Evaluation/654/",
+                                    "input_json": {
+                                        "connection_string": "",
+                                        "container_name": "",
+                                        "query": "",
+                                        "retrieved_chunks": ""
+                                    },
+                                    "version": "1",
+                                    "visibility": "Y"
+                                }
+                            ],
+                            "display_name": "RAG Evaluation",
+                            "is_expanded": "false",
+                            "name": "Evaluation RAG"
+                        }
+                    ]
+                }
+            ],
+            "module_id": 4,
+            "module_name": "RAG"
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Loaded data in table based on modules and components!",
+    "output_kpis": {
+        "execution_time": 0.2958557605743408,
+        "processed_records": 1
+    },
+    "status_code": 200
+}

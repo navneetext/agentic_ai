@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://dev-apis-loop.centific.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "headers": {
+        "Access-Control-Allow-Headers": "Content-Type"
+      }
+    }
+}

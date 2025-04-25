@@ -1,0 +1,91 @@
+.file-upload-container{
+    .upload-area{
+        border: 1px solid $grey-color-20;
+        padding: 20px 20px 15px;
+        margin-bottom: 8px;
+
+        .upload-content{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+
+            img{
+                max-width: 78px;
+            }
+
+            p{
+                @include font(12px);
+                line-height: 1.5;
+                font-weight: 400;
+                color: $black-color;
+
+                span{
+                    font-weight: 700;
+                    color: $sky-blue-alt-color;
+                }
+            }
+        }
+    }
+
+    .suggestion-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3px;
+        margin-bottom: 15px;
+
+        li{
+            @include font(12px);
+            line-height: 1.5;
+            color: $black-color;
+            font-weight: 400;
+
+            strong{
+                font-weight: 700;
+            }
+        }
+    }
+
+    .selected-files{
+        h4{
+            @include font(16px);
+            line-height: 1.5;
+            font-weight: 500;
+            color: $grey-color;
+            margin-bottom: 5px;
+        }
+
+        .file-list{
+            display: block;
+
+            .file-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid $grey-color-10;
+                padding: 0 0 5px;
+                
+                .file-name, .file-size{
+                    @include font(14px);
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: $grey-color;
+                }
+
+                .file-name{
+                    flex-basis: 50%;
+                }
+
+                .btn-close{
+                    background-size: 12px;
+                }
+            }
+        }
+    }
+}

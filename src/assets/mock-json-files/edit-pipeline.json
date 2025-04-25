@@ -1,0 +1,127 @@
+{
+  "body": {
+    "category_id": 5,
+    "created_by": 12,
+    "description": "this is just for test",
+    "editable_data": [
+      {
+        "ai_service_id": 1,
+        "ai_service_name": "My-Dataset2",
+        "component_name": "Data Factory",
+        "connections": [
+          {
+            "unique_id": 33
+          }
+        ],
+        "input_payload": {
+          "param1": {
+            "allowed_values": [],
+            "data_type": "",
+            "default_value": "",
+            "is_mandatory": "Y/N",
+            "source_from": "",
+            "value": ""
+          },
+          "param2": "",
+          "param3": "",
+          "param_n": ""
+        },
+        "output": {
+          "error_code": null,
+          "error_message": null,
+          "execution_status": "success",
+          "message": "Execution completed successfully",
+          "output_kpis": {
+            "execution_time": "10ms",
+            "processed_records": 100
+          },
+          "service_output": {},
+          "status_code": 200
+        },
+        "position_x": 412.12,
+        "position_y": 131.12,
+        "subsystem_name": "Source",
+        "unique_id": 31
+      },
+      {
+        "ai_service_id": 2,
+        "ai_service_name": "Transformation",
+        "component_name": "Data Factory",
+        "connections": [
+          {
+            "unique_id": 32
+          }
+        ],
+        "input_payload": {
+          "param1": "",
+          "param2": "",
+          "param3": "",
+          "paramn": ""
+        },
+        "output": {
+          "error_code": null,
+          "error_message": null,
+          "execution_status": "success",
+          "message": "Execution completed successfully",
+          "output_kpis": {
+            "execution_time": "10ms",
+            "processed_records": 100
+          },
+          "service_output": {
+            "execution_time": "10ms",
+            "processed_records": 100
+          },
+          "status_code": 200
+        },
+        "position_x": 129.12,
+        "position_y": 160.12,
+        "subsystem_name": "Pre-Processing",
+        "unique_id": 33
+      },
+      {
+        "ai_service_id": 3,
+        "ai_service_name": "Pinecone",
+        "component_name": "RAG",
+        "connections": [],
+        "input_payload": {
+          "param1": "",
+          "param2": "",
+          "param3": "",
+          "param_n": ""
+        },
+        "output": {
+          "error_code": null,
+          "error_message": null,
+          "execution_status": "success",
+          "message": "Execution completed successfully",
+          "output_kpis": {
+            "execution_time": "10ms",
+            "processed_records": 100
+          },
+          "service_output": {
+            "execution_time": "10ms",
+            "processed_records": 100
+          },
+          "status_code": 200
+        },
+        "position_x": 253.12,
+        "position_y": 300.12,
+        "subsystem_name": "Vector",
+        "unique_id": 32
+      }
+    ],
+    "is_shareable": "Y",
+    "own_org_name": "Google",
+    "pipeline_template_name": "PAAS Pipeline",
+    "project_env_id": 10
+  },
+  "error_code": null,
+  "error_message": null,
+  "execution_status": "success",
+  "message": "The comments were fetched successfully!",
+  "output_kpis": {
+    "execution_time": "1.9728s",
+    "processed_records": 1
+  },
+  "status_code": 200
+}

@@ -1,0 +1,595 @@
+/**********************************************
+Font face mixin [Note: below mixin is depends on str-replace function]
+**********************************************/
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: woff2) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_"),
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+  );
+
+  @each $ext in $exts {
+    $extmod: if(
+      map-has-key($extmods, $ext),
+      $ext + map-get($extmods, $ext),
+      $ext
+    );
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append(
+      $src,
+      url(quote($path + "." + $extmod)) format(quote($format)),
+      comma
+    );
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+/**********************************************
+Transitions
+**********************************************/
+@mixin transition($property, $duration, $timing) {
+  -webkit-transition: $property $duration $timing;
+  -moz-transition: $property $duration $timing;
+  -ms-transition: $property $duration $timing;
+  -o-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+
+/**********************************************
+Media break points mixin
+**********************************************/
+@mixin media($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media only screen and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "No value found for breakpoint: #{$breakpoint}.";
+  }
+}
+
+/**********************************************
+Font size mixin
+**********************************************/
+@mixin font($fontsize) {
+  font-size: px-to-rem($fontsize);
+  line-height: 1.2;
+}
+
+/**********************************************
+Solid Arrow with all four options
+**********************************************/
+@mixin arrow($direction: down, $size: 5px, $color: #555) {
+  width: 0;
+  height: 0;
+  @if ($direction == left) {
+     border-top: $size solid transparent;
+     border-bottom: $size solid transparent; 
+     border-right: $size solid $color;
+  }
+  @else if ($direction == right) {
+     border-top: $size solid transparent;
+     border-bottom: $size solid transparent; 
+     border-left: $size solid $color;
+  }
+  @else if ($direction == down) {
+     border-left: $size solid transparent;
+     border-right: $size solid transparent;
+     border-top: $size solid $color;
+  }
+  @else {
+     border-left: $size solid transparent;
+     border-right: $size solid transparent;
+     border-bottom: $size solid $color;
+  }
+}
+
+/**********************************************
+Text Sorting(ellipsis...)
+**********************************************/
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/**********************************************
+Flex Toolkit
+**********************************************/
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+ 
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+
+/**********************************************
+Placeholder webkit mixin
+**********************************************/
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+/**********************************************
+Buttons mixins
+**********************************************/
+@mixin button-solid($bg-color, $color, $icon-path: null, $icon-position: left, $options: ()) {
+  background-color: $bg-color;
+  color: $color;
+  padding: 11px 12.5px 9px;
+  border: none;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  @include font(14px);
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: none;
+  text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
+
+  @include media(xl){
+    @include font(16px);
+    line-height: 1;    
+  }
+
+  @include media(xxxl){
+    @include font(18px);
+    line-height: 1;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
+  &:hover, &:focus, &:active, &.active, &.show, &:focus-visible{
+    background-color: mix(white, $bg-color, 20%);
+    color: $color;
+    border: none;
+    box-shadow: none;
+  }
+
+  // Merge in any additional options passed
+  @each $key, $value in $options {
+    #{$key}: $value;
+  }
+
+  // Handle icon if provided
+  @if $icon-path {
+    &::before {
+      content: '';
+      display: inline-block;
+      background: url(#{$icon-path}) no-repeat center center;
+      background-size: contain;
+      width: 12px;
+      height: 12px;
+      // background-color: $color;
+      // mask: url(#{$icon-path}) no-repeat center center;
+      // -webkit-mask: url(#{$icon-path}) no-repeat center center;
+      // mask-size: contain;
+      // -webkit-mask-size: contain;
+
+      @include media(xl){
+        width: 15px;
+        height: 14px;
+      }
+    }
+
+    @if $icon-position == right {
+      padding-right: 32.5px;
+      
+      @include media(xl){
+        padding-right: 35px;
+      }
+
+      &::before{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12.5px;
+      }
+    }      
+  }
+
+  &:disabled{
+    cursor: not-allowed;
+    background-color: $grey-color-20;
+    color: $grey-color-60 !important;
+  }
+}
+
+@mixin button-brd($color, $icon-path: null, $icon-position: left, $options: ()) {
+  background-color: transparent;
+  color: $color;
+  padding: 10px 12.5px 8px;
+  border: 1px solid $color;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  @include font(14px);
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: none;
+  text-transform: capitalize;
+  position: relative;
+
+  @include media(xl){
+    @include font(16px);
+    line-height: 1;    
+  }
+
+  @include media(xxxl){
+    @include font(18px);
+    line-height: 1;
+    padding-top: 11px;
+    padding-bottom: 9px;
+  }
+
+  &:hover, &:focus, &:active, &.active, &.show, &:focus-visible{
+    background-color: mix(white, $color, 80%);
+    border-color: mix(white, $color, 20%);
+    color: $color;
+    box-shadow: none;
+  }
+
+  // Merge in any additional options passed
+  @each $key, $value in $options {
+    #{$key}: $value;
+  }
+
+  // Handle icon if provided
+  @if $icon-path {
+    &::before {
+      content: '';
+      display: inline-block;
+      background: url(#{$icon-path}) no-repeat center center;
+      background-size: contain;
+      width: 12px;
+      height: 12px;
+      // background-color: $color;
+      // mask: url(#{$icon-path}) no-repeat center center;
+      // -webkit-mask: url(#{$icon-path}) no-repeat center center;
+      // mask-size: contain;
+      // -webkit-mask-size: contain;
+
+      @include media(xl){
+        width: 15px;
+        height: 14px;
+      }
+    }
+
+    @if $icon-position == right {
+      padding-right: 32.5px;
+
+      @include media(xl){
+        padding-right: 35px;
+      }
+    
+      &::before {
+        right: 12.5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }      
+  }
+
+  &:disabled{
+    cursor: not-allowed;
+    background-color: $grey-color-20;
+    border-color: $grey-color-20;
+    color: $grey-color-60 !important;
+  }
+}
+
+@mixin button-transparent($color, $icon-path: null, $icon-position: left, $options: ()) {
+  background-color: transparent;
+  color: $color;
+  padding: 11px 12.5px 9px;
+  border: none;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  @include font(14px);
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: none;
+  text-transform: capitalize;
+  position: relative;
+
+  @include media(xl){
+    @include font(16px);
+    line-height: 1;    
+  }
+
+  @include media(xxxl){
+    @include font(18px);
+    line-height: 1;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
+  &:hover, &:focus, &:active, &.active, &.show, &:focus-visible{
+    background-color: mix(white, $color, 90%);
+    border:none;
+    color: mix(white, $color, 20%);
+    box-shadow: none;
+  }
+
+  // Merge in any additional options passed
+  @each $key, $value in $options {
+    #{$key}: $value;
+  }
+
+  // Handle icon if provided
+  @if $icon-path {
+    &::before {
+      content: '';
+      display: inline-block;
+      background: url(#{$icon-path}) no-repeat center center;
+      background-size: contain;
+      width: 12px;
+      height: 12px; 
+      // background-color: $color;
+      // mask: url(#{$icon-path}) no-repeat center center;
+      // -webkit-mask: url(#{$icon-path}) no-repeat center center;
+      // mask-size: contain;
+      // -webkit-mask-size: contain;
+      
+      @include media(xl){
+        width: 15px;
+        height: 14px;
+      }
+    }
+
+    @if $icon-position == right {
+      padding-right: 32.5px;
+
+      @include media(xl){
+        padding-right: 35px;
+      }
+          
+      &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12.5px;
+      }
+    }      
+  }
+}
+
+/** To get icon color updated based on the variable than use below code **/
+// background-color: $color;
+// mask: url(#{$icon-path}) no-repeat center center;
+// -webkit-mask: url(#{$icon-path}) no-repeat center center;
+// mask-size: contain;
+// -webkit-mask-size: contain;
+
+/**********************************************
+Button Swith mixins
+**********************************************/
+@mixin button-switch($bg-color, $active-bg-color, $dot-color, $size: small){
+  input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 33px;
+    height: 18px;
+    background: $bg-color;
+    display: block;
+    border-radius: 20px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 14px;
+      height: 14px;
+      background: $dot-color;
+      border-radius: 100%;
+      transition: 0.3s;
+    }
+  }
+
+  input{
+    &:checked + label{
+      background: $active-bg-color;
+
+      &:after{
+        left: calc(100% - 2px);
+	      transform: translateX(-100%);
+      }
+    }
+  }
+
+  @if $size == large {
+    label {
+      width: 53px;
+      height: 27px;
+      box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4);
+
+      &:after {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+/**********************************************
+Custom Alerts mixins
+**********************************************/
+@mixin custom-alerts($bg-color, $text-color, $icon-path: null){
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 8px 14px 4px;
+  border-radius: 4px;
+  @include font(14px);
+  line-height: 1.7;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: inline-block;
+  border: none;
+  margin: 0;
+
+  @include media(xxxl){
+    @include font(16px);
+    line-height: 1.7;
+  }
+
+  @if $icon-path {
+    padding: 8px 14px 4px 42px;
+
+    &::before{
+      position: absolute;
+      content: '';
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      background-image: url(#{$icon-path});
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+
+
+
+// Agentic AI Workbench Tools Mixins
+
+// =========================================
+// Mixins - agentic-ai-workbench
+// =========================================
+
+
+// Typography mixin for font styling
+@mixin agplan-ai-typography($font-family, $size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  font-style: normal;
+  font-family: $font-family;
+}
+
+// Box shadow mixin
+@mixin agplan-ai-box-shadow {
+  box-shadow: $agplan-ai-shadow-box;
+}
+
+
+
+/// Typography mixin
+/// ------------------------
+/// @param {Length} $size - font size (e.g., 14px)
+/// @param {Number} $weight - font weight (default: 500)
+/// @usage @include agagent-ai-font(16px, 600);
+@mixin agagent-ai-typography($size, $weight: 400, $color: $agagent-ai-color-text) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: normal;
+  line-height: normal;
+  color: $color;
+}
+
+/// Box shadow mixin
+/// ------------------------
+/// Applies the standard shadow used across agagent-ai components
+/// @usage @include agagent-ai-shadow;
+@mixin agagent-ai-box-shadow {
+  box-shadow: $agagent-ai-box-shadow-light;
+}
+
+
+
+
+
+
+
+
+
+/// Typography mixin
+/// ------------------------
+/// @param {Length} $size - font size (e.g., 14px)
+/// @param {Number} $weight - font weight (default: 500)
+/// @usage @include agtool-ai-font(16px, 600);
+@mixin agtool-ai-font($size, $weight: 500) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $agtool-ai-font-semibold;
+}
+
+/// Box shadow mixin
+/// ------------------------
+/// Applies the standard shadow used across agtool-ai components
+/// @usage @include agtool-ai-shadow;
+@mixin agtool-ai-shadow {
+  box-shadow: $agtool-ai-shadow-md;
+}
+
+/// Badge style mixin
+/// ------------------------
+/// Styles a badge typically placed at the corner of a card
+/// Includes color, padding, border-radius, and text overflow
+/// @usage @include agtool-ai-badge;
+@mixin agtool-ai-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: $agtool-ai-badge-bg;
+  color: $agtool-ai-white;
+  padding: 5px 8px;
+
+  @include agtool-ai-font($agtool-ai-font-xs, 400);
+
+  border-top-left-radius: $agtool-ai-radius-md;
+  border-bottom-right-radius: $agtool-ai-radius-lg;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+// Agentic AI Workbench Tools Mixins

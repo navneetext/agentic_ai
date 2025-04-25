@@ -1,0 +1,181 @@
+{
+    "body": [
+        {
+            "category_id": 1,
+            "category_name": "Category 1",
+            "pipeline_templates": [
+                {
+                    "ai_services": {
+                        "algo": 1,
+                        "data": 2,
+                        "model": 1,
+                        "total": 4
+                    },
+                    "description": "Improved pipeline template for testing. Adding some more description here. Improved pipeline template for testing. Improved pipeline template for testing. Improved pipeline template for testing",
+                    "own_org_name": "Amazon",
+                    "pipeline_template_id": 11,
+                    "pipeline_template_name": "Pipeline A",
+                    "pipeline_template_version": "2.0",
+                    "updated_date": "Fri, 15 Nov 2024 08:00:00 GMT",
+                    "usability_metrics": {
+                        "downloads": 1500,
+                        "rating": 4.5
+                    }
+                },
+                {
+                    "ai_services": {
+                        "algo": 1,
+                        "data": 1,
+                        "model": 2,
+                        "total": 4
+                    },
+                    "description": "Data processing pipeline template. Improved pipeline template for testing. Improved pipeline template for testing. Improved pipeline template for testing. Improved pipeline template for testing. Improved pipeline template for testing",
+                    "own_org_name": "Microsoft",
+                    "pipeline_template_id": 12,
+                    "pipeline_template_name": "Pipeline B",
+                    "pipeline_template_version": "1.5",
+                    "updated_date": "Thu, 14 Nov 2024 15:30:00 GMT",
+                    "usability_metrics": {
+                        "downloads": 2000,
+                        "rating": 1.5
+                    }
+                },
+                {
+                    "ai_services": {
+                        "algo": 3,
+                        "data": 1,
+                        "model": 3,
+                        "total": 7
+                    },
+                    "description": "Data processing pipeline template",
+                    "own_org_name": "Microsoft",
+                    "pipeline_template_id": 12,
+                    "pipeline_template_name": "Pipeline C",
+                    "pipeline_template_version": "1.5",
+                    "updated_date": "Thu, 14 Nov 2024 15:30:00 GMT",
+                    "usability_metrics": {
+                        "downloads": 2000,
+                        "rating": 0
+                    }
+                },
+                {
+                    "ai_services": {
+                        "algo": 4,
+                        "data": 1,
+                        "model": 4,
+                        "total": 9
+                    },
+                    "description": "Data processing pipeline template",
+                    "own_org_name": "Microsoft",
+                    "pipeline_template_id": 12,
+                    "pipeline_template_name": "Pipeline D",
+                    "pipeline_template_version": "1.5",
+                    "updated_date": "Thu, 14 Nov 2024 15:30:00 GMT",
+                    "usability_metrics": {
+                        "downloads": 2000,
+                        "rating": 1
+                    }
+                }
+            ]
+        },
+        {
+            "category_id": 2,
+            "category_name": "Category 2",
+            "pipeline_templates": [
+                {
+                    "ai_services": {
+                        "algo": 2,
+                        "data": 1,
+                        "model": 1,
+                        "total": 4
+                    },
+                    "description": "AI and machine learning pipeline",
+                    "own_org_name": "IBM",
+                    "pipeline_template_id": 20,
+                    "pipeline_template_name": "Pipeline C",
+                    "pipeline_template_version": "1.2",
+                    "updated_date": "Mon, 11 Nov 2024 10:00:00 GMT",
+                    "usability_metrics": {
+                        "downloads": 1800,
+                        "rating": 3
+                    }
+                }
+            ]
+        },
+        {
+            "category_id": 3,
+            "category_name": "Category 3",
+            "pipeline_templates": [
+                {
+                    "ai_services": {
+                        "algo": 1,
+                        "data": 1,
+                        "model": 1,
+                        "total": 3
+                    },
+                    "description": "New template with AI integration",
+                    "own_org_name": "Tesla",
+                    "pipeline_template_id": 30,
+                    "pipeline_template_name": "Pipeline D",
+                    "pipeline_template_version": "1.0",
+                    "updated_date": "Wed, 13 Nov 2024 14:00:00 GMT",
+                    "usability_metrics": {
+                        "downloads": 2500,
+                        "rating": 4
+                    }
+                },
+                {
+                    "ai_services": {
+                        "algo": 2,
+                        "data": 3,
+                        "model": 2,
+                        "total": 7
+                    },
+                    "description": "Advanced analytics pipeline",
+                    "own_org_name": "Adobe",
+                    "pipeline_template_id": 31,
+                    "pipeline_template_name": "Pipeline E",
+                    "pipeline_template_version": "2.1",
+                    "updated_date": "Tue, 12 Nov 2024 16:30:00 GMT",
+                    "usability_metrics": {
+                        "downloads": 3200,
+                        "rating": 2.5
+                    }
+                }
+            ]
+        },
+        {
+            "category_id": 4,
+            "category_name": "Category 4",
+            "pipeline_templates": [
+                {
+                    "ai_services": {
+                        "algo": 3,
+                        "data": 2,
+                        "model": 1,
+                        "total": 6
+                    },
+                    "description": "Optimized AI pipeline template",
+                    "own_org_name": "Google",
+                    "pipeline_template_id": 40,
+                    "pipeline_template_name": "Pipeline F",
+                    "pipeline_template_version": "3.0",
+                    "updated_date": "Sat, 16 Nov 2024 09:45:00 GMT",
+                    "usability_metrics": {
+                        "downloads": 5000,
+                        "rating": 2
+                    }
+                }
+            ]
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "The pipeline templates are fetched successfully",
+    "output_kpis": {
+        "execution_time": "3.551s",
+        "processed_records": 4
+    },
+    "status_code": 200
+}

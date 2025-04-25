@@ -1,0 +1,133 @@
+<ng-container>
+  <div class="main-body dashboard-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="custom-card custom-card2">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-12 col-xl-12">
+                <div class="rectangle-8466">
+                  <div class="welcome-to-agentic-ai-workbench">
+                    Welcome to Agentic AI Workbench
+                  </div>
+
+                  <div
+                    class="agentic-ai-automates-repetitive-tasks-and-streamlines-workflows-freeing-up-human-teams-to-focus-on-strategic-high-value-work-with-real-time-decision-making-and-continuous-learning-these-agents-complete-tasks-faster-and-with-greater-accuracy-boosting-overall-efficiency"
+                  >
+                    Agentic AI automates repetitive tasks and streamlines
+                    workflows, freeing up human teams to focus on strategic,
+                    high-value work. With real-
+                    <br />
+                    time decision-making and continuous learning, these agents
+                    complete tasks faster and with greater accuracy, boosting
+                    overall efficiency.
+                  </div>
+
+                  <div class="group-1000006110">
+                    <div class="textarea-wrapper">
+                      <textarea
+                        formControl="agentInput"
+                        class="agent-textarea"
+                        rows="3"
+                        placeholder="Explain what you aim to achieve and the type of agent roles and skills you intend to create"
+                      ></textarea>
+
+                      <div class="icon-group">
+                        <img src="/assets/images/plus.svg" alt="Plus Icon" />
+                        <img src="/assets/images/line.svg" alt="line Icon" />
+                        <img src="/assets/images/send.svg" alt="Send Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-5"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="workbench-header">
+          My Workbench
+          <img
+            src="/assets/images/workbench.svg"
+            alt="Workbench Icon"
+            class="workbench-icon"
+          />
+        </div>
+
+        <div class="col-12 p-0">
+          <div class="custom-card custom-card1">
+            <div class="row">
+              <div class="col-12">
+                <ul class="tabs-container list-unstyled d-flex">
+                  <li
+                    class="tab-link"
+                    [class.active]="activeTab === 'plan'"
+                    (click)="setActiveTab('plan', $event)"
+                  >
+                    My Plan
+                  </li>
+                  <li
+                    class="tab-link"
+                    [class.active]="activeTab === 'agent'"
+                    (click)="setActiveTab('agent', $event)"
+                  >
+                    My Agent
+                  </li>
+                  <li
+                    class="tab-link"
+                    [class.active]="activeTab === 'tools'"
+                    (click)="setActiveTab('tools', $event)"
+                  >
+                    My Tools
+                  </li>
+                </ul>
+
+                <h2 class="card-title"></h2>
+              </div>
+            </div>
+
+            <!-- Tab Content Logic -->
+            <div class="row">
+              <ng-container *ngIf="activeTab && hasPlans; else noPlans">
+                <div class="col-12">
+                  <ng-container [ngSwitch]="activeTab">
+                    <app-my-plans *ngSwitchCase="'plan'"></app-my-plans>
+                    <app-my-agent *ngSwitchCase="'agent'"></app-my-agent>
+                    <app-my-tools *ngSwitchCase="'tools'"></app-my-tools>
+                  </ng-container>
+                </div>
+              </ng-container>
+
+              <!-- No Plans Section -->
+              <ng-template #noPlans>
+                <div class="col-12 col-md-6 col-xl-5" style="margin-top: 100px">
+                  <div class="img-wrapper">
+                    <img
+                      src="/assets/images/img-brainstorm.gif"
+                      alt="img-brainstorm"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  class="col-12 col-md-6 col-xl-6 offset-xl-1"
+                  style="margin-top: 100px"
+                >
+                  <h3>No Plans Available</h3>
+                  <ul class="navigate-steps">
+                    <li>Step 1: <a routerLink="/">Create Plan</a></li>
+                    <li>Step 2: Add Agent</li>
+                    <div class="actions">
+                      <button class="cta-workspace">Create Plan</button>
+                    </div>
+                  </ul>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

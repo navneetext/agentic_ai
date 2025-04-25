@@ -1,0 +1,57 @@
+.alert{
+    &.alert-success{
+        @include custom-alerts($green-color, $white-color);
+        
+        &.is-icon{
+            @include custom-alerts($green-color, $white-color, '/assets/images/icon-success-white.svg');
+        }        
+    }
+
+    &.alert-success-alter{
+        @include custom-alerts($white-color, $green-color);
+
+        &.is-icon{
+            @include custom-alerts($white-color, $green-color, '/assets/images/icon-success-green.svg');
+        }        
+    }
+    
+    &.alert-danger{
+        @include custom-alerts($red-color, $white-color);
+
+        &.is-icon{
+            @include custom-alerts($red-color, $white-color, '/assets/images/icon-danger-white.svg');
+        }
+    }
+
+    &.alert-danger-alter{
+        @include custom-alerts($white-color, $red-color);
+
+        &.is-icon{
+            @include custom-alerts($white-color, $red-color, '/assets/images/icon-failed-red.svg');
+        }
+    }
+
+    &.alert-submitted{
+        @include custom-alerts($white-color, $primary-color1);
+
+        &.is-icon{
+            @include custom-alerts($white-color, $primary-color1, '/assets/images/icon-submit-blue.svg');
+        }        
+    }    
+
+    &.alert-initiated{
+        @include custom-alerts($yellow-color, $white-color);
+
+        &.is-icon{
+            @include custom-alerts($yellow-color, $white-color, '/assets/images/icon-inprogress-yellow.svg');
+        }        
+    }
+
+    &.alert-initiated-alter{
+        @include custom-alerts($white-color, $yellow-color);
+
+        &.is-icon{
+            @include custom-alerts($white-color, $yellow-color, '/assets/images/icon-inprogress-yellow.svg');
+        }        
+    }
+}

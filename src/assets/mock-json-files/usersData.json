@@ -1,0 +1,31 @@
+[
+    {
+        
+        "role_name": "Editor",
+        "user_name": "Bob",
+        "user_id": 1,
+        "role_id": 10
+      },
+      {
+        
+        "role_name": "Editor",
+        "user_name": "Smith",
+        "user_id": 2,
+        "role_id": 15
+      },
+      {
+        
+        "role_name": "Editor",
+        "user_name": "John Smith",
+        "user_id": 3,
+        "role_id": 11
+      },
+      {
+        
+        "role_name": "Editor",
+        "user_name": "Bob Smitten",
+        "user_id": 9,
+        "role_id": 16
+      }
+] 
+

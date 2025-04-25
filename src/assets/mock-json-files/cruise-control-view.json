@@ -1,0 +1,33 @@
+{
+    "body": [
+        {
+            "end_date_time": "2024-10-09T10:00:00+00:00",
+            "pipeline_names": [
+                "Pipeline Instance 1",
+                "Pipeline Instance 2",
+                "Pipeline Instance 3",
+                "Pipeline Instance 5"
+            ],
+            "recurrence": "Weekly",
+            "schedule_name": "Data_Backup",
+            "start_date_time": "2024-10-09T09:00:00+00:00",
+            "trigger_details": {
+                "days": [
+                    "mon",
+                    "tue",
+                    "wed"
+                ],
+                "type": "weekly"
+            }
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Cruise Control details are fetched successfully!",
+    "output_kpis": {
+        "execution_time": 2.082341194152832,
+        "processed_records": 1
+    },
+    "status_code": 200
+}

@@ -1,0 +1,96 @@
+/**primary buttons**/
+.cta-primary{
+  @include button-solid($primary-color1, $white-color);
+
+  img{
+    max-width: 12px;
+
+    @include media(xl){
+      max-width: 15px;
+    }
+  }
+}
+
+.cta-secondary{
+  @include button-brd($primary-color1);
+
+  img{
+    max-width: 12px;
+
+    @include media(xl){
+      max-width: 15px;
+    }
+  }
+}
+
+.cta-tertiary{
+  @include button-transparent($primary-color1);
+
+  img{
+    max-width: 12px;
+
+    @include media(xl){
+      max-width: 15px;
+    }
+  }
+}
+
+
+.cta-home-left{
+  /** background-color, color, icon path, icon position  **/
+  @include button-solid($primary-color1, $white-color, '/assets/images/icon-home-blue.svg');
+}
+
+.cta-home-right{
+  @include button-solid($primary-color1, $white-color, '/assets/images/icon-home-blue.svg', right);
+}
+
+/**secondary buttons**/
+.cta-secondary-home-left{
+  @include button-brd($primary-color1, '/assets/images/icon-home-blue.svg', left);
+}
+
+.cta-secondary-home-right{
+  @include button-brd($primary-color1, '/assets/images/icon-home-blue.svg', right);
+}
+
+
+/**tertiary buttons**/
+.cta-tertiary-home-left{
+  @include button-transparent($primary-color1, '/assets/images/icon-home-blue.svg', left);
+}
+
+.cta-tertiary-home-right{
+  @include button-transparent($primary-color1, '/assets/images/icon-home-blue.svg', right);
+}
+
+.cta-switch{
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: middle;
+
+  &.switch-primary{
+    @include button-switch($grey-color-50, $primary-color1, $white-color);
+  }
+
+  &.switch-primary-lg{
+    @include button-switch($grey-color-50, $primary-color1, $white-color, large);
+  }
+
+  &.switch-primary-lg-reverse{
+    @include button-switch($white-color, $white-color, $primary-color1, large);
+  }
+
+  &.switch-secondary{
+    @include button-switch($grey-color-50, $primary-color2, $white-color);
+  }
+
+  &.switch-secondary-lg{
+    @include button-switch($grey-color-50, $primary-color2, $white-color, large);
+  }
+
+  &.switch-secondary-lg-reverse{
+    @include button-switch($white-color, $white-color, $primary-color2, large);    
+  }
+}

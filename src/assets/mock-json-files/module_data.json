@@ -1,0 +1,90 @@
+[
+  {
+    "moduleId": 1,
+    "moduleName": "Data Factory",
+    "components": [
+      {
+        "componentId": 1,
+        "componentName": "Source"
+      },
+      {
+        "componentId": 2,
+        "componentName": "Datasets"
+      },
+      {
+        "componentId": 3,
+        "componentName": "Pre-processing"
+      },
+      {
+        "componentId": 4,
+        "componentName": "Target"
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleName": "Entity Extraction",
+    "components": [
+      {
+        "componentId": 5,
+        "componentName": "Transcribe"
+      },
+      {
+        "componentId": 6,
+        "componentName": "Document Parsing"
+      },
+      {
+        "componentId": 7,
+        "componentName": "HIL"
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleName": "Rag",
+    "components": [
+      {
+        "componentId": 8,
+        "componentName": "Chunking"
+      },
+      {
+        "componentId": 9,
+        "componentName": "Embedding"
+      },
+      {
+        "componentId": 10,
+        "componentName": "Indexing"
+      },
+      {
+        "componentId": 11,
+        "componentName": "Vector"
+      },
+      {
+        "componentId": 12,
+        "componentName": "Reader"
+      }
+    ]
+  },
+  {
+    "moduleId": 4,
+    "moduleName": "Generation",
+    "components": [
+      {
+        "componentId": 13,
+        "componentName": "QuerySynth"
+      },
+      {
+        "componentId": 14,
+        "componentName": "RAGFusion"
+      },
+      {
+        "componentId": 15,
+        "componentName": "PromptPilot"
+      },
+      {
+        "componentId": 16,
+        "componentName": "GenLink"
+      }
+    ]
+  }
+]

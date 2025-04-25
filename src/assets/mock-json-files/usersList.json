@@ -1,0 +1,104 @@
+[
+    {
+      "data": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+        "business_phones": [],
+        "display_name": "Hari Krishna Ungarala",
+        "given_name": null,
+        "id": "059c140c-2c7d-4e52-a3a5-9a5772ca92b4",
+        "job_title": null,
+        "mail": "harikrishna.u@centific.com",
+        "mobile_phone": null,
+        "office_location": null,
+        "preferred_language": null,
+        "surname": null,
+        "user_principal_name": "harikrishna.u_centific.com#EXT#@centificidp.onmicrosoft.com"
+      },
+      "type": "User"
+    },
+    {
+      "data": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+        "business_phones": [],
+        "display_name": "Vivek .",
+        "given_name": null,
+        "id": "654375b4-e7f2-4767-b7ff-1d3a21f07058",
+        "job_title": null,
+        "mail": "vivek@centific.com",
+        "mobile_phone": null,
+        "office_location": null,
+        "preferred_language": null,
+        "surname": null,
+        "user_principal_name": "vivek_centific.com#EXT#@centificidp.onmicrosoft.com"
+      },
+      "type": "User"
+    },
+    {
+      "data": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+        "business_phones": [],
+        "display_name": "Diviyamurali Pazhani",
+        "given_name": null,
+        "id": "56152f0c-a5ed-4768-8e4f-06524216a545",
+        "job_title": null,
+        "mail": "diviyamurali.p@centific.com",
+        "mobile_phone": null,
+        "office_location": null,
+        "preferred_language": null,
+        "surname": null,
+        "user_principal_name": "diviyamurali.p_centific.com#EXT#@centificidp.onmicrosoft.com"
+      },
+      "type": "User"
+    },
+    {
+      "data": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+        "business_phones": [],
+        "display_name": "Sathwik, T.",
+        "given_name": null,
+        "id": "3900cc52-3968-4ed2-8c32-07534dcd06a3",
+        "job_title": null,
+        "mail": "t.sathwik@centific.com",
+        "mobile_phone": null,
+        "office_location": null,
+        "preferred_language": null,
+        "surname": null,
+        "user_principal_name": "t.sathwik_centific.com#EXT#@centificidp.onmicrosoft.com"
+      },
+      "type": "User"
+    },
+    {
+      "data": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+        "business_phones": [],
+        "display_name": "Banka, Kriti",
+        "given_name": null,
+        "id": "7270c9f0-1569-4a5a-b9ea-3ec6ff9d807c",
+        "job_title": null,
+        "mail": "kriti.banka@centific.com",
+        "mobile_phone": null,
+        "office_location": null,
+        "preferred_language": null,
+        "surname": null,
+        "user_principal_name": "kriti.banka_centific.com#EXT#@centificidp.onmicrosoft.com"
+      },
+      "type": "User"
+    },
+    {
+      "data": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+        "business_phones": [],
+        "display_name": "Garg, Vishav",
+        "given_name": null,
+        "id": "5e484a91-cee0-4ba9-86d7-ee49741cf734",
+        "job_title": null,
+        "mail": "vishav.garg@centific.com",
+        "mobile_phone": null,
+        "office_location": null,
+        "preferred_language": null,
+        "surname": null,
+        "user_principal_name": "vishav.garg_centific.com#EXT#@centificidp.onmicrosoft.com"
+      },
+      "type": "User"
+    }
+  ]

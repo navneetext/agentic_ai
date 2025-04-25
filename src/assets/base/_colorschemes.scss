@@ -1,0 +1,157 @@
+/************************************************************
+Note: Dont use this file for edit/add any styles. 
+This file is used for Developer styles guide creation
+************************************************************/
+.color-boxes{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  
+    .color-box{
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    &.primary-colors1{
+      .color-box{
+        background-color: $primary-color1;
+      
+        &.color-80{
+          background-color: $primary-color1-80;
+        }
+      
+        &.color-60{
+          background-color: $primary-color1-60;
+        }
+      
+        &.color-50{
+          background-color: $primary-color1-50;
+        }
+      
+        &.color-40{
+          background-color: $primary-color1-40;
+        }
+      
+        &.color-20{
+          background-color: $primary-color1-20;
+        }
+      
+        &.color-10{
+          background-color: $primary-color1-10;
+        }
+      
+        &.color-5{
+          background-color: $primary-color1-05;
+        }
+      }
+    }
+  
+    &.primary-colors2{
+      .color-box{
+        background-color: $primary-color2;
+      
+        &.color-80{
+          background-color: $primary-color2-80;
+        }
+      
+        &.color-60{
+          background-color: $primary-color2-60;
+        }
+      
+        &.color-50{
+          background-color: $primary-color2-50;
+        }
+      
+        &.color-40{
+          background-color: $primary-color2-40;
+        }
+      
+        &.color-20{
+          background-color: $primary-color2-20;
+        }
+      
+        &.color-10{
+          background-color: $primary-color2-10;
+        }
+      
+        &.color-5{
+          background-color: $primary-color2-05;
+        }
+      }
+    }
+  
+    &.secondary-colors{
+      .color-box{
+        background-color: $secondary-color;
+      
+        &.color-80{
+          background-color: $secondary-color-80;
+        }
+      
+        &.color-60{
+          background-color: $secondary-color-60;
+        }
+      
+        &.color-50{
+          background-color: $secondary-color-50;
+        }
+      
+        &.color-40{
+          background-color: $secondary-color-40;
+        }
+      
+        &.color-20{
+          background-color: $secondary-color-20;
+        }
+      
+        &.color-10{
+          background-color: $secondary-color-10;
+        }
+      
+        &.color-5{
+          background-color: $secondary-color-05;
+        }
+      }
+    }
+
+    &.grey-colors{
+        .color-box{
+          background-color: $grey-color;
+        
+          &.color-80{
+            background-color: $grey-color-80;
+          }
+        
+          &.color-60{
+            background-color: $grey-color-60;
+          }
+        
+          &.color-50{
+            background-color: $grey-color-50;
+          }
+        
+          &.color-40{
+            background-color: $grey-color-40;
+          }
+        
+          &.color-20{
+            background-color: $grey-color-20;
+          }
+        
+          &.color-10{
+            background-color: $grey-color-10;
+          }
+        
+          &.color-5{
+            background-color: $grey-color-05;
+          }
+        }
+    }
+  }
+  

@@ -1,0 +1,26 @@
+{
+    "adversarial_testing": {
+      "summary": "The robustness benchmarking on the LLM has been conducted, with the Adversarial Success score being 1. This indicates a high level of vulnerability to adversarial attacks. Therefore, the LLM needs improvements in its robustness to enhance its performance and security.",
+      "metric": [
+        {
+          "name": "adversarial success",
+          "input_records": 3,
+          "min_value": 0,
+          "max_value": 1,
+          "avg": 1
+        }
+      ]
+    },
+    "ood_testing": {
+      "summary": "The robustness benchmarking on the Language Learning Model (LLM) has been conducted. The model has achieved an Out-Of-Distribution (OOD) score of 1. This indicates a high level of robustness, suggesting the model performs well even with data it has not been trained on.",
+      "metric": [
+        {
+          "name": "OOD score",
+          "input_records": 3,
+          "min_value": 0,
+          "max_value": 1,
+          "avg": 1
+        }
+      ]
+    }
+  }

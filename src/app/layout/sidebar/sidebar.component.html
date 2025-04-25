@@ -1,0 +1,38 @@
+<div id="sidebar" class="sidebar">
+  <div>
+    <ul>
+     
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active" class="side-menu" placement="right">
+          <div class="side-menu-icon side-menu-home"></div>
+          <div class="side-menu-text">Dashboard</div>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/plans" routerLinkActive="active" class="side-menu" placement="right">
+          <div class="side-menu-icon side-menu-work"></div>
+          <div class="side-menu-text">Plans</div>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/agent" routerLinkActive="active" class="side-menu" placement="right">
+          <div class="side-menu-icon side-menu-aiservices"></div>
+          <div class="side-menu-text">Agent</div>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/tools" routerLinkActive="active" class="side-menu" placement="right">
+          <div class="side-menu-icon side-menu-plan"></div>
+          <div class="side-menu-text">Tools</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="toggle-cta" (click)="toggleSidebar()">
+    <img
+      src="/assets/images/icon-arrow-left-white.svg"
+      alt="icon-arrow-left-white"
+    />
+  </div>
+</div>

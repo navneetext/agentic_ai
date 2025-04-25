@@ -1,0 +1,192 @@
+/***********************************************
+Bootstrap Tabs element styles customization 
+***********************************************/
+.custom-tabs {
+    .nav {
+        &.nav-tabs {
+            border-bottom: 1px solid $primary-color1-40;
+            gap: 50px;
+
+            .nav-link {
+                border: none;
+                padding: 10px 15px;
+                @include font(14px);
+                line-height: 1.5;
+                font-weight: 500;
+                color: $grey-color;
+                margin-bottom: 0;
+                position: relative;
+
+                @include media(xxxl) {
+                    @include font(16px);
+                    line-height: 1.5;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 3px;
+                    background-color: $white-color;
+                }
+
+                &.active {
+                    &::before {
+                        background-color: $primary-color1;
+                    }
+                }
+
+                &.more-link{
+                    color: $sky-blue-alt-color;
+                    cursor: pointer;
+                    padding: 10px 28px 10px 15px;
+                    
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        right: 10px;
+                        top: 50%;
+                        background-image: url('../../assets/images/icon-arrow-down-black.svg');
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 10px;
+                        height: 6px;
+                        margin-top: -3px;
+                    }
+
+                    &.show{
+                        &::after{
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                &.disabled{
+                    pointer-events: none;
+                    opacity: 0.5;
+                }
+            }
+
+            .more-tabs-dropdown {
+                .dropdown-menu {
+                    border-radius: 10px;
+                    background-color: $white-color;
+                    padding: 10px 0;
+                    border: none;
+                    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+
+                    li {
+                        a {
+                            @include font(14px);
+                            line-height: 1.5;
+                            font-weight: 500;
+                            color: $grey-color;
+                            padding: 10px 20px;
+                            text-transform: capitalize;                            
+
+                            &:hover{
+                                background-color: $primary-color1-05;
+                                color: $primary-color1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 15px 0;
+    }
+
+    &.custom-tabs-small {
+        .nav {
+            &.nav-tabs {
+                gap: 20px;
+            }
+        }
+    }
+
+    &.custom-tabs-no-bg {
+        .nav {
+            &.nav-tabs {
+                .nav-link {
+                    &::before {
+                        background-color: transparent;
+                    }
+
+                    &.active {
+                        background-color: transparent;
+
+                        &::before {
+                            background-color: $primary-color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.custom-tabs-vertical{
+        display: flex;
+        justify-content: flex-start;
+        min-height: 300px;
+        
+        .nav {
+            &.nav-tabs {
+                border-bottom: none;
+                gap: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex-basis: 185px;
+    
+                .nav-link {
+                    border: none;
+                    padding: 12px 20px;
+                    @include font(14px);
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: $grey-color;
+                    margin-bottom: 0;
+                    position: relative;
+                    width: 100%;
+                    text-align: left;
+                    border-radius: 0;
+    
+                    &::before {
+                        display: none;
+                    }
+
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        background-image: url('/assets/images/icon-down-arrow-grey.svg');
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        width: 10px;
+                        height: 6px;
+                        right: 10px;
+                        top: 50%;
+                        margin-top: -5px;
+                        transform: rotate(-90deg);
+                    }
+
+                    &.active {
+                        background-color: $primary-color1-10;
+                    }
+                }
+            }
+        }
+
+        .tab-content{
+            flex-basis: calc(100% - 200px);
+            border-left: 1px solid $primary-color1-40;
+            padding: 0 0 24px 24px;
+        }
+    }
+}

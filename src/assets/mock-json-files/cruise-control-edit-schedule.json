@@ -1,0 +1,56 @@
+{
+    "scheduleName": "My Schedule",
+    "recurrence": {
+      "type": "weekly",
+      "startDate": "2024-11-22",
+      "startTime": "14:00",
+      "endDate": "2024-12-01",
+      "weekdays": ["Monday", "Wednesday"]
+    },
+    "stages": [
+      {
+        "id": 1,
+        "name": "Stage 1",
+        "orchestration": [
+          {
+            "pipelineId": 205,
+            "pipelineName": "DataProcessingPipeling1",
+            "pipelineVersion": "1"
+          },
+          {
+            "pipelineId": 206,
+            "pipelineName": "DataProcessingPipeline2",
+            "pipelineVersion": "2"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Stage 2",
+        "orchestration": [
+          {
+            "pipelineId": 178,
+            "pipelineName": "DataProcessingPipeline3",
+            "pipelineVersion": "3"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Stage 3",
+        "orchestration": [
+          {
+            "pipelineId": 1,
+            "pipelineName": "Rag",
+            "pipelineVersion": "8"
+          },
+          {
+            "pipelineId": 2,
+            "pipelineName": "Rag1",
+            "pipelineVersion": "9"
+          }
+        ]
+      }
+    ]
+  }
+  

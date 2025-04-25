@@ -1,0 +1,60 @@
+{
+    "textGeneration": {
+      "summary": "The BLEU score is 0.0000000005 and the ROUGE score is 0.33. Both scores are on a scale from 0 to 1, with 1 being the best possible score. The BLEU score is quite low, suggesting that the translation or text generation may not be very accurate. The ROUGE score is higher, indicating a better performance in terms of recall or capturing all the relevant details. However, there is still room for improvement.",
+      "metric": [
+        {
+          "name": "bleu",
+          "inputRecords": 3,
+          "minValue": 0,
+          "maxValue": 1,
+          "avg": 0.05
+        },
+        {
+          "name": "rouge",
+          "inputRecords": 3,
+          "minValue": 0,
+          "maxValue": 1,
+          "avg": 0.33
+        }
+      ]
+    },
+    "textUnderstanding": {
+      "summary": "The F1 score and Accuracy score are both between 0 and 1, which is good. The F1 score is 0.62, which indicates a relatively good balance between precision and recall. The Accuracy score is 0.99, which is excellent and indicates that the model is correctly identifying the outcome the vast majority of the time.",
+      "metric": [
+        {
+          "name": "f1Score",
+          "inputRecords": 3,
+          "minValue": 0,
+          "maxValue": 1,
+          "avg": 0.62
+        },
+        {
+          "name": "accuracy",
+          "inputRecords": 3,
+          "minValue": 0,
+          "maxValue": 1,
+          "avg": 0.99
+        }
+      ]
+    },
+    "knowledgeRetrieval": {
+      "summary": "The Retrieval Accuracy score is 0.67, which is relatively high, indicating that the system is fairly accurate in retrieving relevant information. The Response Diversity score is 0.3, which is on the lower side, suggesting that the system may not be providing a wide variety of responses.",
+      "metric": [
+        {
+          "name": "retrievalAccuracy",
+          "inputRecords": 3,
+          "minValue": 0,
+          "maxValue": 1,
+          "avg": 0.67
+        },
+        {
+          "name": "responseDiversity",
+          "inputRecords": 3,
+          "minValue": 0,
+          "maxValue": 1,
+          "avg": 0.3
+        }
+      ]
+    }
+  }
+  

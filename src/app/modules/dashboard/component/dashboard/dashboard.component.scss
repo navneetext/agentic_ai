@@ -1,0 +1,379 @@
+@import "../../../../../assets/abstracts/variables";
+@import "../../../../../assets/abstracts/functions";
+@import "../../../../../assets/abstracts/mixins";
+
+.group-1000006110 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 797px;
+  margin: 0 auto;
+}
+
+.textarea-wrapper {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  width: 103%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  .agent-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: vertical;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+    min-height: 45px;
+  }
+  .icon-group:before {
+    content: none; /* This will stop the icon from appearing */
+  }
+
+  .icon-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+
+    img {
+      cursor: pointer;
+      object-fit: none;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.tabs-container {
+  display: flex;
+  gap: 20px; /* Adjust spacing between tabs */
+}
+
+.tab-link {
+  position: relative;
+  text-decoration: none;
+  color: black; /* Adjust color as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.tab-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust to remove gap */
+  left: 0;
+  width: 100%;
+  height: 4px; /* Adjust height of underline */
+}
+
+.workbench-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  margin: -12px 20px 20px 0px;
+
+  .workbench-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+}
+
+$color-start: rgba(89, 41, 208, 1);
+$color-end: rgba(205, 18, 138, 1);
+
+.rectangle-8466 {
+  background: linear-gradient(
+    93.51deg,
+    rgba(246, 244, 252, 1) 0%,
+    rgba(252, 243, 249, 1) 100%
+  );
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+    93.55deg,
+    rgba(89, 41, 208, 1) 0%,
+    rgba(205, 18, 138, 1) 100%
+  );
+  border-image-slice: 1;
+  height: 287px;
+  position: relative;
+  .welcome-to-agentic-ai-workbench,
+  .welcome-to-agentic-ai-workbench * {
+    box-sizing: border-box;
+  }
+  .welcome-to-agentic-ai-workbench {
+    background: linear-gradient(
+      90deg,
+      rgba(89, 41, 208, 1) 0%,
+      rgba(205, 18, 138, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .agentic-ai-automates-repetitive-tasks-and-streamlines-workflows-freeing-up-human-teams-to-focus-on-strategic-high-value-work-with-real-time-decision-making-and-continuous-learning-these-agents-complete-tasks-faster-and-with-greater-accuracy-boosting-overall-efficiency,
+  .agentic-ai-automates-repetitive-tasks-and-streamlines-workflows-freeing-up-human-teams-to-focus-on-strategic-high-value-work-with-real-time-decision-making-and-continuous-learning-these-agents-complete-tasks-faster-and-with-greater-accuracy-boosting-overall-efficiency
+    * {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+  }
+  .agentic-ai-automates-repetitive-tasks-and-streamlines-workflows-freeing-up-human-teams-to-focus-on-strategic-high-value-work-with-real-time-decision-making-and-continuous-learning-these-agents-complete-tasks-faster-and-with-greater-accuracy-boosting-overall-efficiency {
+    color: var(--g100-333333, #333333);
+    text-align: center;
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .explain-what-you-aim-to-achieve-and-the-type-of-agent-roles-and-skills-you-intend-to-create {
+    color: var(--g50-d9d9d9, #989898);
+
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    // margin-top: 10px;
+    line-height: 0;
+  }
+
+  .image-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: flex-end; /* Align images to the right */
+    align-items: center; /* Center images vertically */
+    gap: 0px; /* Add spacing between images */
+    margin: 10px -10px -20px 680px;
+  }
+
+  .component-252,
+  .layer-38 {
+    width: 40px; /* Set a fixed width for the images */
+    height: 40px; /* Set a fixed height for the images */
+    object-fit: contain; /* Ensure the images fit within their containers */
+    cursor: pointer; /* Change cursor to pointer for clickable images */
+    transition: transform 0.2s ease; /* Add a hover effect */
+  }
+  .layer-39 {
+    width: 40px; /* Set a fixed width for the images */
+    height: 20px; /* Set a fixed height for the images */
+    object-fit: contain; /* Ensure the images fit within their containers */
+    cursor: pointer; /* Change cursor to pointer for clickable images */
+    transition: transform 0.2s ease; /* Add a hover effect */
+  }
+
+  .component-252:hover,
+  .layer-38:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+  }
+}
+
+.dashboard-wrapper {
+  .custom-card {
+    padding: 25px;
+    margin-bottom: 32px;
+
+    h1 {
+      @include font(24px);
+      line-height: 1.5;
+      color: $grey-color;
+      font-weight: 400;
+      margin-bottom: 5px;
+
+      @include media(xl) {
+        @include font(30px);
+        line-height: 1.5;
+      }
+    }
+
+    .card-title {
+      @include font(18px);
+      line-height: 1.5;
+      color: $grey-color;
+      font-weight: 500;
+      margin-bottom: 30px;
+
+      @include media(xl) {
+        @include font(22px);
+        line-height: 1.5;
+      }
+
+      img {
+        width: 24px;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+
+        @include media(xl) {
+          width: 32px;
+        }
+      }
+    }
+
+    h3 {
+      @include font(18px);
+      line-height: 1.5;
+      color: $grey-color-50;
+      font-weight: 500;
+      margin-bottom: 12px;
+
+      &.subtitle {
+        font-weight: 300;
+      }
+
+      @include media(xl) {
+        @include font(22px);
+        line-height: 1.5;
+      }
+    }
+
+    h4 {
+      @include font(16px);
+      line-height: 1.5;
+      font-weight: 300;
+      color: $red-color;
+      margin-bottom: 10px;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 24px;
+      padding-top: 12px;
+
+      .cta-workspace {
+        @include button-brd(
+          $primary-color1,
+          "/assets/images/icon-plus-blue.svg",
+          left
+        );
+
+        @include media(xl) {
+          @include font(20px);
+          line-height: 1.2;
+          padding: 12px 24px;
+        }
+
+        @include media(xxl) {
+          @include font(20px);
+          line-height: 1.2;
+          padding: 20px 50px;
+        }
+      }
+
+      .link {
+        @include font(16px);
+        line-height: 1.5;
+        color: $sky-blue-alt-color;
+
+        @include media(xl) {
+          @include font(18px);
+          line-height: 1.5;
+        }
+
+        @include media(xxl) {
+          @include font(22px);
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .navigate-steps {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        @include font(14px);
+        line-height: 1.5;
+        font-weight: 300;
+        color: $grey-color-80;
+        margin-bottom: 5px;
+
+        a {
+          font-size: inherit;
+          color: $sky-blue-alt-color;
+          text-decoration: underline;
+          display: inline;
+          font-weight: 500;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .img-wrapper {
+      position: relative;
+      padding-bottom: 56.2%;
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &.custom-card1 {
+      height: 1200px;
+    }
+
+    &.custom-card2 {
+      height: auto;
+    }
+  }
+}
+
+.tabs-container {
+  border-bottom: 2px solid #e0e0e0; /* Optional: subtle bottom line for structure */
+  padding-bottom: 4px;
+}
+
+.tab-link {
+  margin-right: 24px;
+  padding: 8px 0;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.tab-link.active {
+  color: #6a1b9a; /* Highlight color */
+}
+
+.tab-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background-color: #6a1b9a;
+  border-radius: 2px;
+}

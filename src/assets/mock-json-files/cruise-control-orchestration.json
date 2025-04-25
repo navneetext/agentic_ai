@@ -1,0 +1,95 @@
+{
+    "body": {
+        "body": [
+            {
+                "items": [
+                    {
+                        "pipelineId": 205,
+                        "pipelineName": "DataProcessingPipeling1",
+                        "pipelineVersion": "1"
+                    },
+                    {
+                        "pipelineId": 206,
+                        "pipelineName": "DataProcessingPipeline2",
+                        "pipelineVersion": "2"
+                    },
+                    {
+                        "pipelineId": 178,
+                        "pipelineName": "DataProcessingPipeline3",
+                        "pipelineVersion": "3"
+                    },
+                    {
+                        "pipelineId": 202,
+                        "pipelineName": "DataProcessingPipeline4",
+                        "pipelineVersion": "4"
+                    },
+                    {
+                        "pipelineId": 203,
+                        "pipelineName": "DataProcessingPipeline5",
+                        "pipelineVersion": "5"
+                    },
+                    {
+                        "pipelineId": 177,
+                        "pipelineName": "DataProcessingPipeline6",
+                        "pipelineVersion": "6"
+                    },
+                    {
+                        "pipelineId": 204,
+                        "pipelineName": "DataProcessingPipeline7",
+                        "pipelineVersion": "7"
+                    }
+                ],
+                "label": "Data Factory"
+            },
+            {
+                "items": [
+                    {
+                        "pipelineId": 1,
+                        "pipelineName": "Rag",
+                        "pipelineVersion": "8"
+                    },
+                    {
+                        "pipelineId": 2,
+                        "pipelineName": "Rag1",
+                        "pipelineVersion": "9"
+                    },
+                    {
+                        "pipelineId": 3,
+                        "pipelineName": "Rag2",
+                        "pipelineVersion": "10"
+                    },
+                    {
+                        "pipelineId": 4,
+                        "pipelineName": "Rag3",
+                        "pipelineVersion": "11"
+                    },
+                    {
+                        "pipelineId": 5,
+                        "pipelineName": "Rag4",
+                        "pipelineVersion": "12"
+                    },
+                    {
+                        "pipelineId": 6,
+                        "pipelineName": "Rag5",
+                        "pipelineVersion": "13"
+                    },
+                    {
+                        "pipelineId": 7,
+                        "pipelineName": "Rag6",
+                        "pipelineVersion": "14"
+                    }
+                ],
+                "label": "RAG"
+            }
+        ]
+    },
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Loaded pipelines list in dropdown based on project and env id!",
+    "output_kpis": {
+        "execution_time": 0.08170318603515625,
+        "processed_records": 1
+    },
+    "status_code": 200
+}

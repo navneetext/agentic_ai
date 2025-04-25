@@ -1,0 +1,54 @@
+<div class="model-catalog-container">
+  <div class="header">
+    <div class="title-section">
+      <h1>Model Catalog</h1>
+      <p>Browse and manage your AI models</p>
+    </div>
+    <div class="search-section">
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search models...">
+      </div>
+      <button class="create-model-btn">
+        <i class="fas fa-plus"></i>
+        Create Model
+      </button>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="filter-group">
+      <span class="filter-label">Category:</span>
+      <div class="filter-options">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Public Sector</button>
+        <button class="filter-btn">Finance</button>
+        <button class="filter-btn">Logistic</button>
+        <button class="filter-btn">Retail</button>
+        <button class="filter-btn">Healthcare</button>
+        <button class="filter-btn">E-Commerce</button>
+        <button class="filter-btn">Hi-Tech</button>
+        <button class="filter-btn">Embodied AI</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="model-grid">
+    <div class="model-card" *ngFor="let model of modelCards">
+      <div class="card-header">
+        <div class="category-tag">{{model.category}}</div>
+        <div class="card-actions">
+          <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+      </div>
+      <div class="card-content">
+        <h3>{{model.title}}</h3>
+        <p>{{model.description}}</p>
+      </div>
+      <div class="card-footer">
+        <span class="last-edited">{{model.lastEdited}}</span>
+        <button class="view-btn">View Details</button>
+      </div>
+    </div>
+  </div>
+</div> 

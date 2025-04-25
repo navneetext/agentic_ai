@@ -1,0 +1,114 @@
+{
+    "body": {
+      "benchmarking_table": [
+        {
+          "benchmarking_aspect": "Task Accuracy",
+          "dataset_used": "IMDB, AG News",
+          "score_achieved": ">90%",
+          "industry_standard": "+23%",
+          "gap_analysis": "-5"
+        },
+        {
+          "benchmarking_aspect": "Knowledge Retrieval",
+          "dataset_used": "IMDB, AG News",
+          "score_achieved": ">90%",
+          "industry_standard": "+23%",
+          "gap_analysis": "-5"
+        },
+        {
+          "benchmarking_aspect": "Toxicity Testing",
+          "dataset_used": "IMDB, AG News",
+          "score_achieved": ">90%",
+          "industry_standard": "+23%",
+          "gap_analysis": "-5"
+        },
+        {
+          "benchmarking_aspect": "Bias Detection",
+          "dataset_used": "IMDB, AG News",
+          "score_achieved": ">90%",
+          "industry_standard": "+23%",
+          "gap_analysis": "-5"
+        },
+        {
+          "benchmarking_aspect": "Generalization Accuracy",
+          "dataset_used": "IMDB, AG News",
+          "score_achieved": ">90%",
+          "industry_standard": "+23%",
+          "gap_analysis": "-5"
+        }
+      ],
+      "benchmarking_summary": "summary for benchmarking",
+      "robustness_testing_table": [
+        {
+          "test_type": "Adversarial Inputs",
+          "metric": "Adversarial Success Rate (ASR)",
+          "pre_finetuning": "60%",
+          "post_finetuning": "85%",
+          "gap_analysis": "Achieved"
+        },
+        {
+          "test_type": "Out-of-Distribution",
+          "metric": "Generalization Accuracy",
+          "pre_finetuning": "60%",
+          "post_finetuning": "85%",
+          "gap_analysis": "-2%"
+        },
+        {
+          "test_type": "Multilingual Testing",
+          "metric": "Translation Accuracy",
+          "pre_finetuning": "60%",
+          "post_finetuning": "85%",
+          "gap_analysis": "+15%"
+        }
+      ],
+      "robustness_testing_summary": "summary for robustness testing",
+      "safety_and_ethical_metrics_table": [
+        {
+          "test_type": "Toxicity Rate",
+          "metric": "Adversarial Success Rate (ASR)",
+          "pre_finetuning": "60%",
+          "post_finetuning": "85%",
+          "standard": "85%",
+          "gap_analysis": "Achieved"
+        },
+        {
+          "test_type": "Bias Detection Rate",
+          "metric": "Generalization Accuracy",
+          "pre_finetuning": "60%",
+          "post_finetuning": "85%",
+          "standard": "85%",
+          "gap_analysis": "Achieved"
+        },
+        {
+          "test_type": "Ethical Compliance Rate",
+          "metric": "Translation Accuracy",
+          "pre_finetuning": "60%",
+          "post_finetuning": "85%",
+          "standard": "85%",
+          "gap_analysis": "Achieved"
+        }
+      ],
+      "safety_and_ethical_metrics_summary": "summary for safety and ethical metrics",
+      "deployment_readiness_table": [
+        {
+          "attribute": "Inference Latency",
+          "status": "Achieved: 130ms"
+        },
+        {
+          "attribute": "Scalability",
+          "status": "Multi-node deployment tested"
+        },
+        {
+          "attribute": "Real-Time Monitoring",
+          "status": "Integrated with Prometheus and Grafana"
+        }
+      ],
+      "deployment_readiness_summary": "summary for deployment readiness",
+      "weightage_meter_values": {
+        "overall_result": 85,
+        "core_performance": 1.56,
+        "robustness": 1,
+        "deployment_readiness": 1
+      }
+    }
+  }

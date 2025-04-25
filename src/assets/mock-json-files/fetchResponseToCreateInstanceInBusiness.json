@@ -1,0 +1,223 @@
+{
+  "body": {
+    "ai_services": {
+      "9": [
+        {
+          "component_id": 9,
+          "deploy_id": 38,
+          "description": "This is RAG",
+          "id": 215,
+          "input_payload": {
+            "blob_connection_details": {
+              "allowed_values": [],
+              "data_type": "json",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "setup",
+              "value": "{\"connection_string\": \"DefaultEndpointsProtocol=https;AccountName=homedepotstorageaccount;AccountKey=;EndpointSuffix=core.windows.net\", \"container_name\": \"databricks-storage-container\"}"
+            },
+            "blob_file_name": {
+              "allowed_values": [],
+              "data_type": "string",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "runtime",
+              "value": "NYPD.txt"
+            },
+            "param_json": {
+              "allowed_values": [],
+              "data_type": "json",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "runtime",
+              "value": "{\"chunk_size\": 50, \"overlap\": 15}"
+            },
+            "pipeline_id": {
+              "allowed_values": [],
+              "data_type": "string",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "setup",
+              "value": ""
+            },
+            "source_type": {
+              "allowed_values": [],
+              "data_type": "string",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "setup",
+              "value": ""
+            }
+          },
+          "payload_setup": {
+            "input_parameters": [
+              {
+                "allowedValues": [],
+                "defaultValue": "Value",
+                "formControlType": "textbox",
+                "id": "",
+                "isMandatory": true,
+                "label": "blob connection details",
+                "maxlength": 50,
+                "minlength": 5,
+                "name": "blob_connection_details"
+              },
+              {
+                "name": "pipeline_id",
+                "id": "radio",
+                "label": "Pipeline Id",
+                "formControlType": "radio",
+                "isMandatory": true,
+                "defaultValue": "Value 1",
+                "allowedValues": ["Value 1", "Value 2", "Value 3"]
+              },
+              {
+                "name": "source_type",
+                "id": "source_type",
+                "label": "Source Type",
+                "formControlType": "dropdown",
+                "isMandatory": true,
+                "defaultValue": "Value",
+                "allowedValues": ["Blob"],
+                "maxlength": 30,
+                "minlength": 4
+              }
+            ]
+          },
+          "metrics": {
+            "execution_time": "10ms",
+            "processed_records": 100
+          },
+          "name": "RAG_chunking_fixed_size",
+          "output": {
+            "error_code": null,
+            "error_message": null,
+            "execution_status": "success",
+            "message": "Execution completed successfully",
+            "service_output": {},
+            "status_code": 200
+          },
+          "service_type": "Data",
+          "subsystem_id": 4,
+          "version": 1.0
+        },
+        {
+          "component_id": 9,
+          "deploy_id": 45,
+          "description": "This is RAG",
+          "id": 246,
+          "input_payload": {
+            "blob_connection_details": {
+              "allowed_values": [],
+              "data_type": "json",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "runtime",
+              "value": "{\"connection_string\": \"DefaultEndpointsProtocol=https;AccountName=homedepotstorageaccount;AccountKey=;EndpointSuffix=core.windows.net\", \"container_name\": \"databricks-storage-container\"}"
+            },
+            "blob_file_name": {
+              "allowed_values": [],
+              "data_type": "string",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "runtime",
+              "value": "NYPD.txt"
+            },
+            "param_json": {
+              "allowed_values": [],
+              "data_type": "json",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "runtime",
+              "value": "{\"chunk_size\": 50, \"overlap\": 15}"
+            }
+          },
+          "payload_setup": {
+            "input_parameters": []
+          },
+          "metrics": {
+            "execution_time": "10ms",
+            "processed_records": 100
+          },
+          "name": "Restore_test_v1",
+          "output": {
+            "error_code": null,
+            "error_message": null,
+            "execution_status": "success",
+            "message": "Execution completed successfully",
+            "service_output": {},
+            "status_code": 200
+          },
+          "service_type": "Data",
+          "subsystem_id": 4,
+          "version": 1.0
+        }
+      ],
+      "10": [
+        {
+          "component_id": 10,
+          "deploy_id": 4,
+          "description": "This is RAG service",
+          "id": 2,
+          "input_payload": {
+            "chunking_table": {
+              "allowed_values": [],
+              "data_type": "string",
+              "default_value": "",
+              "is_mandatory": "Y",
+              "source_from": "runtime",
+              "value": ""
+            }
+          },
+          "payload_setup": {
+            "input_parameters": []
+          },
+          "metrics": {
+            "execution_time": "10ms",
+            "processed_records": 100
+          },
+          "name": "RAG_dense_embedding",
+          "output": {
+            "error_code": null,
+            "error_message": null,
+            "execution_status": "success",
+            "message": "Execution completed successfully",
+            "service_output": {},
+            "status_code": 200
+          },
+          "service_type": "Data",
+          "subsystem_id": 4,
+          "version": 1.0
+        }
+      ]
+    },
+    "subsystems": [
+      {
+        "components": [
+          {
+            "description": "Divide data into chunks for better processing",
+            "id": 9,
+            "name": "Chunking"
+          },
+          {
+            "description": "Embed data for similarity matching",
+            "id": 10,
+            "name": "Embedding"
+          }
+        ],
+        "description": "Relevant Answer Generation",
+        "id": 4,
+        "name": "RAG"
+      }
+    ]
+  },
+  "error_code": null,
+  "error_message": null,
+  "execution_status": "success",
+  "message": "The sub-systems were fetched successfully!",
+  "output_kpis": {
+    "execution_time": "4.5483s",
+    "processed_records": 45
+  },
+  "status_code": 200
+}

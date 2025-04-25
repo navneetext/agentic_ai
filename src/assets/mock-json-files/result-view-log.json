@@ -1,0 +1,71 @@
+{
+    "activityObj": [
+        {
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "AI Services, requested for Test"
+        },
+        {
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "Send for Approval"
+        },
+        {
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "Modified"
+        },
+        {
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "AI Services Created"
+        }
+    ],
+    "runTimeObj": [
+        {
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "End Test"
+        },
+        {
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "Start Test"
+        },
+        {
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "AI Services-In Progress"
+        },
+        {
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "AI Services Successfully created"
+        }
+    ],
+    "workFlowObj": [
+        {
+            "aiServiceModel": "Base Model",
+            "version": "3.1",
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "Pipleline scheduled-weekly 2 times"
+        },
+        {
+            "aiServiceModel": "Base Model_2",
+            "version": "3.2",
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "Send for Approval"
+        },
+        {
+            "aiServiceModel": "Base Model_1",
+            "version": "3.3",
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "Pipleline Created"
+        },
+        {
+            "aiServiceModel": "Base Model_1",
+            "version": "3.4",
+            "timeStamp": "10-10-24 09:15AM",
+            "description": "Pipleline Updated"
+        }
+    ],
+    "ai_service_info": {
+        "aiServiceName": "GPT-351_Doordash",
+        "version": "1.3",
+        "Visibility": "public",
+        "deploymentStatus": "Success",
+        "lastExecution": "2024-06-20T10:34:51"
+    }
+}

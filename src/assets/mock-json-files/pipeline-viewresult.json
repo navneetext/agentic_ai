@@ -1,0 +1,71 @@
+{
+    "body": [
+        {
+            "active_flag": "Y",
+            "component_id": 7,
+            "component_name": "Redteaming",
+            "subcomponents": [
+                {
+                    "ai_services": [
+                        {
+                            "ai_service_id": 338,
+                            "ai_service_name": "Prompt Generation",
+                            "ai_service_version": "1.0"
+                        }
+                    ],
+                    "subcomponent_id": 23,
+                    "subcomponent_name": "Jailbreaking Prompt Generation"
+                },
+                {
+                    "ai_services": [
+                        {
+                            "ai_service_id": 339,
+                            "ai_service_name": "Policy RAG",
+                            "ai_service_version": "1.0"
+                        }
+                    ],
+                    "subcomponent_id": 24,
+                    "subcomponent_name": "Policy RAG"
+                }
+            ]
+        },
+        {
+            "active_flag": "Y",
+            "component_id": 8,
+            "component_name": "Data Security",
+            "subcomponents": [
+                {
+                    "ai_services": [
+                        {
+                            "ai_service_id": 340,
+                            "ai_service_name": "Encryption Service",
+                            "ai_service_version": "1.0"
+                        }
+                    ],
+                    "subcomponent_id": 25,
+                    "subcomponent_name": "File Encryption"
+                },
+                {
+                    "ai_services": [
+                        {
+                            "ai_service_id": 341,
+                            "ai_service_name": "Access Control",
+                            "ai_service_version": "1.0"
+                        }
+                    ],
+                    "subcomponent_id": 26,
+                    "subcomponent_name": "User Authentication"
+                }
+            ]
+        }
+    ],
+    "error_code": null,
+    "error_message": null,
+    "execution_status": "success",
+    "message": "Components,Subcomponents and AiServices details fetched successfully",
+    "output_kpis": {
+        "execution_time": 2.5037355422973633,
+        "processed_records": 0
+    },
+    "status_code": 200
+}

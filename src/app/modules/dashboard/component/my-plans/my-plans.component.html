@@ -1,0 +1,61 @@
+<div class="plan-container">
+  <div class="row plan-header align-items-start">
+    <!-- Toggle Button -->
+
+    <!-- Main Header Content -->
+    <div class="col-md-10 integration-header">
+      <div class="title-row">
+        <h2 class="title">NVIDIA VILA Integration</h2>
+        <span class="version">V5.0 <img src="/assets/images/collapse.svg"/></span>
+        <span class="status"
+          ><img src="/assets/images/running.svg" /> Running</span
+        >
+      </div>
+      <div>
+        <img
+          (click)="toggleExpand()"
+          [src]="
+            isExpanded
+              ? '/assets/images/collapse.svg'
+              : '/assets/images/expand.svg'
+          "
+          alt="Toggle"
+        />
+        <p class="description">
+          Use the VILA model's multimodal capabilities to integrate vision,
+          language, and action functionalities into the platform. This could be
+          done through NVIDIA’s AI Developer Tools like CUDA and TensorRT to
+          optimize performance.
+        </p>
+      </div>
+    </div>
+
+    <!-- Edited Time -->
+    <div class="col-md-1 d-flex justify-content-end align-items-start">
+      <p class="edited-time">Edited 4 hours ago</p>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div *ngIf="isExpanded"><h4>Agents</h4></div>
+  <div *ngIf="isExpanded" class="agent-table-wrapper">
+    <p-table
+      [value]="agents"
+      class="p-datatable-sm"
+      [responsiveLayout]="'scroll'"
+    >
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Agent Name</th>
+          <th>Role</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-agent>
+        <tr>
+          <td>{{ agent.name }}</td>
+          <td>{{ agent.role }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

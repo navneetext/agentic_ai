@@ -1,0 +1,45 @@
+<div class="source-panel" [class.show]="isVisible">
+  <div class="panel-header">
+    <h4 class="panel-title">Source</h4>
+    <button type="button" class="close-btn" (click)="close()">×</button>
+  </div>
+  <div class="panel-body">
+    <div class="nav-tabs">
+      <button class="tab-btn" [class.active]="activeTab === 'test'" (click)="onTabClick($event, 'test')">Test</button>
+      <button class="tab-btn" [class.active]="activeTab === 'log'" (click)="onTabClick($event, 'log')">Log</button>
+    </div>
+    <div class="tab-content">
+      <div *ngIf="activeTab === 'test'" class="test-content">
+        <div class="input-section">
+          <div class="input-avatar">
+            <img src="assets/images/avatar.svg" alt="Avatar">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Add/Upload your input..." [(ngModel)]="inputText">
+            <button class="send-btn" (click)="onSend()">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="activeTab === 'log'" class="log-content">
+        <h3>Endpoint</h3>
+        <div class="endpoint-input">
+          <input type="text" value="https://www.figma.com/proto/xgxkbKdF8oPb......" readonly>
+        </div>
+        <div class="code-block">
+          <pre>response =
+runtime_sagemaker_client.invoke_endpoint(
+    EndpointName = "<span class="highlight">ENDPOINT_NAME</span>",
+    ContentType = "text/csv",
+    TargetModel = "<span class="highlight">MODEL_FILENAME</span>.tar.gz",
+    Body       = body)</pre>
+          <div class="code-actions">
+            <button class="action-btn edit" (click)="onEdit()"><i class="fas fa-pen"></i></button>
+            <button class="action-btn copy" (click)="onCopy()"><i class="fas fa-copy"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
